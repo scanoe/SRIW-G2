@@ -19,6 +19,18 @@
            rdfs:range :Municipio .
 
 
+###  http://www.EPSColombia.org#Contenido_por
+:Contenido_por rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               owl:inverseOf :Contiene_a ;
+               rdf:type owl:FunctionalProperty .
+
+
+###  http://www.EPSColombia.org#Contiene_a
+:Contiene_a rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty .
+
+
 ###  http://www.EPSColombia.org#Contrata
 :Contrata rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
@@ -181,6 +193,18 @@
 #    Classes
 #################################################################
 
+###  http://www.EPSColombia.org#Departamento
+:Departamento rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :Contiene_a ;
+                                owl:someValuesFrom :Municipio
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :Contiene_a ;
+                                owl:maxCardinality "123"^^xsd:nonNegativeInteger
+                              ] .
+
+
 ###  http://www.EPSColombia.org#EPS
 :EPS rdf:type owl:Class ;
      rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -208,6 +232,10 @@
 ###  http://www.EPSColombia.org#Municipio
 :Municipio rdf:type owl:Class ;
            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :Contenido_por ;
+                             owl:someValuesFrom :Departamento
+                           ] ,
+                           [ rdf:type owl:Restriction ;
                              owl:onProperty :Es_atendido_por ;
                              owl:someValuesFrom :IPS
                            ] .
@@ -216,6 +244,17 @@
 #################################################################
 #    General axioms
 #################################################################
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :Atiende_a
+                :Contenido_por
+                :Contiene_a
+                :Contrata
+                :Es_atendido_por
+                :Es_contratada
+              )
+] .
+
 
 [ rdf:type owl:AllDisjointProperties ;
   owl:members ( :CODIGO_DANE_DEL_DEPARTAMENTO
