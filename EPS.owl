@@ -28,7 +28,8 @@
 
 ###  http://www.EPSColombia.org#Contiene_a
 :Contiene_a rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf owl:topObjectProperty .
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdf:type owl:TransitiveProperty .
 
 
 ###  http://www.EPSColombia.org#Contrata
@@ -196,6 +197,10 @@
 ###  http://www.EPSColombia.org#Departamento
 :Departamento rdf:type owl:Class ;
               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :Contenido_por ;
+                                owl:someValuesFrom :Municipio
+                              ] ,
+                              [ rdf:type owl:Restriction ;
                                 owl:onProperty :Contiene_a ;
                                 owl:someValuesFrom :Municipio
                               ] ,
@@ -239,6 +244,14 @@
                              owl:onProperty :Es_atendido_por ;
                              owl:someValuesFrom :IPS
                            ] .
+
+
+###  http://www.EPSColombia.org#Subdivision
+:Subdivision rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :Contiene_a ;
+                               owl:someValuesFrom :Departamento
+                             ] .
 
 
 #################################################################
