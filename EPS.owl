@@ -257,6 +257,13 @@
                            ] .
 
 
+###  http://www.EPSColombia.org#Servicios_de_Salud
+:Servicios_de_Salud rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Class ;
+                                          owl:complementOf :Locaciones
+                                        ] .
+
+
 ###  http://www.EPSColombia.org#Subdivision
 :Subdivision rdf:type owl:Class ;
              rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -268,6 +275,16 @@
 #################################################################
 #    General axioms
 #################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Departamento
+                :Locaciones
+                :Municipio
+                :Servicios_de_Salud
+                :Subdivision
+              )
+] .
+
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( :EPS
