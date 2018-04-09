@@ -257,6 +257,11 @@
                            ] .
 
 
+###  http://www.EPSColombia.org#Region
+:Region rdf:type owl:Class ;
+        owl:equivalentClass :Subdivision .
+
+
 ###  http://www.EPSColombia.org#Servicios_de_Salud
 :Servicios_de_Salud rdf:type owl:Class ;
                     owl:equivalentClass [ rdf:type owl:Class ;
