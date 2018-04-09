@@ -234,6 +234,17 @@
                          ] .
 
 
+###  http://www.EPSColombia.org#Locaciones
+:Locaciones rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Class ;
+                                  owl:complementOf [ rdf:type owl:Class ;
+                                                     owl:unionOf ( :EPS
+                                                                   :IPS
+                                                                 )
+                                                   ]
+                                ] .
+
+
 ###  http://www.EPSColombia.org#Municipio
 :Municipio rdf:type owl:Class ;
            rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -257,6 +268,14 @@
 #################################################################
 #    General axioms
 #################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :EPS
+                :IPS
+                :Locaciones
+              )
+] .
+
 
 [ rdf:type owl:AllDisjointProperties ;
   owl:members ( :Atiende_a
