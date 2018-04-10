@@ -35,23 +35,15 @@
 ###  http://www.EPSColombia.org#Contrata
 :Contrata rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
+          rdf:type owl:SymmetricProperty ;
           rdfs:domain :EPS ;
-          rdfs:range :IPS ;
-          owl:propertyDisjointWith :Es_contratada .
+          rdfs:range :IPS .
 
 
 ###  http://www.EPSColombia.org#Es_atendido_por
 :Es_atendido_por rdf:type owl:ObjectProperty ;
                  rdfs:domain :Municipio ;
                  rdfs:range :IPS .
-
-
-###  http://www.EPSColombia.org#Es_contratada
-:Es_contratada rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf owl:topObjectProperty ;
-               owl:inverseOf :Es_contratada ;
-               rdfs:domain :IPS ;
-               rdfs:range :EPS .
 
 
 #################################################################
@@ -196,18 +188,21 @@
 
 ###  http://www.EPSColombia.org#Departamento
 :Departamento rdf:type owl:Class ;
-              rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                owl:onProperty :Contenido_por ;
-                                owl:someValuesFrom :Municipio
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :Contiene_a ;
-                                owl:someValuesFrom :Municipio
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :Contiene_a ;
-                                owl:maxCardinality "123"^^xsd:nonNegativeInteger
-                              ] .
+              owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :Contenido_por ;
+                                                           owl:someValuesFrom :Municipio
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :Contiene_a ;
+                                                           owl:someValuesFrom :Municipio
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :Contiene_a ;
+                                                           owl:maxCardinality "123"^^xsd:nonNegativeInteger
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] .
 
 
 ###  http://www.EPSColombia.org#EPS
@@ -222,7 +217,7 @@
 ###  http://www.EPSColombia.org#IPS
 :IPS rdf:type owl:Class ;
      owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                  owl:onProperty :Es_contratada ;
+                                                  owl:onProperty :Contrata ;
                                                   owl:someValuesFrom :EPS
                                                 ]
                                                 [ rdf:type owl:Restriction ;
@@ -313,17 +308,6 @@
   owl:members ( :EPS
                 :IPS
                 :Locaciones
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointProperties ;
-  owl:members ( :Atiende_a
-                :Contenido_por
-                :Contiene_a
-                :Contrata
-                :Es_atendido_por
-                :Es_contratada
               )
 ] .
 
