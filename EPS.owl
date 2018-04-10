@@ -236,12 +236,22 @@
 
 ###  http://www.EPSColombia.org#Locaciones
 :Locaciones rdf:type owl:Class ;
-            owl:equivalentClass [ rdf:type owl:Class ;
-                                  owl:complementOf [ rdf:type owl:Class ;
-                                                     owl:unionOf ( :EPS
-                                                                   :IPS
-                                                                 )
-                                                   ]
+            owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                         owl:unionOf ( :Departamento
+                                                                       :Municipio
+                                                                       :Region
+                                                                       :Subdivision
+                                                                     )
+                                                       ]
+                                                       [ rdf:type owl:Class ;
+                                                         owl:complementOf [ rdf:type owl:Class ;
+                                                                            owl:unionOf ( :EPS
+                                                                                          :IPS
+                                                                                        )
+                                                                          ]
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] .
 
 
@@ -264,8 +274,16 @@
 
 ###  http://www.EPSColombia.org#Servicios_de_Salud
 :Servicios_de_Salud rdf:type owl:Class ;
-                    owl:equivalentClass [ rdf:type owl:Class ;
-                                          owl:complementOf :Locaciones
+                    owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                 owl:unionOf ( :EPS
+                                                                               :IPS
+                                                                             )
+                                                               ]
+                                                               [ rdf:type owl:Class ;
+                                                                 owl:complementOf :Locaciones
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
                                         ] .
 
 
