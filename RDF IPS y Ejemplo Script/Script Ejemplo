@@ -1,0 +1,20 @@
+sparql
+PREFIX DS:<https://www.datos.gov.co/resource/thui-g47e/>
+SELECT *
+FROM <IPS>
+WHERE {
+?y DS:departamento ?x
+} 
+;
+
+
+sparql
+PREFIX DS:<https://www.datos.gov.co/resource/thui-g47e/>
+SELECT ?nombre ?resultado ?unidades
+FROM <IPS>
+WHERE {
+?y DS:ips ?nombre;
+   DS:resultado ?resultado;
+   DS:nomunidad ?unidades.
+} 
+;
