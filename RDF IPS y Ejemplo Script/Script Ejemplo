@@ -1,9 +1,9 @@
 sparql
 PREFIX DS:<https://www.datos.gov.co/resource/thui-g47e/>
 SELECT *
-FROM <IPS>
+FROM <ips>
 WHERE {
-?y DS:departamento ?x
+?y DS:ips_departamento ?x
 } 
 ;
 
@@ -11,10 +11,10 @@ WHERE {
 sparql
 PREFIX DS:<https://www.datos.gov.co/resource/thui-g47e/>
 SELECT ?nombre ?resultado ?unidades
-FROM <IPS>
+FROM <ips>
 WHERE {
-?y DS:ips ?nombre;
-   DS:resultado ?resultado;
-   DS:nomunidad ?unidades.
+?y DS:ips_ips ?nombre;
+   DS:ips_resultado ?resultado;
+   DS:ips_nomunidad ?unidades.
 } 
 ;
