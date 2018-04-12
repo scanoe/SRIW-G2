@@ -1,4 +1,0 @@
-bash dump-rdf -u root -p "" -o rdfeps.ttl -f RDF/XML jdbc:mysql:///EPS
-
-bash generate-mapping -u root -p "" -o eps.ttl jdbc:mysql:///EPS
-
