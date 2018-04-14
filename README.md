@@ -12,6 +12,7 @@
 
   ## Links al servidor
   
-  * [phpmyadmin](http://54.233.253.19/phpmyadmin/)
-  * [apache jena fuseki](http://54.233.253.19:3030)
-  * [d2r](http://54.233.253.19:2020)
+  * [phpmyadmin](http://52.67.23.207:8890/phpmyadmin/)
+  * [apache jena fuseki](http:52.67.23.207:3030)
+  * [d2r](http://52.67.23.207:8890:2020)
+  * [virtuoso](http://52.67.23.207:8890:8890)
