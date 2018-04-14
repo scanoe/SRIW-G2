@@ -210,6 +210,54 @@
      rdfs:subClassOf [ rdf:type owl:Restriction ;
                        owl:onProperty :Contrata ;
                        owl:someValuesFrom :IPS
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :codigo ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :eps ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :fecha_corte ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :ideps ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :linkfuente ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :nomcategorias ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :nomespecifique ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :nomfuente ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :nomindicador ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :nomservicio ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :nomunidad ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :resultado ;
+                       owl:someValuesFrom xsd:float
                      ] ;
      owl:disjointWith :IPS .
 
@@ -223,6 +271,73 @@
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty :Atiende_a ;
                                                   owl:allValuesFrom :Municipio
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ,
+                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :coddepartamento ;
+                                                  owl:someValuesFrom xsd:int
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :codmunicipio ;
+                                                  owl:someValuesFrom xsd:int
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :denominador ;
+                                                  owl:someValuesFrom xsd:float
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :departamento ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :enlace ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :ideps ;
+                                                  owl:someValuesFrom xsd:int
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :ips ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :municipio ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :nomcategorias ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :nomespecifique ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :nomfuente ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :nomindicador ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :nomservicio ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :nomunidad ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :numerador ;
+                                                  owl:someValuesFrom xsd:float
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :resultado ;
+                                                  owl:someValuesFrom xsd:int
                                                 ]
                                               ) ;
                            rdf:type owl:Class
