@@ -21,3 +21,17 @@ WHERE {
    DS:ips_nomunidad ?unidades.
 } 
 ;
+
+
+Ejemplo Consulta r2d
+
+PREFIX DS:<http://localhost:2020/resource/vocab/>
+SELECT ?nombre ?resultado ?unidad
+WHERE {
+service<http://52.67.23.207:2020/sparql>{
+?y DS:EPS_eps ?nombre;
+   DS:EPS_resultado ?resultado;
+   DS:EPS_nomunidad ?unidad
+}
+} 
+
