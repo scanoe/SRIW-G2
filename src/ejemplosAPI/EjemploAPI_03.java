@@ -1,6 +1,9 @@
 package ejemplosAPI;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.io.OutputStream;
 
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
@@ -17,18 +20,17 @@ import org.apache.jena.rdf.model.Property;
 //import org.apache.jena.rdf.model.Statement;
 //import org.apache.jena.rdf.model.StmtIterator;
 import org.apache.jena.util.FileManager;
-import org.apache.jena.vocabulary.VCARD;
+//import org.apache.jena.vocabulary.VCARD;
 
 public class EjemploAPI_03 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		Model model = ModelFactory.createDefaultModel(); // creates an in-memory Jena Model
 		
 		// abrir el archivo con la ontolog�a
 		InputStream in = FileManager.get().open( "src/owl/EPS.owl" );
 		model.read(in, null, "TURTLE"); // parses an InputStream assuming RDF in Turtle format
 
-		
 		
 		String queryString =        
 				"PREFIX eps: <http://localhost:2020/resource/vocab/>" +
@@ -87,8 +89,9 @@ public class EjemploAPI_03 {
                                
                 
                 //System.out.println("http://www.EPSColombia.org#"+ soln.getLiteral("codigo") + "-" + soln.getLiteral("id_eps"));
-            }
-            model.write(System.out, "TURTLE");
+            }        
+            OutputStream output = new FileOutputStream("src/owl/EPS-D2R.owl");
+            model.write(output, "TURTLE");
         } finally {
             qexec.close();
         }
