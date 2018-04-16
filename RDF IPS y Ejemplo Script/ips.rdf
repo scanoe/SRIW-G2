@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:vocab="https://www.datos.gov.co/resource/thui-g47e/"
+    xmlns:db="file:///home/daniel/Documentos/SRW/d2rq-0.8.1/ips.rdf"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:map="file:///home/daniel/Documentos/SRW/d2rq-0.8.1/ips.rdf#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="file:///home/daniel/Documentos/SRW/d2rq-0.8.1/ips.rdf#" > 
+  <rdf:Description rdf:about="vocab/ips_idips">
+    <rdfs:label>ips idips</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips_municipio">
+    <rdfs:label>ips municipio</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips_nomfuente">
+    <rdfs:label>ips nomfuente</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips_denominador">
+    <rdfs:label>ips denominador</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips_nomcategorias">
+    <rdfs:label>ips nomcategorias</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips">
+    <rdfs:label>ips</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips_resultado">
+    <rdfs:label>ips resultado</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ips">
+    <vocab:ips_ips>Ese camu la apartada.</vocab:ips_ips>
+    <vocab:ips_departamento>Cordoba</vocab:ips_departamento>
+    <vocab:ips_nomunidad>Tasa</vocab:ips_nomunidad>
+    <vocab:ips_enlace>https://www.supersalud.gov.co/vigilados/vigilados/</vocab:ips_enlace>
+    <vocab:ips_denominador>1188</vocab:ips_denominador>
+    <vocab:ips_nomespecifique>Reingreso de pacientes</vocab:ips_nomespecifique>
+    <vocab:ips_coddepartamento>23</vocab:ips_coddepartamento>
+    <vocab:ips_municipio>La Apartada</vocab:ips_municipio>
+    <vocab:ips_nomindicador>Tasa de reingreso de pacientes hospitalizados (por cada 100 hospitalizados)</vocab:ips_nomindicador>
+    <vocab:ips_numerador>35</vocab:ips_numerador>
+    <vocab:ips_nomfuente>Supersalud</vocab:ips_nomfuente>
+    <vocab:ips_codmunicipio>23350</vocab:ips_codmunicipio>
+    <vocab:ips_idips>2335000471</vocab:ips_idips>
+    <vocab:ips_nomservicio>Hospitalaria</vocab:ips_nomservicio>
+    <vocab:ips_nomcategorias>Seguridad del paciente</vocab:ips_nomcategorias>
+    <vocab:ips_resultado>2</vocab:ips_resultado>
+    <vocab:ips_ips>Fundacion clinica integral sincelejo.</vocab:ips_ips>
+    <vocab:ips_departamento>Sucre</vocab:ips_departamento>
+    <vocab:ips_nomunidad>Tasa</vocab:ips_nomunidad>
+    <vocab:ips_enlace>https://www.supersalud.gov.co/vigilados/vigilados/</vocab:ips_enlace>
+    <vocab:ips_denominador>1974</vocab:ips_denominador>
+    <vocab:ips_nomespecifique>Infecciones hospitalarias</vocab:ips_nomespecifique>
+    <vocab:ips_coddepartamento>70</vocab:ips_coddepartamento>
+    <vocab:ips_municipio>Sincelejo</vocab:ips_municipio>
+    <vocab:ips_nomindicador>Tasa de infección intrahospitalaria (por cada 100 hospitalizados)</vocab:ips_nomindicador>
+    <vocab:ips_numerador>6</vocab:ips_numerador>
+    <vocab:ips_nomfuente>Supersalud</vocab:ips_nomfuente>
+    <vocab:ips_codmunicipio>70001</vocab:ips_codmunicipio>
+    <vocab:ips_idips>7000100801</vocab:ips_idips>
+    <vocab:ips_nomservicio>Hospitalaria</vocab:ips_nomservicio>
+    <vocab:ips_nomcategorias>Seguridad del paciente</vocab:ips_nomcategorias>
+    <vocab:ips_resultado>0</vocab:ips_resultado>
+    <vocab:ips_ips>Ese puesto de salud san miguel de tuta.</vocab:ips_ips>
+    <vocab:ips_departamento>Boyacá</vocab:ips_departamento>
+    <vocab:ips_nomunidad>días</vocab:ips_nomunidad>
+    <vocab:ips_enlace>https://www.supersalud.gov.co/vigilados/vigilados/</vocab:ips_enlace>
+    <vocab:ips_denominador>11722</vocab:ips_denominador>
+    <vocab:ips_nomespecifique>Médico General</vocab:ips_nomespecifique>
+    <vocab:ips_coddepartamento>15</vocab:ips_coddepartamento>
+    <vocab:ips_municipio>Tuta</vocab:ips_municipio>
+    <vocab:ips_nomindicador>Espera en la asignación de citas en la consulta médica general</vocab:ips_nomindicador>
+    <vocab:ips_numerador>15691</vocab:ips_numerador>
+    <vocab:ips_nomfuente>Supersalud</vocab:ips_nomfuente>
+    <vocab:ips_codmunicipio>15837</vocab:ips_codmunicipio>
+    <vocab:ips_idips>1583700709</vocab:ips_idips>
+    <vocab:ips_nomservicio>Consultas</vocab:ips_nomservicio>
+    <vocab:ips_nomcategorias>Tiempos de espera</vocab:ips_nomcategorias>
+    <vocab:ips_resultado>1</vocab:ips_resultado>
+       <rdf:type rdf:resource="vocab/ips"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips_nomunidad">
+    <rdfs:label>ips nomunidad</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips_coddepartamento">
+    <rdfs:label>ips coddepartamento</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips_numerador">
+    <rdfs:label>ips numerador</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips_nomespecifique">
+    <rdfs:label>ips nomespecifique</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips_nomindicador">
+    <rdfs:label>ips nomindicador</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips_departamento">
+    <rdfs:label>ips departamento</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips_ips">
+    <rdfs:label>ips ips</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips_enlace">
+    <rdfs:label>ips enlace</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips_codmunicipio">
+    <rdfs:label>ips codmunicipio</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="vocab/ips_nomservicio">
+    <rdfs:label>ips nomservicio</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+</rdf:RDF>
