@@ -1,3 +1,6 @@
+# Luego de subir el archivo IPS.rdf a virtuoso como grafo, 
+# se presentan las siguientes ejemplos de consultas sparql.
+
 sparql
 PREFIX DS:<https://www.datos.gov.co/resource/thui-g47e/>
 SELECT *
