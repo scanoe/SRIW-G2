@@ -59,7 +59,7 @@ public class QueryVIrtuoso {
                 String recurso = "http://www.EPSColombia.org#"+ soln.getLiteral("idips") + "-" +
                 		soln.getLiteral("nomcategorias").toString().replaceAll("\\s+","") + "-" + 
                 		soln.getLiteral("nomservicio").toString().replaceAll("\\s+","");
-                Property nombre = model.getProperty("http://www.EPSColombia.org#nombre");
+                Property nombre = model.getProperty("http://www.EPSColombia.org#ips");
                 Property departamento  = model.getProperty("http://www.EPSColombia.org#departamento");
                 Property nomunidad = model.getProperty("http://www.EPSColombia.org#nomunidad");
                 Property link = model.getProperty("http://www.EPSColombia.org#enlace");
