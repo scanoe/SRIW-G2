@@ -190,7 +190,7 @@
 :Departamento rdf:type owl:Class ;
               owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                            owl:onProperty :Contenido_por ;
-                                                           owl:someValuesFrom :Municipio
+                                                           owl:someValuesFrom :Subdivision
                                                          ]
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty :Contiene_a ;
