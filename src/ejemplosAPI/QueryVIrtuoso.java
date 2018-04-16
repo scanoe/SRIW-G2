@@ -23,7 +23,7 @@ public class QueryVIrtuoso {
 		Model model = ModelFactory.createDefaultModel(); // creates an in-memory Jena Model
 		
 		// abrir el archivo con la ontologia
-		InputStream in = FileManager.get().open( "src/owl/EPS.owl" );
+		InputStream in = FileManager.get().open( "src/owl/EPS-D2R.owl" );
 		model.read(in, null, "TURTLE"); // parses an InputStream assuming RDF in Turtle format
 
 		
