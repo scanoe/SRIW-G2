@@ -1,0 +1,1277 @@
+@prefix :      <http://www.EPSColombia.org#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+:1575902100-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "15" ;
+        :codmunicipio     "15759" ;
+        :denominador      "31" ;
+        :departamento     "Boyacá" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1575902100" ;
+        :municipio        "Sogamoso" ;
+        :nombre           "Dr house SAS." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "25" ;
+        :resultado        "80" .
+
+:1738001719-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "17" ;
+        :codmunicipio     "17380" ;
+        :denominador      "2" ;
+        :departamento     "Caldas" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1738001719" ;
+        :municipio        "La Dorada" ;
+        :nombre           "Clinica para el neonato critico la dorada Ltda." ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Reingreso de pacientes" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de reingreso de pacientes hospitalizados (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "0" ;
+        :resultado        "0" .
+
+:Locaciones  a               owl:Class ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( [ a            owl:Class ;
+                                                       owl:unionOf  ( :Departamento :Municipio :Region :Subdivision )
+                                                     ]
+                                                     [ a                 owl:Class ;
+                                                       owl:complementOf  [ a            owl:Class ;
+                                                                           owl:unionOf  ( :EPS :IPS )
+                                                                         ]
+                                                     ]
+                                                   )
+                             ] .
+
+:departamento  a            owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:4100101517-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "41" ;
+        :codmunicipio     "41001" ;
+        :denominador      "143" ;
+        :departamento     "Huila" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "4100101517" ;
+        :municipio        "Neiva" ;
+        :nombre           "Unidad neurologica del huila SAS." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "143" ;
+        :resultado        "100" .
+
+:Atiende_a  a          owl:ObjectProperty ;
+        rdfs:domain    :IPS ;
+        rdfs:range     :Municipio ;
+        owl:inverseOf  :Es_atendido_por .
+
+:REGION  a                  owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:2335000471-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "23" ;
+        :codmunicipio     "23350" ;
+        :denominador      "1188" ;
+        :departamento     "Cordoba" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "2335000471" ;
+        :municipio        "La Apartada" ;
+        :nombre           "Ese camu la apartada." ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Reingreso de pacientes" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de reingreso de pacientes hospitalizados (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "35" ;
+        :resultado        "2" .
+
+:5200101914-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "52" ;
+        :codmunicipio     "52001" ;
+        :denominador      "2" ;
+        :departamento     "Nariño" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "5200101914" ;
+        :municipio        "Pasto" ;
+        :nombre           "Clinilaser salud y belleza SAS." ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Infecciones hospitalarias" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de infección intrahospitalaria (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "2" ;
+        :resultado        "100" .
+
+:denominador  a             owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( :EPS :IPS :Locaciones )
+] .
+
+:1100128828-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "11" ;
+        :codmunicipio     "11001" ;
+        :denominador      "416" ;
+        :departamento     "Bogotá D.C." ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1100128828" ;
+        :municipio        "Bogotá" ;
+        :nombre           "Consorcio empresarial de profesionales SAS consempro SAS." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Odontología" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la atención en consulta de odontología general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "1241" ;
+        :resultado        "2" .
+
+:7600106385-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "76" ;
+        :codmunicipio     "76001" ;
+        :denominador      "32417" ;
+        :departamento     "Valle del cauca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "7600106385" ;
+        :municipio        "Cali" ;
+        :nombre           "Rio IPS SA red de ips?s odontologicas SA." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Odontología" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la atención en consulta de odontología general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "55557" ;
+        :resultado        "1" .
+
+:EPS    a                 owl:Class ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :nomunidad ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :eps ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :nomservicio ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :nomindicador ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :fecha_corte ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :codigo ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :ideps ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :nomespecifique ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :linkfuente ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :nomfuente ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :Contrata ;
+                            owl:someValuesFrom  :IPS
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :nomcategorias ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :resultado ;
+                            owl:someValuesFrom  xsd:float
+                          ] ;
+        owl:disjointWith  :IPS .
+
+:Departamento  a             owl:Class ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( [ a                   owl:Restriction ;
+                                                       owl:onProperty      :Contenido_por ;
+                                                       owl:someValuesFrom  :Subdivision
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :Contiene_a ;
+                                                       owl:someValuesFrom  :Municipio
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:maxCardinality  "123"^^xsd:nonNegativeInteger ;
+                                                       owl:onProperty      :Contiene_a
+                                                     ]
+                                                   )
+                             ] .
+
+:7300100706-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "73" ;
+        :codmunicipio     "73001" ;
+        :denominador      "141985" ;
+        :departamento     "Tolima" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "7300100706" ;
+        :municipio        "Ibagué" ;
+        :nombre           "Corporacion IPS tolima." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Odontología" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la atención en consulta de odontología general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "212925" ;
+        :resultado        "1" .
+
+:6868901268-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "68" ;
+        :codmunicipio     "68689" ;
+        :denominador      "300" ;
+        :departamento     "Santander" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "6868901268" ;
+        :municipio        "San Vicente de Chucurí" ;
+        :nombre           "Salud rh Ltda." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Odontología" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la atención en consulta de odontología general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "300" ;
+        :resultado        "1" .
+
+:2055000213-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "20" ;
+        :codmunicipio     "20550" ;
+        :denominador      "7548" ;
+        :departamento     "Cesar" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "2055000213" ;
+        :municipio        "Pelaya" ;
+        :nombre           "Hospital francisco canossa." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Urgencias" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tiempo de espera para la atención en consulta de urgencias" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "minutos" ;
+        :numerador        "110971" ;
+        :resultado        "14" .
+
+:500102036-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "5" ;
+        :codmunicipio     "05001" ;
+        :denominador      "1539" ;
+        :departamento     "Antioquia" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "500102036" ;
+        :municipio        "Medellín" ;
+        :nombre           "Centro Odontológico de Especialistas Brasilia SAS" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "1478" ;
+        :resultado        "96" .
+
+:IPS    a                    owl:Class ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( [ a                   owl:Restriction ;
+                                                       owl:onProperty      :coddepartamento ;
+                                                       owl:someValuesFrom  xsd:int
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :codmunicipio ;
+                                                       owl:someValuesFrom  xsd:int
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :denominador ;
+                                                       owl:someValuesFrom  xsd:float
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :departamento ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :enlace ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :ideps ;
+                                                       owl:someValuesFrom  xsd:int
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :ips ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :municipio ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :nomcategorias ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :nomespecifique ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :nomfuente ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :nomindicador ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :nomservicio ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :nomunidad ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :numerador ;
+                                                       owl:someValuesFrom  xsd:float
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :resultado ;
+                                                       owl:someValuesFrom  xsd:int
+                                                     ]
+                                                   )
+                             ] ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( [ a                   owl:Restriction ;
+                                                       owl:onProperty      :Contrata ;
+                                                       owl:someValuesFrom  :EPS
+                                                     ]
+                                                     [ a                  owl:Restriction ;
+                                                       owl:allValuesFrom  :Municipio ;
+                                                       owl:onProperty     :Atiende_a
+                                                     ]
+                                                   )
+                             ] .
+
+:7326802242-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "73" ;
+        :codmunicipio     "73268" ;
+        :denominador      "31531" ;
+        :departamento     "Tolima" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "7326802242" ;
+        :municipio        "Espinal" ;
+        :nombre           "Galenus salud integral IPS SAS." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "31515" ;
+        :resultado        "99" .
+
+:5200102240-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "52" ;
+        :codmunicipio     "52001" ;
+        :denominador      "329" ;
+        :departamento     "Nariño" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "5200102240" ;
+        :municipio        "Pasto" ;
+        :nombre           "Hospital en casa SA." ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Reingreso de pacientes" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de reingreso de pacientes hospitalizados (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "2" ;
+        :resultado        "0" .
+
+:municipio  a               owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:508802932-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "5" ;
+        :codmunicipio     "05088" ;
+        :denominador      "106" ;
+        :departamento     "Antioquia" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "508802932" ;
+        :municipio        "Bello" ;
+        :nombre           "Mg Salud S A" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "105" ;
+        :resultado        "99" .
+
+:codmunicipio  a            owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( :Departamento :Locaciones :Municipio :Servicios_de_Salud :Subdivision )
+] .
+
+:7600109248-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "76" ;
+        :codmunicipio     "76001" ;
+        :denominador      "2264" ;
+        :departamento     "Valle del cauca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "7600109248" ;
+        :municipio        "Cali" ;
+        :nombre           "Solucion integral SAS." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "2178" ;
+        :resultado        "96" .
+
+:7673601444-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "76" ;
+        :codmunicipio     "76736" ;
+        :denominador      "657" ;
+        :departamento     "Valle del cauca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "7673601444" ;
+        :municipio        "Sevilla" ;
+        :nombre           "Centro integral de salud quiron eat." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "618" ;
+        :resultado        "94" .
+
+:5060601191-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "50" ;
+        :codmunicipio     "50606" ;
+        :denominador      "200" ;
+        :departamento     "Meta" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "5060601191" ;
+        :municipio        "Restrepo" ;
+        :nombre           "Fundacion lugar de reencuentro." ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Reingreso de pacientes" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de reingreso de pacientes hospitalizados (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "160" ;
+        :resultado        "80" .
+
+[ a            owl:AllDisjointProperties ;
+  owl:members  ( :coddepartamento :codigo :codmunicipio :denominador :departamento :eps :fecha_corte :ideps :idips :ips :linkfuente :municipio :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :numerador :resultado )
+] .
+
+:Servicios_de_Salud  a       owl:Class ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( [ a            owl:Class ;
+                                                       owl:unionOf  ( :EPS :IPS )
+                                                     ]
+                                                     [ a                 owl:Class ;
+                                                       owl:complementOf  :Locaciones
+                                                     ]
+                                                   )
+                             ] .
+
+:Es_atendido_por  a  owl:ObjectProperty ;
+        rdfs:domain  :Municipio ;
+        rdfs:range   :IPS .
+
+:2038300453-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "20" ;
+        :codmunicipio     "20383" ;
+        :denominador      "229" ;
+        :departamento     "Cesar" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "2038300453" ;
+        :municipio        "La Gloria" ;
+        :nombre           "Hospital san jose ESE." ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Infecciones hospitalarias" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de infección intrahospitalaria (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "0" ;
+        :resultado        "0" .
+
+:1553100507-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "15" ;
+        :codmunicipio     "15531" ;
+        :denominador      "104" ;
+        :departamento     "Boyacá" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1553100507" ;
+        :municipio        "Pauna" ;
+        :nombre           "Ese centro de salud edgar alonso pulido solano." ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Reingreso de pacientes" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de reingreso de pacientes hospitalizados (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "0" ;
+        :resultado        "0" .
+
+:enlace  a                      owl:DatatypeProperty ;
+        rdfs:subPropertyOf      owl:topDataProperty ;
+        owl:equivalentProperty  :linkfuente .
+
+:6313000403-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "63" ;
+        :codmunicipio     "63130" ;
+        :denominador      "60860" ;
+        :departamento     "Quindio" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "6313000403" ;
+        :municipio        "Calarcá" ;
+        :nombre           "Ese hospital la misericordia." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Urgencias" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tiempo de espera para la atención en consulta de urgencias" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "minutos" ;
+        :numerador        "2047542" ;
+        :resultado        "33" .
+
+:ideps  a                   owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:nomindicador  a            owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:6843204872-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "68" ;
+        :codmunicipio     "68432" ;
+        :denominador      "100" ;
+        :departamento     "Santander" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "6843204872" ;
+        :municipio        "Málaga" ;
+        :nombre           "Ips optica mundo vision SAS." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "82" ;
+        :resultado        "82" .
+
+:1100125872-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "11" ;
+        :codmunicipio     "11001" ;
+        :denominador      "215" ;
+        :departamento     "Bogotá D.C." ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1100125872" ;
+        :municipio        "Bogotá" ;
+        :nombre           "Odontologia estetica s & a SAS." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Odontología" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la atención en consulta de odontología general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "885" ;
+        :resultado        "4" .
+
+:6600101714-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "66" ;
+        :codmunicipio     "66001" ;
+        :denominador      "171" ;
+        :departamento     "Risaralda" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "6600101714" ;
+        :municipio        "Pereira" ;
+        :nombre           "Fundacion para el servicio integral de atencion medica fundacion siam." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "154" ;
+        :resultado        "90" .
+
+[ a            owl:AllDisjointProperties ;
+  owl:members  ( :codigo :eps :fecha_corte :ideps :linkfuente :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :resultado )
+] .
+
+:1100115877-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "11" ;
+        :codmunicipio     "11001" ;
+        :denominador      "100" ;
+        :departamento     "Bogotá D.C." ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1100115877" ;
+        :municipio        "Bogotá" ;
+        :nombre           "Sanarterapias." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "100" ;
+        :resultado        "100" .
+
+:idips  a                   owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:1354900095-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "13" ;
+        :codmunicipio     "13549" ;
+        :denominador      "5517" ;
+        :departamento     "Bolivar" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1354900095" ;
+        :municipio        "Pinillos" ;
+        :nombre           "Ese hospital san nicolas de tolentino." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Urgencias" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tiempo de espera para la atención en consulta de urgencias" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "minutos" ;
+        :numerador        "37375" ;
+        :resultado        "6" .
+
+:1100123784-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "11" ;
+        :codmunicipio     "11001" ;
+        :denominador      "125" ;
+        :departamento     "Bogotá D.C." ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1100123784" ;
+        :municipio        "Bogotá" ;
+        :nombre           "Fundacion colombiana para el diagnostico y tratamiento de las arritmias cardiacas Fundarritmia." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "110" ;
+        :resultado        "88" .
+
+:Municipio  a            owl:Class ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      :Es_atendido_por ;
+                           owl:someValuesFrom  :IPS
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      :Contenido_por ;
+                           owl:someValuesFrom  :Departamento
+                         ] .
+
+:1100124808-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "11" ;
+        :codmunicipio     "11001" ;
+        :denominador      "199" ;
+        :departamento     "Bogotá D.C." ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1100124808" ;
+        :municipio        "Bogotá" ;
+        :nombre           "Asociacion otorrinolaringologica del chico Ltda." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "192" ;
+        :resultado        "96" .
+
+:1300102105-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "13" ;
+        :codmunicipio     "13001" ;
+        :denominador      "6841" ;
+        :departamento     "Bolivar" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1300102105" ;
+        :municipio        "Cartagena de Indias" ;
+        :nombre           "Promotora bocagrande SA proboca sa." ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Infecciones hospitalarias" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de infección intrahospitalaria (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "99" ;
+        :resultado        "1" .
+
+:7600107507-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "76" ;
+        :codmunicipio     "76001" ;
+        :denominador      "501" ;
+        :departamento     "Valle del cauca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "7600107507" ;
+        :municipio        "Cali" ;
+        :nombre           "Clinica blanca SAS." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "496" ;
+        :resultado        "99" .
+
+:nomunidad  a               owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:2579900056-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "25" ;
+        :codmunicipio     "25799" ;
+        :denominador      "247" ;
+        :departamento     "Cundinamarca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "2579900056" ;
+        :municipio        "Tenjo" ;
+        :nombre           "Ese hospital santa rosa de tenjo." ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Infecciones hospitalarias" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de infección intrahospitalaria (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "0" ;
+        :resultado        "0" .
+
+:nomespecifique  a          owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:2367001235-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "23" ;
+        :codmunicipio     "23670" ;
+        :denominador      "5249" ;
+        :departamento     "Cordoba" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "2367001235" ;
+        :municipio        "San Andrés de Sotavento" ;
+        :nombre           "Institucion prestadora de servicios clinimas Ltda." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Médico General" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la asignación de citas en la consulta médica general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "5256" ;
+        :resultado        "1" .
+
+:coddepartamento  a  owl:DatatypeProperty .
+
+:CODIGO_DANE_DEL_MUNICIPIO
+        a                   owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:8632000024-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "86" ;
+        :codmunicipio     "86320" ;
+        :denominador      "9635" ;
+        :departamento     "Putumayo" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "8632000024" ;
+        :municipio        "Orito" ;
+        :nombre           "Ese hospital orito." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Odontología" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la atención en consulta de odontología general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "30177" ;
+        :resultado        "3" .
+
+:DEPARTAMENTO  a                owl:DatatypeProperty ;
+        rdfs:subPropertyOf      owl:topDataProperty ;
+        owl:equivalentProperty  :departamento .
+
+:Contrata  a                owl:SymmetricProperty , owl:ObjectProperty ;
+        rdfs:domain         :EPS ;
+        rdfs:range          :IPS ;
+        rdfs:subPropertyOf  owl:topObjectProperty .
+
+:560405509-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "5" ;
+        :codmunicipio     "05604" ;
+        :denominador      "686" ;
+        :departamento     "Antioquia" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "560405509" ;
+        :municipio        "Remedios" ;
+        :nombre           "ESE Hospital San Vicente de Paúl" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "639" ;
+        :resultado        "93" .
+
+[ a            owl:AllDisjointProperties ;
+  owl:members  ( :CODIGO_DANE_DEL_DEPARTAMENTO :CODIGO_DANE_DEL_MUNICIPIO :DEPARTAMENTO :MUNICIPIO :REGION :coddepartamento :codigo :codmunicipio :denominador :enlace :eps :fecha_corte :ideps :idips :ips :linkfuente :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :numerador :resultado )
+] .
+
+:7600103954-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "76" ;
+        :codmunicipio     "76001" ;
+        :denominador      "347" ;
+        :departamento     "Valle del cauca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "7600103954" ;
+        :municipio        "Cali" ;
+        :nombre           "Hospital departamental mario correa renjifo." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Odontología" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la atención en consulta de odontología general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "907" ;
+        :resultado        "2" .
+
+:Subdivision  a          owl:Class ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      :Contiene_a ;
+                           owl:someValuesFrom  :Departamento
+                         ] .
+
+:1500102197-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "15" ;
+        :codmunicipio     "15001" ;
+        :denominador      "612" ;
+        :departamento     "Boyacá" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1500102197" ;
+        :municipio        "Tunja" ;
+        :nombre           "Clinica pozo donato de tunja SAS." ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Reingreso de pacientes" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de reingreso de pacientes hospitalizados (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "1" ;
+        :resultado        "0" .
+
+:5400100595-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "54" ;
+        :codmunicipio     "54001" ;
+        :denominador      "180" ;
+        :departamento     "Norte de Santander" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "5400100595" ;
+        :municipio        "Cúcuta" ;
+        :nombre           "Alarcon prevenir salud ocupacional Ltda." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "170" ;
+        :resultado        "94" .
+
+:linkfuente  a              owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:532104429-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "5" ;
+        :codmunicipio     "05321" ;
+        :denominador      "5202" ;
+        :departamento     "Antioquia" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "532104429" ;
+        :municipio        "Guatapé" ;
+        :nombre           "ESE Hospital la Inmaculada" ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Urgencias" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tiempo de espera para la atención en consulta de urgencias" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "minutos" ;
+        :numerador        "86834" ;
+        :resultado        "16" .
+
+:Region  a                   owl:Class ;
+        owl:equivalentClass  :Subdivision .
+
+:1738000589-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "17" ;
+        :codmunicipio     "17380" ;
+        :denominador      "2094" ;
+        :departamento     "Caldas" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1738000589" ;
+        :municipio        "La Dorada" ;
+        :nombre           "Medicare IPS SAS." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "2027" ;
+        :resultado        "96" .
+
+:1700101984-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "17" ;
+        :codmunicipio     "17001" ;
+        :denominador      "1080" ;
+        :departamento     "Caldas" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1700101984" ;
+        :municipio        "Manizales" ;
+        :nombre           "Laboratorio clinico marcela hoyos rendon SAS." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "1044" ;
+        :resultado        "96" .
+
+:2000100403-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "20" ;
+        :codmunicipio     "20001" ;
+        :denominador      "1173" ;
+        :departamento     "Cesar" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "2000100403" ;
+        :municipio        "Valledupar" ;
+        :nombre           "Liga contra el cancer seccional cesar." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Médico General" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la asignación de citas en la consulta médica general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "1173" ;
+        :resultado        "1" .
+
+:500102160-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "5" ;
+        :codmunicipio     "05001" ;
+        :denominador      "1476" ;
+        :departamento     "Antioquia" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "500102160" ;
+        :municipio        "Medellín" ;
+        :nombre           "Unidad Gastroenterológica SAS" ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Infecciones hospitalarias" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de infección intrahospitalaria (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "0" ;
+        :resultado        "0" .
+
+<http://www.EPSColombia.org>
+        a       owl:Ontology .
+
+:6600101781-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "66" ;
+        :codmunicipio     "66001" ;
+        :denominador      "3439" ;
+        :departamento     "Risaralda" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "6600101781" ;
+        :municipio        "Pereira" ;
+        :nombre           "Sinergia global en salud SAS." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Médico General" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la asignación de citas en la consulta médica general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "4591" ;
+        :resultado        "1" .
+
+:nomcategorias  a           owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:numerador  a               owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:1100121548-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "11" ;
+        :codmunicipio     "11001" ;
+        :denominador      "90" ;
+        :departamento     "Bogotá D.C." ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1100121548" ;
+        :municipio        "Bogotá" ;
+        :nombre           "Clínica de estética dermoestetic IPS SAS." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "85" ;
+        :resultado        "94" .
+
+:2512600353-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "25" ;
+        :codmunicipio     "25126" ;
+        :denominador      "1180" ;
+        :departamento     "Cundinamarca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "2512600353" ;
+        :municipio        "Cajicá" ;
+        :nombre           "Ese hospital profesor jorge cavelier i nivel de atencion cajica." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "1040" ;
+        :resultado        "88" .
+
+:MUNICIPIO  a                   owl:DatatypeProperty ;
+        rdfs:subPropertyOf      owl:topDataProperty ;
+        owl:equivalentProperty  :municipio .
+
+:eps    a                   owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:Contenido_por  a           owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:subPropertyOf  owl:topObjectProperty ;
+        owl:inverseOf       :Contiene_a .
+
+:1100120231-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "11" ;
+        :codmunicipio     "11001" ;
+        :denominador      "9488" ;
+        :departamento     "Bogotá D.C." ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1100120231" ;
+        :municipio        "Bogotá" ;
+        :nombre           "Ips especializada SA." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Médico General" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la asignación de citas en la consulta médica general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "28464" ;
+        :resultado        "3" .
+
+:2529002266-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "25" ;
+        :codmunicipio     "25290" ;
+        :denominador      "585" ;
+        :departamento     "Cundinamarca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "2529002266" ;
+        :municipio        "Fusagasugá" ;
+        :nombre           "Dentalist SAS." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Odontología" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la atención en consulta de odontología general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "765" ;
+        :resultado        "1" .
+
+:resultado  a               owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:nomfuente  a               owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:800103439-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "8" ;
+        :codmunicipio     "08001" ;
+        :denominador      "200" ;
+        :departamento     "Atlántico" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "800103439" ;
+        :municipio        "Barranquilla" ;
+        :nombre           "Investigacion medica atlantico SAS." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "196" ;
+        :resultado        "98" .
+
+:Contiene_a  a              owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:subPropertyOf  owl:topObjectProperty .
+
+:ips    a                   owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:CODIGO_DANE_DEL_DEPARTAMENTO
+        a                   owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:fecha_corte  a             owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:codigo  a                  owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:5400100470-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "54" ;
+        :codmunicipio     "54001" ;
+        :denominador      "8225" ;
+        :departamento     "Norte de Santander" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "5400100470" ;
+        :municipio        "Cúcuta" ;
+        :nombre           "Clinica san jose de cucuta SA." ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Reingreso de pacientes" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de reingreso de pacientes hospitalizados (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "526" ;
+        :resultado        "6" .
+
+:1900108524-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "19" ;
+        :codmunicipio     "19001" ;
+        :denominador      "124" ;
+        :departamento     "Cauca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1900108524" ;
+        :municipio        "Popayán" ;
+        :nombre           "Centro de reconocimiento de conductores del cauca SAS." ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "102" ;
+        :resultado        "82" .
+
+:nomservicio  a             owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:6300101203-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "63" ;
+        :codmunicipio     "63001" ;
+        :denominador      "88" ;
+        :departamento     "Quindio" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "6300101203" ;
+        :municipio        "Armenia" ;
+        :nombre           "Humanizar salud integral SAS." ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Médico General" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la asignación de citas en la consulta médica general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "91" ;
+        :resultado        "1" .

@@ -15,6 +15,7 @@ import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.util.FileManager;
+import org.apache.jena.vocabulary.RDF;
 
 public class QueryVIrtuoso {
 
@@ -55,25 +56,28 @@ public class QueryVIrtuoso {
             while ( results.hasNext() ) {
                 QuerySolution soln = results.nextSolution();
                 
-                String recurso = "http://www.EPSColombia.org#"+ soln.getLiteral("idips") + "-" + soln.getLiteral("nomservicio");
-                Property nombre = model.getProperty("nombre");
-                Property departamento  = model.getProperty("departamento");
-                Property nomunidad = model.getProperty("nomunidad");
-                Property link = model.getProperty("link");
-                Property denominador = model.getProperty("denominador");
-                Property nomespecifique = model.getProperty("nomespecifique");
-                Property coddepartamento = model.getProperty("coddepartamento");
-                Property municipio = model.getProperty("municipio");
-                Property nomindicador = model.getProperty("nomindicador");
-                Property numerador = model.getProperty("numerador");
-                Property nomfuente = model.getProperty("nomfuente");
-                Property codmunicipio = model.getProperty("codmunicipio");
-                Property idips = model.getProperty("idips");
-                Property nomservicio = model.getProperty("nomservicio");
-                Property nomcategorias = model.getProperty("nomcategorias");
-                Property resultado = model.getProperty("resultado");
+                String recurso = "http://www.EPSColombia.org#"+ soln.getLiteral("idips") + "-" +
+                		soln.getLiteral("nomcategorias").toString().replaceAll("\\s+","") + "-" + 
+                		soln.getLiteral("nomservicio").toString().replaceAll("\\s+","");
+                Property nombre = model.getProperty("http://www.EPSColombia.org#nombre");
+                Property departamento  = model.getProperty("http://www.EPSColombia.org#departamento");
+                Property nomunidad = model.getProperty("http://www.EPSColombia.org#nomunidad");
+                Property link = model.getProperty("http://www.EPSColombia.org#enlace");
+                Property denominador = model.getProperty("http://www.EPSColombia.org#denominador");
+                Property nomespecifique = model.getProperty("http://www.EPSColombia.org#nomespecifique");
+                Property coddepartamento = model.getProperty("http://www.EPSColombia.org#coddepartamento");
+                Property municipio = model.getProperty("http://www.EPSColombia.org#municipio");
+                Property nomindicador = model.getProperty("http://www.EPSColombia.org#nomindicador");
+                Property numerador = model.getProperty("http://www.EPSColombia.org#numerador");
+                Property nomfuente = model.getProperty("http://www.EPSColombia.org#nomfuente");
+                Property codmunicipio = model.getProperty("http://www.EPSColombia.org#codmunicipio");
+                Property idips = model.getProperty("http://www.EPSColombia.org#idips");
+                Property nomservicio = model.getProperty("http://www.EPSColombia.org#nomservicio");
+                Property nomcategorias = model.getProperty("http://www.EPSColombia.org#nomcategorias");
+                Property resultado = model.getProperty("http://www.EPSColombia.org#resultado");
                 
                 model.createResource(recurso)
+               		.addProperty(RDF.type, model.getResource("http://www.EPSColombia.org#IPS"))
                 	.addProperty(nombre, soln.getLiteral("nombre"))
                 	.addProperty(departamento , soln.getLiteral("departamento"))
                 	.addProperty(nomunidad , soln.getLiteral("nomunidad"))
@@ -89,12 +93,10 @@ public class QueryVIrtuoso {
                 	.addProperty(idips, soln.getLiteral("idips"))
                 	.addProperty(nomservicio, soln.getLiteral("nomservicio"))
                 	.addProperty(nomcategorias, soln.getLiteral("nomcategorias"))
-                	.addProperty(resultado, soln.getLiteral("resultado"));
-                	
-              
-                	System.out.println(soln);
+                	.addProperty(resultado, soln.getLiteral("resultado"));              	
+    
             }  
-            //model.write(System.out, "TURTLE");
+   
             OutputStream output = new FileOutputStream("src/owl/ips-virtuoso.owl");
             model.write(output, "TURTLE");
         } finally {
