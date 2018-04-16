@@ -1,0 +1,3566 @@
+@prefix :      <http://www.EPSColombia.org#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+:E.3.6-ESS002  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "EMDISALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS002" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.5-CCF033  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "COMFASUCRE" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF033" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-EPS017  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "FAMISANAR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS017" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-EPS022  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "CONVIDA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS022" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.3-ESS076  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "AMBUQ" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS076" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.98E0 .
+
+:E.3.6-CCF053  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "COMFACUNDI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF053" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+<http://www.EPSColombia.org>
+        a       owl:Ontology .
+
+:E.3.5-CCF015  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "COMFACOR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF015" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-EPS001  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "ALIANSALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS001" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:REGION  a                  owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.2-EPS033  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "SALUDVIDA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS033" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-CCF102  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COMFACHOCO" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF102" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.93E0 .
+
+:E.3.6-ESS207  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "MUTUAL SER" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS207" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-EPS003  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "CAFESALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS003" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-EPSI04  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "ANASWAYUU" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI04" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-EPSI01  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "DUSAKAWI E.P.S.I." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI01" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.69E0 .
+
+:E.3.4-CCF024  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "COMFAMILIAR HUILA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF024" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:Subdivision  a          owl:Class ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      :Contiene_a ;
+                           owl:someValuesFrom  :Departamento
+                         ] .
+
+:E.3.6-EPS016  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "COOMEVA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS016" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.27E0 .
+
+:E.3.4-EPS010  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "EPS SURA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS010" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.02E0 .
+
+:E.3.4-ESS062  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "ASMET SALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS062" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-ESS118  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "EMSSANAR E.S.S." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS118" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-EPS012  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COMFENALCO VALLE" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS012" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.4-ESS002  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "EMDISALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS002" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.1E0 .
+
+:E.3.3-CCF033  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "COMFASUCRE" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF033" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:Locaciones  a               owl:Class ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( [ a            owl:Class ;
+                                                       owl:unionOf  ( :Departamento :Municipio :Region :Subdivision )
+                                                     ]
+                                                     [ a                 owl:Class ;
+                                                       owl:complementOf  [ a            owl:Class ;
+                                                                           owl:unionOf  ( :EPS :IPS )
+                                                                         ]
+                                                     ]
+                                                   )
+                             ] .
+
+:E.3.4-EPS022  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "CONVIDA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS022" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.33E0 .
+
+:E.3.5-CCF009  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "COMFABOY" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF009" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.08E0 .
+
+:CODIGO_DANE_DEL_DEPARTAMENTO
+        a                   owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:Region  a                   owl:Class ;
+        owl:equivalentClass  :Subdivision .
+
+:E.3.1-ESS076  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "AMBUQ" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS076" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+[ a            owl:AllDisjointProperties ;
+  owl:members  ( :coddepartamento :codigo :codmunicipio :denominador :departamento :eps :fecha_corte :ideps :idips :ips :linkfuente :municipio :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :numerador :resultado )
+] .
+
+:E.3.5-EPS037  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "NUEVA EPS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS037" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:eps    a                   owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.3-CCF015  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "COMFACOR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF015" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-EPS001  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "ALIANSALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS001" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-EPSI05  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "MALLAMAS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI05" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.6-EPSS34  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "CAPITAL SALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSS34" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.09E0 .
+
+:E.3.4-ESS207  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "MUTUAL SER" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS207" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.16E0 .
+
+:E.3.1-EPSI04  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "ANASWAYUU" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI04" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.61E0 .
+
+:E.3.2-CCF024  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COMFAMILIAR HUILA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF024" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.4-EPS016  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "COOMEVA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS016" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.2-EPS010  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "EPS SURA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS010" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-ESS062  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "ASMET SALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS062" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-EPS018  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "SOS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS018" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-EPS023  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "CRUZ BLANCA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS023" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.2-ESS002  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "EMDISALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS002" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-CCF033  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COMFASUCRE" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF033" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-EPS025  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "CAPRESOCA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS025" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-EPS022  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "CONVIDA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS022" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-CCF009  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "COMFABOY" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF009" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.35E0 .
+
+:ideps  a                   owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.6-EPS005  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "SANITAS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS005" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-EPS002  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "SALUD TOTAL" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS002" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-EPSI03  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             " AIC-EPSI-I" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI03" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.3-EPS037  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "NUEVA EPS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS037" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.2-CCF018  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "CAFAM" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF018" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-CCF015  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COMFACOR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF015" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-ESS024  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "COOSALUD E.S.S." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS024" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.69E0 .
+
+:E.3.3-EPSI05  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "MALLAMAS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI05" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.1E0 .
+
+:E.3.1-EPS001  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "ALIANSALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS001" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.28E0 .
+
+:Municipio  a            owl:Class ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      :Es_atendido_por ;
+                           owl:someValuesFrom  :IPS
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      :Contenido_por ;
+                           owl:someValuesFrom  :Departamento
+                         ] .
+
+:linkfuente  a              owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.2-EPSI02  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "MANEXKA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI02" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:nomindicador  a            owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.4-EPSS34  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "CAPITAL SALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSS34" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-EPS017  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "FAMISANAR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS017" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.07E0 .
+
+:E.3.2-ESS207  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "MUTUAL SER" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS207" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:CODIGO_DANE_DEL_MUNICIPIO
+        a                   owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.1-CCF027  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COMFAMILIAR NARIÑO" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF027" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-EPS016  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COOMEVA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS016" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-EPS013  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "SALUDCOOP" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS013" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.4-EPS023  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "CRUZ BLANCA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS023" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.4-CCF007  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "COMFAMILIAR CARTAGENA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF007" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-ESS133  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "COMPARTA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS133" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-EPS025  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "CAPRESOCA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS025" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-CCF009  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COMFABOY" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF009" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( :Departamento :Locaciones :Municipio :Servicios_de_Salud :Subdivision )
+] .
+
+:E.3.5-EPS008  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "COMPENSAR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS008" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.5-EPSI06  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "PIJAOSALUD EPSI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI06" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.4-EPS005  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "SANITAS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS005" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.98E0 .
+
+:E.3.5-CCF053  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "COMFACUNDI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF053" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-EPS002  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "SALUD TOTAL" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS002" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.4-EPSI03  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             " AIC-EPSI-I" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI03" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.4-CCF050  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "CENTRO ORIENTE MOVILIDAD SUBSI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF050" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.18E0 .
+
+:E.3.1-EPS037  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "NUEVA EPS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS037" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-ESS118  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "EMSSANAR E.S.S." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS118" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-CCF023  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "COMFAGUAJIRA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF023" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-ESS091  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             " ECOOPSOS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS091" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-ESS024  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "COOSALUD E.S.S." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS024" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.96E0 .
+
+:E.3.6-EPS012  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "COMFENALCO VALLE" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS012" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.2-CCF055  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "CAJACOPI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF055" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-EPSI05  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "MALLAMAS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI05" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-EPSS34  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "CAPITAL SALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSS34" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-ESS076  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "AMBUQ" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS076" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.43E0 .
+
+:Es_atendido_por  a  owl:ObjectProperty ;
+        rdfs:domain  :Municipio ;
+        rdfs:range   :IPS .
+
+:E.3.2-EPS023  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "CRUZ BLANCA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS023" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-EPS020  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "CAPRECOM" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS020" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-CCF007  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COMFAMILIAR CARTAGENA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF007" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-CCF055  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "CAJACOPI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF055" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-ESS133  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "COMPARTA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS133" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-EPS033  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "SALUDVIDA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS033" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.66E0 .
+
+:E.3.5-CCF102  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "COMFACHOCO" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF102" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-CCF049  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COMFAORIENTE" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF049" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.74E0 .
+
+:E.3.5-EPS003  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "CAFESALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS003" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.5-EPSI01  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "DUSAKAWI E.P.S.I." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI01" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-CCF101  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COLSUBSIDIO" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF101" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-EPS008  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "COMPENSAR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS008" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.2-EPS005  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "SANITAS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS005" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-EPSI06  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "PIJAOSALUD EPSI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI06" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.66E0 .
+
+:E.3.1-EPS002  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "SALUD TOTAL" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS002" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-CCF053  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "COMFACUNDI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF053" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-EPSI03  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             " AIC-EPSI-I" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI03" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.45E0 .
+
+:E.3.2-CCF050  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "CENTRO ORIENTE MOVILIDAD SUBSI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF050" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:resultado  a               owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.4-ESS118  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "EMSSANAR E.S.S." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS118" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:nomfuente  a               owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:ips    a                   owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:enlace  a                      owl:DatatypeProperty ;
+        rdfs:subPropertyOf      owl:topDataProperty ;
+        owl:equivalentProperty  :linkfuente .
+
+:E.3.3-CCF023  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "COMFAGUAJIRA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF023" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-CCF007  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "COMFAMILIAR CARTAGENA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF007" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-ESS091  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             " ECOOPSOS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS091" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-ESS024  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COOSALUD E.S.S." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS024" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.4-EPS012  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "COMFENALCO VALLE" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS012" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:codigo  a                  owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.2-EPS017  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "FAMISANAR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS017" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:nomespecifique  a          owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.4-ESS076  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "AMBUQ" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS076" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-CCF050  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "CENTRO ORIENTE MOVILIDAD SUBSI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF050" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.43E0 .
+
+[ a            owl:AllDisjointProperties ;
+  owl:members  ( :codigo :eps :fecha_corte :ideps :linkfuente :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :resultado )
+] .
+
+:departamento  a            owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.6-EPS001  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "ALIANSALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS001" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.1-ESS133  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COMPARTA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS133" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-CCF102  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "COMFACHOCO" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF102" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-EPS033  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "SALUDVIDA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS033" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.37E0 .
+
+:E.3.3-EPS003  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "CAFESALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS003" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.01E0 .
+
+:idips  a                   owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.4-EPSI04  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "ANASWAYUU" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI04" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.41E0 .
+
+:Servicios_de_Salud  a       owl:Class ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( [ a            owl:Class ;
+                                                       owl:unionOf  ( :EPS :IPS )
+                                                     ]
+                                                     [ a                 owl:Class ;
+                                                       owl:complementOf  :Locaciones
+                                                     ]
+                                                   )
+                             ] .
+
+:E.3.3-EPSI01  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "DUSAKAWI E.P.S.I." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI01" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-CCF024  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "COMFAMILIAR HUILA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF024" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-EPS008  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COMPENSAR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS008" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-EPS010  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "EPS SURA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS010" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.02E0 .
+
+:E.3.1-EPSI06  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "PIJAOSALUD EPSI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI06" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-CCF053  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COMFACUNDI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF053" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-ESS062  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "ASMET SALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS062" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-ESS118  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "EMSSANAR E.S.S." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS118" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:nomcategorias  a           owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.1-CCF023  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COMFAGUAJIRA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF023" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.4-EPS018  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "SOS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS018" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-ESS091  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             " ECOOPSOS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS091" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-EPS012  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COMFENALCO VALLE" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS012" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-ESS002  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "EMDISALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS002" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.18E0 .
+
+:E.3.4-CCF033  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "COMFASUCRE" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF033" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-EPS022  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "CONVIDA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS022" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.69E0 .
+
+:E.3.2-ESS076  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "AMBUQ" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS076" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-EPS037  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "NUEVA EPS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS037" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.05E0 .
+
+:E.3.4-CCF015  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "COMFACOR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF015" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.4-EPS001  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "ALIANSALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS001" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-EPS033  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "SALUDVIDA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS033" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-CCF102  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COMFACHOCO" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF102" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-EPS003  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "CAFESALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS003" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-ESS207  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "MUTUAL SER" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS207" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.47E0 .
+
+:E.3.2-EPSI04  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "ANASWAYUU" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI04" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.53E0 .
+
+:E.3.1-EPSI01  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "DUSAKAWI E.P.S.I." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI01" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.85E0 .
+
+:E.3.3-CCF024  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "COMFAMILIAR HUILA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF024" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-EPS016  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "COOMEVA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS016" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.21E0 .
+
+:Contenido_por  a           owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:subPropertyOf  owl:topObjectProperty ;
+        owl:inverseOf       :Contiene_a .
+
+:E.3.3-EPS010  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "EPS SURA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS010" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.17E0 .
+
+:nomunidad  a               owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.3-ESS062  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "ASMET SALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS062" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-EPS018  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "SOS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS018" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:municipio  a               owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.3-ESS002  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "EMDISALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS002" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.2E0 .
+
+:E.3.2-CCF033  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COMFASUCRE" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF033" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-EPS022  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "CONVIDA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS022" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.28E0 .
+
+:E.3.4-CCF009  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "COMFABOY" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF009" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:EPS    a                 owl:Class ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :linkfuente ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :resultado ;
+                            owl:someValuesFrom  xsd:float
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :Contrata ;
+                            owl:someValuesFrom  :IPS
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :nomservicio ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :nomfuente ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :fecha_corte ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :nomindicador ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :ideps ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :nomespecifique ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :nomcategorias ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :nomunidad ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :codigo ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :eps ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        owl:disjointWith  :IPS .
+
+:codmunicipio  a            owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.6-EPS002  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "SALUD TOTAL" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS002" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.4-EPS037  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "NUEVA EPS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS037" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-CCF015  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COMFACOR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF015" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-ESS024  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "COOSALUD E.S.S." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS024" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.5-CCF055  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "CAJACOPI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF055" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-EPS001  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "ALIANSALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS001" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.4-EPSI05  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "MALLAMAS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI05" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.07E0 .
+
+:E.3.6-CCF033  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "COMFASUCRE" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF033" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-EPSS34  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "CAPITAL SALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSS34" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( :EPS :IPS :Locaciones )
+] .
+
+:E.3.3-ESS207  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "MUTUAL SER" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS207" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.5E0 .
+
+:E.3.2-CCF027  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COMFAMILIAR NARIÑO" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF027" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-CCF024  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COMFAMILIAR HUILA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF024" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-EPS016  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "COOMEVA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS016" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-EPS013  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "SALUDCOOP" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS013" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+[ a            owl:AllDisjointProperties ;
+  owl:members  ( :CODIGO_DANE_DEL_DEPARTAMENTO :CODIGO_DANE_DEL_MUNICIPIO :DEPARTAMENTO :MUNICIPIO :REGION :coddepartamento :codigo :codmunicipio :denominador :enlace :eps :fecha_corte :ideps :idips :ips :linkfuente :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :numerador :resultado )
+] .
+
+:E.3.1-EPS010  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "EPS SURA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS010" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-ESS062  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "ASMET SALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS062" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-EPS023  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "CRUZ BLANCA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS023" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.5-CCF007  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "COMFAMILIAR CARTAGENA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF007" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-ESS133  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "COMPARTA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS133" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.61E0 .
+
+:E.3.1-ESS002  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "EMDISALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS002" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-CCF009  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COMFABOY" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF009" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:denominador  a             owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.2-EPS025  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "CAPRESOCA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS025" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-EPS022  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "CONVIDA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS022" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:Atiende_a  a          owl:ObjectProperty ;
+        rdfs:domain    :IPS ;
+        rdfs:range     :Municipio ;
+        owl:inverseOf  :Es_atendido_por .
+
+:nomservicio  a             owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:DEPARTAMENTO  a                owl:DatatypeProperty ;
+        rdfs:subPropertyOf      owl:topDataProperty ;
+        owl:equivalentProperty  :departamento .
+
+:E.3.6-EPS008  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "COMPENSAR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS008" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:MUNICIPIO  a                   owl:DatatypeProperty ;
+        rdfs:subPropertyOf      owl:topDataProperty ;
+        owl:equivalentProperty  :municipio .
+
+:E.3.5-EPS005  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "SANITAS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS005" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.4-EPS002  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "SALUD TOTAL" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS002" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:Contrata  a                owl:SymmetricProperty , owl:ObjectProperty ;
+        rdfs:domain         :EPS ;
+        rdfs:range          :IPS ;
+        rdfs:subPropertyOf  owl:topObjectProperty .
+
+:E.3.5-EPSI03  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             " AIC-EPSI-I" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI03" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.5-CCF050  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "CENTRO ORIENTE MOVILIDAD SUBSI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF050" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.07E0 .
+
+:E.3.2-EPS037  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "NUEVA EPS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS037" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:numerador  a               owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.1-CCF018  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "CAFAM" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF018" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-ESS091  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             " ECOOPSOS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS091" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.4-ESS024  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "COOSALUD E.S.S." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS024" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.84E0 .
+
+:Contiene_a  a              owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:subPropertyOf  owl:topObjectProperty .
+
+:E.3.3-CCF055  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "CAJACOPI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF055" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-EPSI05  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "MALLAMAS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI05" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-EPSI02  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "MANEXKA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI02" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-EPSS34  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "CAPITAL SALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSS34" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-EPS017  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "FAMISANAR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS017" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.27E0 .
+
+:E.3.1-ESS207  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "MUTUAL SER" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS207" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-EPS016  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COOMEVA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS016" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-EPS023  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "CRUZ BLANCA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS023" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.3-CCF007  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "COMFAMILIAR CARTAGENA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF007" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-EPS020  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "CAPRECOM" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS020" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:fecha_corte  a             owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+:E.3.4-ESS133  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "COMPARTA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS133" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-EPS033  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "SALUDVIDA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS033" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.5E0 .
+
+:Departamento  a             owl:Class ;
+        rdfs:subClassOf      [ a                         owl:Restriction ;
+                               owl:onDataRange           xsd:string ;
+                               owl:onProperty            :departamento ;
+                               owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                             ] ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( [ a                   owl:Restriction ;
+                                                       owl:onProperty      :Contenido_por ;
+                                                       owl:someValuesFrom  :Subdivision
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :Contiene_a ;
+                                                       owl:someValuesFrom  :Municipio
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:maxCardinality  "123"^^xsd:nonNegativeInteger ;
+                                                       owl:onProperty      :Contiene_a
+                                                     ]
+                                                   )
+                             ] .
+
+:E.3.6-EPS003  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "CAFESALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS003" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.6-EPSI01  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "DUSAKAWI E.P.S.I." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI01" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.2-CCF101  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COLSUBSIDIO" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF101" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.4-EPS008  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "COMPENSAR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS008" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.3-EPS005  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "SANITAS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS005" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.5E0 .
+
+:E.3.4-EPSI06  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "PIJAOSALUD EPSI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI06" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.46E0 .
+
+:E.3.2-EPS002  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "SALUD TOTAL" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS002" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.4-CCF053  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "COMFACUNDI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF053" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-EPSI03  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             " AIC-EPSI-I" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI03" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.3-CCF050  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "CENTRO ORIENTE MOVILIDAD SUBSI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF050" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.6E0 .
+
+:E.3.5-ESS118  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "EMSSANAR E.S.S." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS118" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.6E0 .
+
+:E.3.4-CCF023  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "COMFAGUAJIRA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF023" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.4-ESS091  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             " ECOOPSOS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS091" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-ESS024  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COOSALUD E.S.S." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS024" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.5-EPS012  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "COMFENALCO VALLE" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS012" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.1-CCF055  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "CAJACOPI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF055" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:coddepartamento  a  owl:DatatypeProperty .
+
+:E.3.1-EPSS34  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "CAPITAL SALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSS34" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-EPS017  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "FAMISANAR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS017" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.06E0 .
+
+:E.3.5-ESS076  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "AMBUQ" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS076" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.69E0 .
+
+:E.3.1-EPS023  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "CRUZ BLANCA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS023" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-CCF007  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COMFAMILIAR CARTAGENA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF007" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-ESS133  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COMPARTA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS133" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.4-CCF102  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "COMFACHOCO" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF102" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:IPS    a                    owl:Class ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( [ a                   owl:Restriction ;
+                                                       owl:onProperty      :coddepartamento ;
+                                                       owl:someValuesFrom  xsd:int
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :codmunicipio ;
+                                                       owl:someValuesFrom  xsd:int
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :denominador ;
+                                                       owl:someValuesFrom  xsd:float
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :departamento ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :enlace ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :ideps ;
+                                                       owl:someValuesFrom  xsd:int
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :ips ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :municipio ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :nomcategorias ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :nomespecifique ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :nomfuente ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :nomindicador ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :nomservicio ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :nomunidad ;
+                                                       owl:someValuesFrom  xsd:string
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :numerador ;
+                                                       owl:someValuesFrom  xsd:float
+                                                     ]
+                                                     [ a                   owl:Restriction ;
+                                                       owl:onProperty      :resultado ;
+                                                       owl:someValuesFrom  xsd:int
+                                                     ]
+                                                   )
+                             ] ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( [ a                   owl:Restriction ;
+                                                       owl:onProperty      :Contrata ;
+                                                       owl:someValuesFrom  :EPS
+                                                     ]
+                                                     [ a                  owl:Restriction ;
+                                                       owl:allValuesFrom  :Municipio ;
+                                                       owl:onProperty     :Atiende_a
+                                                     ]
+                                                   )
+                             ] .
+
+:E.3.1-CCF049  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COMFAORIENTE" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF049" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.61E0 .
+
+:E.3.4-EPS003  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "CAFESALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS003" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.5-EPSI04  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "ANASWAYUU" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI04" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.4-EPSI01  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "DUSAKAWI E.P.S.I." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI01" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-EPS008  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COMPENSAR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS008" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-EPS010  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "EPS SURA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS010" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
+:E.3.1-EPS005  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "SANITAS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS005" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-EPSI03  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             " AIC-EPSI-I" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI03" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.47E0 .
+
+:E.3.2-EPSI06  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "PIJAOSALUD EPSI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI06" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-CCF053  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COMFACUNDI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF053" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-CCF050  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "CENTRO ORIENTE MOVILIDAD SUBSI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF050" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.6-ESS062  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "ASMET SALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS062" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.13E0 .
+
+:E.3.3-ESS118  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "EMSSANAR E.S.S." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS118" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-CCF023  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COMFAGUAJIRA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF023" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.2-ESS091  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             " ECOOPSOS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS091" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-EPS012  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "COMFENALCO VALLE" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS012" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .

@@ -1,0 +1,506 @@
+@prefix : <http://www.EPSColombia.org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.EPSColombia.org> .
+
+<http://www.EPSColombia.org> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.EPSColombia.org#Atiende_a
+:Atiende_a rdf:type owl:ObjectProperty ;
+           owl:inverseOf :Es_atendido_por ;
+           rdfs:domain :IPS ;
+           rdfs:range :Municipio .
+
+
+###  http://www.EPSColombia.org#Contenido_por
+:Contenido_por rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               owl:inverseOf :Contiene_a ;
+               rdf:type owl:FunctionalProperty .
+
+
+###  http://www.EPSColombia.org#Contiene_a
+:Contiene_a rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdf:type owl:TransitiveProperty .
+
+
+###  http://www.EPSColombia.org#Contrata
+:Contrata rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdf:type owl:SymmetricProperty ;
+          rdfs:domain :EPS ;
+          rdfs:range :IPS .
+
+
+###  http://www.EPSColombia.org#Es_atendido_por
+:Es_atendido_por rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Municipio ;
+                 rdfs:range :IPS .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.EPSColombia.org#CODIGO_DANE_DEL_DEPARTAMENTO
+:CODIGO_DANE_DEL_DEPARTAMENTO rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#CODIGO_DANE_DEL_MUNICIPIO
+:CODIGO_DANE_DEL_MUNICIPIO rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#DEPARTAMENTO
+:DEPARTAMENTO rdf:type owl:DatatypeProperty ;
+              owl:equivalentProperty :departamento ;
+              rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#MUNICIPIO
+:MUNICIPIO rdf:type owl:DatatypeProperty ;
+           owl:equivalentProperty :municipio ;
+           rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#REGION
+:REGION rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#coddepartamento
+:coddepartamento rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EPSColombia.org#codigo
+:codigo rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#codmunicipio
+:codmunicipio rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#denominador
+:denominador rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#departamento
+:departamento rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#enlace
+:enlace rdf:type owl:DatatypeProperty ;
+        owl:equivalentProperty :linkfuente ;
+        rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#eps
+:eps rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#fecha_corte
+:fecha_corte rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#ideps
+:ideps rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#idips
+:idips rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#ips
+:ips rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#linkfuente
+:linkfuente rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#municipio
+:municipio rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#nomcategorias
+:nomcategorias rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#nomespecifique
+:nomespecifique rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#nomfuente
+:nomfuente rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#nomindicador
+:nomindicador rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#nomservicio
+:nomservicio rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#nomunidad
+:nomunidad rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#numerador
+:numerador rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.EPSColombia.org#resultado
+:resultado rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.EPSColombia.org#Departamento
+:Departamento rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :Contenido_por ;
+                                                           owl:someValuesFrom :Subdivision
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :Contiene_a ;
+                                                           owl:someValuesFrom :Municipio
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :Contiene_a ;
+                                                           owl:maxCardinality "123"^^xsd:nonNegativeInteger
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :departamento ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] .
+
+
+###  http://www.EPSColombia.org#EPS
+:EPS rdf:type owl:Class ;
+     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                       owl:onProperty :Contrata ;
+                       owl:someValuesFrom :IPS
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :codigo ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :eps ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :fecha_corte ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :ideps ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :linkfuente ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :nomcategorias ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :nomespecifique ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :nomfuente ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :nomindicador ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :nomservicio ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :nomunidad ;
+                       owl:someValuesFrom xsd:string
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :resultado ;
+                       owl:someValuesFrom xsd:float
+                     ] ;
+     owl:disjointWith :IPS .
+
+
+###  http://www.EPSColombia.org#IPS
+:IPS rdf:type owl:Class ;
+     owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :Contrata ;
+                                                  owl:someValuesFrom :EPS
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :Atiende_a ;
+                                                  owl:allValuesFrom :Municipio
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ,
+                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :coddepartamento ;
+                                                  owl:someValuesFrom xsd:int
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :codmunicipio ;
+                                                  owl:someValuesFrom xsd:int
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :denominador ;
+                                                  owl:someValuesFrom xsd:float
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :departamento ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :enlace ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :ideps ;
+                                                  owl:someValuesFrom xsd:int
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :ips ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :municipio ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :nomcategorias ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :nomespecifique ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :nomfuente ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :nomindicador ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :nomservicio ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :nomunidad ;
+                                                  owl:someValuesFrom xsd:string
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :numerador ;
+                                                  owl:someValuesFrom xsd:float
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :resultado ;
+                                                  owl:someValuesFrom xsd:int
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] .
+
+
+###  http://www.EPSColombia.org#Locaciones
+:Locaciones rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                         owl:unionOf ( :Departamento
+                                                                       :Municipio
+                                                                       :Region
+                                                                       :Subdivision
+                                                                     )
+                                                       ]
+                                                       [ rdf:type owl:Class ;
+                                                         owl:complementOf [ rdf:type owl:Class ;
+                                                                            owl:unionOf ( :EPS
+                                                                                          :IPS
+                                                                                        )
+                                                                          ]
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] .
+
+
+###  http://www.EPSColombia.org#Municipio
+:Municipio rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :Contenido_por ;
+                             owl:someValuesFrom :Departamento
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :Es_atendido_por ;
+                             owl:someValuesFrom :IPS
+                           ] .
+
+
+###  http://www.EPSColombia.org#Region
+:Region rdf:type owl:Class ;
+        owl:equivalentClass :Subdivision .
+
+
+###  http://www.EPSColombia.org#Servicios_de_Salud
+:Servicios_de_Salud rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                 owl:unionOf ( :EPS
+                                                                               :IPS
+                                                                             )
+                                                               ]
+                                                               [ rdf:type owl:Class ;
+                                                                 owl:complementOf :Locaciones
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] .
+
+
+###  http://www.EPSColombia.org#Subdivision
+:Subdivision rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :Contiene_a ;
+                               owl:someValuesFrom :Departamento
+                             ] .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Departamento
+                :Locaciones
+                :Municipio
+                :Servicios_de_Salud
+                :Subdivision
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :EPS
+                :IPS
+                :Locaciones
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :CODIGO_DANE_DEL_DEPARTAMENTO
+                :CODIGO_DANE_DEL_MUNICIPIO
+                :DEPARTAMENTO
+                :MUNICIPIO
+                :REGION
+                :coddepartamento
+                :codigo
+                :codmunicipio
+                :denominador
+                :enlace
+                :eps
+                :fecha_corte
+                :ideps
+                :idips
+                :ips
+                :linkfuente
+                :nomcategorias
+                :nomespecifique
+                :nomfuente
+                :nomindicador
+                :nomservicio
+                :nomunidad
+                :numerador
+                :resultado
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :coddepartamento
+                :codigo
+                :codmunicipio
+                :denominador
+                :departamento
+                :eps
+                :fecha_corte
+                :ideps
+                :idips
+                :ips
+                :linkfuente
+                :municipio
+                :nomcategorias
+                :nomespecifique
+                :nomfuente
+                :nomindicador
+                :nomservicio
+                :nomunidad
+                :numerador
+                :resultado
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :codigo
+                :eps
+                :fecha_corte
+                :ideps
+                :linkfuente
+                :nomcategorias
+                :nomespecifique
+                :nomfuente
+                :nomindicador
+                :nomservicio
+                :nomunidad
+                :resultado
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
