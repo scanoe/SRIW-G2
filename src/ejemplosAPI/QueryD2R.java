@@ -5,6 +5,8 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+import org.apache.jena.ontology.OntClass;
+import org.apache.jena.ontology.OntModel;
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
@@ -14,12 +16,16 @@ import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
+import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.util.FileManager;
+import org.apache.jena.vocabulary.OWL;
+import org.apache.jena.vocabulary.RDF;
+import org.apache.jena.vocabulary.RDFS;
 
 public class QueryD2R {
 
 	public static void main(String[] args) throws FileNotFoundException {
-		Model model = ModelFactory.createDefaultModel(); // creates an in-memory Jena Model
+		Model model =  ModelFactory.createOntologyModel(); // creates an in-memory Jena Model
 		
 		// abrir el archivo con la ontolog�a
 		InputStream in = FileManager.get().open( "src/owl/EPS.owl" );
@@ -52,20 +58,22 @@ public class QueryD2R {
                 QuerySolution soln = results.nextSolution();
                 
                 String recurso = "http://www.EPSColombia.org#"+ soln.getLiteral("codigo") + "-" + soln.getLiteral("id_eps");
-                Property eps = model.getProperty("eps");
-                Property codigo = model.getProperty("codigo");
-                Property fecha_corte = model.getProperty("fecha_corte");
-                Property id_eps = model.getProperty("id_eps");
-                Property linkfuente = model.getProperty("link");
-                Property nomCategorias = model.getProperty("nomcategorias");
-                Property nomEspecifique = model.getProperty("nomespecifique");
-                Property nomFuente = model.getProperty("nomfuente");
-                Property nomIndicador = model.getProperty("nomindicador");
-                Property nomServicio = model.getProperty("nomservicio");
-                Property nomUnidad = model.getProperty("nomunidad");
-                Property resultado = model.getProperty("resultado");
+                Property eps = model.getProperty("http://www.EPSColombia.org#eps");
+                Property codigo = model.getProperty("http://www.EPSColombia.org#codigo");
+                Property fecha_corte = model.getProperty("http://www.EPSColombia.org#fecha_corte");
+                Property id_eps = model.getProperty("http://www.EPSColombia.org#ideps");
+                Property linkfuente = model.getProperty("http://www.EPSColombia.org#linkfuente");
+                Property nomCategorias = model.getProperty("http://www.EPSColombia.org#nomcategorias");
+                Property nomEspecifique = model.getProperty("http://www.EPSColombia.org#nomespecifique");
+                Property nomFuente = model.getProperty("http://www.EPSColombia.org#nomfuente");
+                Property nomIndicador = model.getProperty("http://www.EPSColombia.org#nomindicador");
+                Property nomServicio = model.getProperty("http://www.EPSColombia.org#nomservicio");
+                Property nomUnidad = model.getProperty("http://www.EPSColombia.org#nomunidad");
+                Property resultado = model.getProperty("http://www.EPSColombia.org#resultado");
+                
                 
                 model.createResource(recurso)
+                	.addProperty(RDF.type, model.getResource("http://www.EPSColombia.org#EPS"))
                 	.addProperty(eps, soln.getLiteral("nombre"))
                 	.addProperty(codigo, soln.getLiteral("codigo"))
                 	.addProperty(fecha_corte, soln.getLiteral("fecha_corte"))
@@ -78,7 +86,6 @@ public class QueryD2R {
                 	.addProperty(nomServicio, soln.getLiteral("nomservicio"))
                 	.addProperty(nomUnidad, soln.getLiteral("nomunidad"))
                 	.addProperty(resultado, soln.getLiteral("resultado"));
-                               
                 
             }        
             OutputStream output = new FileOutputStream("src/owl/EPS-D2R.owl");

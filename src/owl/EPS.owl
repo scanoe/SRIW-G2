@@ -296,7 +296,7 @@
                                                   owl:someValuesFrom xsd:string
                                                 ]
                                                 [ rdf:type owl:Restriction ;
-                                                  owl:onProperty :ideps ;
+                                                  owl:onProperty :idips ;
                                                   owl:someValuesFrom xsd:int
                                                 ]
                                                 [ rdf:type owl:Restriction ;
