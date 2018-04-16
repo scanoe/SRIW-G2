@@ -61,6 +61,10 @@
         :nomunidad       "Días" ;
         :resultado       0.0E0 .
 
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( :Departamento :Locaciones :Municipio :Servicios_de_Salud :Subdivision )
+] .
+
 :E.3.3-ESS076  a         :EPS ;
         :codigo          "E.3.3" ;
         :eps             "AMBUQ" ;
@@ -325,19 +329,6 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
-:Locaciones  a               owl:Class ;
-        owl:equivalentClass  [ a                   owl:Class ;
-                               owl:intersectionOf  ( [ a            owl:Class ;
-                                                       owl:unionOf  ( :Departamento :Municipio :Region :Subdivision )
-                                                     ]
-                                                     [ a                 owl:Class ;
-                                                       owl:complementOf  [ a            owl:Class ;
-                                                                           owl:unionOf  ( :EPS :IPS )
-                                                                         ]
-                                                     ]
-                                                   )
-                             ] .
-
 :E.3.4-EPS022  a         :EPS ;
         :codigo          "E.3.4" ;
         :eps             "CONVIDA" ;
@@ -351,6 +342,19 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.33E0 .
+
+:Locaciones  a               owl:Class ;
+        owl:equivalentClass  [ a                   owl:Class ;
+                               owl:intersectionOf  ( [ a            owl:Class ;
+                                                       owl:unionOf  ( :Departamento :Municipio :Region :Subdivision )
+                                                     ]
+                                                     [ a                 owl:Class ;
+                                                       owl:complementOf  [ a            owl:Class ;
+                                                                           owl:unionOf  ( :EPS :IPS )
+                                                                         ]
+                                                     ]
+                                                   )
+                             ] .
 
 :E.3.5-CCF009  a         :EPS ;
         :codigo          "E.3.5" ;
@@ -418,20 +422,6 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
-:E.3.3-EPS001  a         :EPS ;
-        :codigo          "E.3.3" ;
-        :eps             "ALIANSALUD" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "EPS001" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Imágenes diagnostica" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
-        :nomservicio     "Autorizaciones" ;
-        :nomunidad       "Días" ;
-        :resultado       0.99E0 .
-
 :E.3.5-EPSI05  a         :EPS ;
         :codigo          "E.3.5" ;
         :eps             "MALLAMAS" ;
@@ -445,6 +435,20 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.0E0 .
+
+:E.3.3-EPS001  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "ALIANSALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS001" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
 
 :E.3.6-EPSS34  a         :EPS ;
         :codigo          "E.3.6" ;
@@ -515,10 +519,6 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.0E0 .
-
-[ a            owl:AllDisjointClasses ;
-  owl:members  ( :EPS :IPS :Locaciones )
-] .
 
 :E.3.2-EPS010  a         :EPS ;
         :codigo          "E.3.2" ;
@@ -1205,6 +1205,10 @@
         rdfs:domain  :Municipio ;
         rdfs:range   :IPS .
 
+[ a            owl:AllDisjointProperties ;
+  owl:members  ( :coddepartamento :codigo :codmunicipio :denominador :departamento :eps :fecha_corte :ideps :idips :ips :linkfuente :municipio :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :numerador :resultado )
+] .
+
 :E.3.2-EPS023  a         :EPS ;
         :codigo          "E.3.2" ;
         :eps             "CRUZ BLANCA" ;
@@ -1260,10 +1264,6 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
-
-[ a            owl:AllDisjointProperties ;
-  owl:members  ( :codigo :eps :fecha_corte :ideps :linkfuente :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :resultado )
-] .
 
 :E.3.3-ESS133  a         :EPS ;
         :codigo          "E.3.3" ;
@@ -1419,20 +1419,6 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
-:E.3.3-CCF053  a         :EPS ;
-        :codigo          "E.3.3" ;
-        :eps             "COMFACUNDI" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "CCF053" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Imágenes diagnostica" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
-        :nomservicio     "Autorizaciones" ;
-        :nomunidad       "Días" ;
-        :resultado       0.99E0 .
-
 :E.3.2-EPSI03  a         :EPS ;
         :codigo          "E.3.2" ;
         :eps             " AIC-EPSI-I" ;
@@ -1446,6 +1432,20 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.45E0 .
+
+:E.3.3-CCF053  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "COMFACUNDI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF053" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
 
 :E.3.2-CCF050  a         :EPS ;
         :codigo          "E.3.2" ;
@@ -1478,10 +1478,10 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
-:ips    a                   owl:DatatypeProperty ;
+:nomfuente  a               owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
 
-:nomfuente  a               owl:DatatypeProperty ;
+:ips    a                   owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
 
 :enlace  a                      owl:DatatypeProperty ;
@@ -1516,20 +1516,6 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
-:E.3.3-ESS091  a         :EPS ;
-        :codigo          "E.3.3" ;
-        :eps             " ECOOPSOS" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "ESS091" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Imágenes diagnostica" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
-        :nomservicio     "Autorizaciones" ;
-        :nomunidad       "Días" ;
-        :resultado       0.99E0 .
-
 :E.3.4-EPS012  a         :EPS ;
         :codigo          "E.3.4" ;
         :eps             "COMFENALCO VALLE" ;
@@ -1544,6 +1530,20 @@
         :nomunidad       "Días" ;
         :resultado       0.0E0 .
 
+:E.3.3-ESS091  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             " ECOOPSOS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS091" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
 :E.3.1-ESS024  a         :EPS ;
         :codigo          "E.3.1" ;
         :eps             "COOSALUD E.S.S." ;
@@ -1557,10 +1557,6 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
-
-[ a            owl:AllDisjointProperties ;
-  owl:members  ( :coddepartamento :codigo :codmunicipio :denominador :departamento :eps :fecha_corte :ideps :idips :ips :linkfuente :municipio :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :numerador :resultado )
-] .
 
 :codigo  a                  owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
@@ -1579,6 +1575,20 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:E.3.6-CCF050  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "CENTRO ORIENTE MOVILIDAD SUBSI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF050" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.43E0 .
+
 :nomespecifique  a          owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
 
@@ -1595,20 +1605,6 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
-
-:E.3.6-CCF050  a         :EPS ;
-        :codigo          "E.3.6" ;
-        :eps             "CENTRO ORIENTE MOVILIDAD SUBSI" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "CCF050" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Cirugía programada" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
-        :nomservicio     "Autorizaciones" ;
-        :nomunidad       "Días" ;
-        :resultado       0.43E0 .
 
 :departamento  a            owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
@@ -1924,6 +1920,10 @@
         :nomunidad       "Días" ;
         :resultado       0.69E0 .
 
+[ a            owl:AllDisjointProperties ;
+  owl:members  ( :CODIGO_DANE_DEL_DEPARTAMENTO :CODIGO_DANE_DEL_MUNICIPIO :DEPARTAMENTO :MUNICIPIO :REGION :coddepartamento :codigo :codmunicipio :denominador :enlace :eps :fecha_corte :ideps :idips :ips :linkfuente :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :numerador :resultado )
+] .
+
 :E.3.2-ESS076  a         :EPS ;
         :codigo          "E.3.2" ;
         :eps             "AMBUQ" ;
@@ -2172,20 +2172,6 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
-:E.3.3-EPS022  a         :EPS ;
-        :codigo          "E.3.3" ;
-        :eps             "CONVIDA" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "EPS022" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Imágenes diagnostica" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
-        :nomservicio     "Autorizaciones" ;
-        :nomunidad       "Días" ;
-        :resultado       0.28E0 .
-
 :E.3.4-CCF009  a         :EPS ;
         :codigo          "E.3.4" ;
         :eps             "COMFABOY" ;
@@ -2200,25 +2186,23 @@
         :nomunidad       "Días" ;
         :resultado       0.0E0 .
 
+:E.3.3-EPS022  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "CONVIDA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS022" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.28E0 .
+
 :EPS    a                 owl:Class ;
         rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :ideps ;
-                            owl:someValuesFrom  xsd:string
-                          ] ;
-        rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :eps ;
-                            owl:someValuesFrom  xsd:string
-                          ] ;
-        rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :fecha_corte ;
-                            owl:someValuesFrom  xsd:string
-                          ] ;
-        rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :codigo ;
-                            owl:someValuesFrom  xsd:string
-                          ] ;
-        rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :nomindicador ;
+                            owl:onProperty      :nomunidad ;
                             owl:someValuesFrom  xsd:string
                           ] ;
         rdfs:subClassOf   [ a                   owl:Restriction ;
@@ -2226,23 +2210,39 @@
                             owl:someValuesFrom  xsd:string
                           ] ;
         rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :resultado ;
-                            owl:someValuesFrom  xsd:float
+                            owl:onProperty      :eps ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :codigo ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :nomcategorias ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :ideps ;
+                            owl:someValuesFrom  xsd:string
                           ] ;
         rdfs:subClassOf   [ a                   owl:Restriction ;
                             owl:onProperty      :nomservicio ;
                             owl:someValuesFrom  xsd:string
                           ] ;
         rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :nomunidad ;
+                            owl:onProperty      :nomindicador ;
                             owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :fecha_corte ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :resultado ;
+                            owl:someValuesFrom  xsd:float
                           ] ;
         rdfs:subClassOf   [ a                   owl:Restriction ;
                             owl:onProperty      :linkfuente ;
-                            owl:someValuesFrom  xsd:string
-                          ] ;
-        rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :nomfuente ;
                             owl:someValuesFrom  xsd:string
                           ] ;
         rdfs:subClassOf   [ a                   owl:Restriction ;
@@ -2250,10 +2250,14 @@
                             owl:someValuesFrom  :IPS
                           ] ;
         rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :nomcategorias ;
+                            owl:onProperty      :nomfuente ;
                             owl:someValuesFrom  xsd:string
                           ] ;
         owl:disjointWith  :IPS .
+
+[ a            owl:AllDisjointProperties ;
+  owl:members  ( :codigo :eps :fecha_corte :ideps :linkfuente :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :resultado )
+] .
 
 :codmunicipio  a            owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
@@ -2328,20 +2332,6 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
-:E.3.2-EPS001  a         :EPS ;
-        :codigo          "E.3.2" ;
-        :eps             "ALIANSALUD" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "EPS001" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Mostrar resultado" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
-        :nomservicio     "Citas médicas" ;
-        :nomunidad       "Días" ;
-        :resultado       0.99E0 .
-
 :E.3.4-EPSI05  a         :EPS ;
         :codigo          "E.3.4" ;
         :eps             "MALLAMAS" ;
@@ -2355,6 +2345,20 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.07E0 .
+
+:E.3.2-EPS001  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "ALIANSALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS001" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
 
 :E.3.6-CCF033  a         :EPS ;
         :codigo          "E.3.6" ;
@@ -2537,6 +2541,10 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( :EPS :IPS :Locaciones )
+] .
 
 :denominador  a             owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
@@ -2848,6 +2856,9 @@
         :nomunidad       "Días" ;
         :resultado       0.0E0 .
 
+:fecha_corte  a             owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
 :E.3.2-EPS020  a         :EPS ;
         :codigo          "E.3.2" ;
         :eps             "CAPRECOM" ;
@@ -2875,9 +2886,6 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
-
-:fecha_corte  a             owl:DatatypeProperty ;
-        rdfs:subPropertyOf  owl:topDataProperty .
 
 :E.3.4-ESS133  a         :EPS ;
         :codigo          "E.3.4" ;
@@ -2908,6 +2916,11 @@
         :resultado       0.5E0 .
 
 :Departamento  a             owl:Class ;
+        rdfs:subClassOf      [ a                         owl:Restriction ;
+                               owl:onDataRange           xsd:string ;
+                               owl:onProperty            :departamento ;
+                               owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                             ] ;
         owl:equivalentClass  [ a                   owl:Class ;
                                owl:intersectionOf  ( [ a                   owl:Restriction ;
                                                        owl:onProperty      :Contenido_por ;
@@ -3192,10 +3205,6 @@
         :nomunidad       "Días" ;
         :resultado       0.69E0 .
 
-[ a            owl:AllDisjointClasses ;
-  owl:members  ( :Departamento :Locaciones :Municipio :Servicios_de_Salud :Subdivision )
-] .
-
 :E.3.1-EPS023  a         :EPS ;
         :codigo          "E.3.1" ;
         :eps             "CRUZ BLANCA" ;
@@ -3251,10 +3260,6 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
-
-[ a            owl:AllDisjointProperties ;
-  owl:members  ( :CODIGO_DANE_DEL_DEPARTAMENTO :CODIGO_DANE_DEL_MUNICIPIO :DEPARTAMENTO :MUNICIPIO :REGION :coddepartamento :codigo :codmunicipio :denominador :enlace :eps :fecha_corte :ideps :idips :ips :linkfuente :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :numerador :resultado )
-] .
 
 :IPS    a                    owl:Class ;
         owl:equivalentClass  [ a                   owl:Class ;

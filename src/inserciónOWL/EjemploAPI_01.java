@@ -1,4 +1,4 @@
-package ejemplosAPI;
+package inserciÃ³nOWL;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -13,7 +13,7 @@ public class EjemploAPI_01 {
     static String fullName     = "Jaime Guzman";
 	    
     public static void main (String args[]) {
-	       // crea un modelo vacío
+	       // crea un modelo vacï¿½o
 	       Model model = ModelFactory.createDefaultModel();
 
 	       // crea el recurso

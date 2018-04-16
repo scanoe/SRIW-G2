@@ -1,4 +1,4 @@
-package ejemplosAPI;
+package inserciónOWL;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -25,7 +25,6 @@ public class QueryVIrtuoso {
 		// abrir el archivo con la ontologia
 		InputStream in = FileManager.get().open( "src/owl/EPS-D2R.owl" );
 		model.read(in, null, "TURTLE"); // parses an InputStream assuming RDF in Turtle format
-
 		
 		String queryString =        
 				"PREFIX ips: <https://www.datos.gov.co/resource/thui-g47e/>" +
@@ -48,7 +47,7 @@ public class QueryVIrtuoso {
         						"		ips:nomcategorias ?nomcategorias;" +
         						"		ips:resultado ?resultado." +
         					"}" +	
-        		"} LIMIT 50";
+        		"}";
         Query query = QueryFactory.create(queryString); //Crear un objeto para consulta
         QueryExecution qexec = QueryExecutionFactory.create(query, model); // ejecutar la consulta SPARQL
         try {
@@ -93,8 +92,7 @@ public class QueryVIrtuoso {
                 	.addProperty(idips, soln.getLiteral("idips"))
                 	.addProperty(nomservicio, soln.getLiteral("nomservicio"))
                 	.addProperty(nomcategorias, soln.getLiteral("nomcategorias"))
-                	.addProperty(resultado, soln.getLiteral("resultado"));              	
-    
+                	.addProperty(resultado, soln.getLiteral("resultado"));
             }  
    
             OutputStream output = new FileOutputStream("src/owl/ips-virtuoso.owl");

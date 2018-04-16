@@ -1,4 +1,4 @@
-package ejemplosAPI;
+package inserciÃ³nOWL;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -13,7 +13,7 @@ public class EjemploAPI_02 {
     static String fullName     = givenName + " " + familyName;
 	
 	public static void main(String[] args) {
-		// crea un modelo vacío
+		// crea un modelo vacï¿½o
 		Model model = ModelFactory.createDefaultModel();
 	    
 		//Adiciona al modelo las propiedades en estilo cascada

@@ -1,4 +1,4 @@
-package ejemplosARQ;
+package consultasRecomendador;
 
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecutionFactory;
@@ -24,7 +24,7 @@ public class EjemploARQ_03 {
         Query query = QueryFactory.create(sparqlQueryString1);
         QueryExecution qexec = QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", query);
 
-        //Luego procesar la ejecución de la consulta y su resultado
+        //Luego procesar la ejecuciï¿½n de la consulta y su resultado
 
         try {
         	ResultSet results = qexec.execSelect();

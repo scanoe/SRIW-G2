@@ -1,4 +1,4 @@
-package ejemplosARQ;
+package consultasRecomendador;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -15,8 +15,8 @@ public class EjemploARQ_04 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//Carga la ontología de data.ttl y la imprime
-        FileManager.get().addLocatorClassLoader(EjemploARQ_01.class.getClassLoader());
+		//Carga la ontologï¿½a de data.ttl y la imprime
+        FileManager.get().addLocatorClassLoader(consultasEPS.class.getClassLoader());
         Model model = FileManager.get().loadModel("src/owl/data.ttl");
         System.out.println("Input data:");
         model.write(System.out, "TURTLE");
