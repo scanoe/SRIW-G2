@@ -11,18 +11,12 @@ import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QueryFactory;
 import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
-//import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
-//import org.apache.jena.rdf.model.RDFNode;
-//import org.apache.jena.rdf.model.Resource;
-//import org.apache.jena.rdf.model.Statement;
-//import org.apache.jena.rdf.model.StmtIterator;
 import org.apache.jena.util.FileManager;
-//import org.apache.jena.vocabulary.VCARD;
 
-public class EjemploAPI_03 {
+public class QueryD2R {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		Model model = ModelFactory.createDefaultModel(); // creates an in-memory Jena Model
@@ -56,10 +50,8 @@ public class EjemploAPI_03 {
             ResultSet results = qexec.execSelect();
             while ( results.hasNext() ) {
                 QuerySolution soln = results.nextSolution();
-                //Literal name = soln.getLiteral("EPS_ideps");
                 
                 String recurso = "http://www.EPSColombia.org#"+ soln.getLiteral("codigo") + "-" + soln.getLiteral("id_eps");
-                //System.out.println(model.getProperty("eps"));
                 Property eps = model.getProperty("eps");
                 Property codigo = model.getProperty("codigo");
                 Property fecha_corte = model.getProperty("fecha_corte");
@@ -88,7 +80,6 @@ public class EjemploAPI_03 {
                 	.addProperty(resultado, soln.getLiteral("resultado"));
                                
                 
-                //System.out.println("http://www.EPSColombia.org#"+ soln.getLiteral("codigo") + "-" + soln.getLiteral("id_eps"));
             }        
             OutputStream output = new FileOutputStream("src/owl/EPS-D2R.owl");
             model.write(output, "TURTLE");
@@ -96,37 +87,6 @@ public class EjemploAPI_03 {
             qexec.close();
         }
 		
-        /*StmtIterator iter = model.listStatements();
-        try {
-            while ( iter.hasNext() ) {
-                Statement stmt = iter.next();
-                
-                Resource s = stmt.getSubject();
-                Resource p = stmt.getPredicate();
-                RDFNode o = stmt.getObject();
-                
-                if ( s.isURIResource() ) {
-                    System.out.print("URI");
-                } else if ( s.isAnon() ) {
-                    System.out.print("blank");
-                }
-                
-                if ( p.isURIResource() ) 
-                    System.out.print(" URI ");
-                
-                if ( o.isURIResource() ) {
-                    System.out.print("URI");
-                } else if ( o.isAnon() ) {
-                    System.out.print("blank");
-                } else if ( o.isLiteral() ) {
-                    System.out.print("literal");
-                }
-                
-                System.out.println();                
-            }
-        } finally {
-            if ( iter != null ) iter.close();
-        }*/
 	}
 
 }
