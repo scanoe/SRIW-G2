@@ -202,7 +202,12 @@
                                                          ]
                                                        ) ;
                                     rdf:type owl:Class
-                                  ] .
+                                  ] ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :departamento ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] .
 
 
 ###  http://www.EPSColombia.org#EPS
@@ -374,6 +379,10 @@
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :Es_atendido_por ;
                              owl:someValuesFrom :IPS
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :municipio ;
+                             owl:someValuesFrom xsd:string
                            ] .
 
 
