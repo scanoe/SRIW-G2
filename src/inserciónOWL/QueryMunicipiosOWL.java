@@ -52,7 +52,7 @@ Model model = ModelFactory.createDefaultModel(); // creates an in-memory Jena Mo
             	Property nombreMunicipio = model.getProperty("http://www.EPSColombia.org#municipio");
             	String departamentoRecurso = "http://www.EPSColombia.org#" + soln.getLiteral("departamento").toString().replaceAll("\\s", "");
             	Property departamento = model.getProperty("http://www.EPSColombia.org#Departamento");
-            	Property contenidoPor = model.getProperty("http://www.EPSColombia.org#Contenido_Por");
+            	Property contenidoPor = model.getProperty("http://www.EPSColombia.org#Contenido_por");
             	String nombreRecurso = "http://www.EPSColombia.org#"+ soln.getLiteral("codigo").toString().replaceAll("\\s", "");
             	model.createResource(nombreRecurso)    
             		.addProperty(RDF.type, municipio)

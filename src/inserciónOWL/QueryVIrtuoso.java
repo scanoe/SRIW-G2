@@ -54,7 +54,7 @@ public class QueryVIrtuoso {
             ResultSet results = qexec.execSelect();
             while ( results.hasNext() ) {
                 QuerySolution soln = results.nextSolution();
-                
+                            
                 String recurso = "http://www.EPSColombia.org#"+ soln.getLiteral("idips") + "-" +
                 		soln.getLiteral("nomcategorias").toString().replaceAll("\\s+","") + "-" + 
                 		soln.getLiteral("nomservicio").toString().replaceAll("\\s+","");
