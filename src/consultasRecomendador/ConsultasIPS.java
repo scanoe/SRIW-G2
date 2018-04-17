@@ -13,7 +13,7 @@ import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.util.FileManager;
 
-public class EjemploARQ_02 {
+public class ConsultasIPS {
 
 	public static void mostrarConsulta(String queryString, Model model) {
         Query query = QueryFactory.create(queryString); //Crear un objeto para consulta
@@ -27,11 +27,9 @@ public class EjemploARQ_02 {
             qexec.close();
         }
 	}
-	
 	public static void main(String[] args) {
 		
 		Model model =  ModelFactory.createOntologyModel(); // creates an in-memory Jena Model
-		
 		// abrir el archivo con la ontolog�a
 		InputStream in = FileManager.get().open( "src/owl/ips-virtuoso.owl" );
 		model.read(in, null, "TURTLE"); // parses an InputStream assuming RDF in Turtle format
