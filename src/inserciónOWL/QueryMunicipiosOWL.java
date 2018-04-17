@@ -25,21 +25,23 @@ import org.apache.jena.vocabulary.DC;
 import org.apache.jena.vocabulary.RDF;
 import org.apache.jena.vocabulary.SKOS;
 
-public class QueryMunicipiosDBPedia {
+public class QueryMunicipiosOWL {
 
 	public static void main(String[] args) throws FileNotFoundException {
 Model model = ModelFactory.createDefaultModel(); // creates an in-memory Jena Model
 		
 		// abrir el archivo con la ontologia
-		InputStream in = FileManager.get().open( "src/owl/departamentos-dbpedia.owl" );
+		InputStream in = FileManager.get().open( "src/owl/Salida.owl" );
 		model.read(in, null, "TURTLE"); // parses an InputStream assuming RDF in Turtle format
 		
 		String queryString =        
 				"PREFIX ips: <http://www.EPSColombia.org#>" +
-        		"SELECT DISTINCT ?municipios ?departamento WHERE { " +  
+        		"SELECT DISTINCT * WHERE { " +  
         		"    ?ips ips:departamento ?departamento;" +
-    			"    ips:municipio ?municipios." +	
+    			"    ips:municipio ?municipios;" +	
+        		"    ips:codmunicipio ?codigo" +
         		"}";
+		
 		Query query = QueryFactory.create(queryString); //Crear un objeto para consulta
         QueryExecution qexec = QueryExecutionFactory.create(query, model); // ejecutar la consulta SPARQL
         try {            
@@ -47,16 +49,18 @@ Model model = ModelFactory.createDefaultModel(); // creates an in-memory Jena Mo
             while ( results.hasNext() ) {
             	QuerySolution soln = results.nextSolution();
             	Property municipio = model.getProperty("http://www.EPSColombia.org#Municipio");
+            	Property nombreMunicipio = model.getProperty("http://www.EPSColombia.org#municipio");
             	String departamentoRecurso = "http://www.EPSColombia.org#" + soln.getLiteral("departamento").toString().replaceAll("\\s", "");
             	Property departamento = model.getProperty("http://www.EPSColombia.org#Departamento");
             	Property contenidoPor = model.getProperty("http://www.EPSColombia.org#Contenido_Por");
-            	String nombreRecurso = "http://www.EPSColombia.org#"+ soln.getLiteral("municipios").toString().replaceAll("\\s", "");
-            	model.createResource(nombreRecurso)
+            	String nombreRecurso = "http://www.EPSColombia.org#"+ soln.getLiteral("codigo").toString().replaceAll("\\s", "");
+            	model.createResource(nombreRecurso)    
             		.addProperty(RDF.type, municipio)
+            		.addProperty(nombreMunicipio, soln.getLiteral("municipios"))
             		.addProperty(contenidoPor, model.getResource(departamentoRecurso));
             		
             }
-            OutputStream output = new FileOutputStream("src/owl/municipios.owl");
+            OutputStream output = new FileOutputStream("src/owl/Salida.owl");
             model.write(output, "TURTLE");
         } finally {
             qexec.close();

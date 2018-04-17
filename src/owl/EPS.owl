@@ -379,6 +379,10 @@
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :Es_atendido_por ;
                              owl:someValuesFrom :IPS
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :municipio ;
+                             owl:someValuesFrom xsd:string
                            ] .
 
 

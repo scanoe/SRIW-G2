@@ -31,7 +31,7 @@ public class ConsultasIPS {
 		
 		Model model =  ModelFactory.createOntologyModel(); // creates an in-memory Jena Model
 		// abrir el archivo con la ontolog�a
-		InputStream in = FileManager.get().open( "src/owl/ips-virtuoso.owl" );
+		InputStream in = FileManager.get().open( "src/owl/Salida.owl" );
 		model.read(in, null, "TURTLE"); // parses an InputStream assuming RDF in Turtle format
         
 		System.out.println("La 40 IPS donde los usuarios están más satisfechos");
@@ -62,6 +62,19 @@ public class ConsultasIPS {
         
     	mostrarConsulta(queryString,model);    
    
+		System.out.println("Promedio de satisfacción de usuarios por municipio");
+        queryString = 
+                "PREFIX : <http://www.EPSColombia.org#> " +
+        		"SELECT (AVG(?porcentaje) AS ?promedio) ?municipio WHERE { " +
+        		     "?recurso :ips ?ips;" +
+        		     ":nomindicador ?indicador;" +
+        		     ":municipio ?municipio;" +
+        		     ":resultado  ?porcentaje." +
+        		     "FILTER REGEX(?indicador, 'Usuarios satisfechos con el servicio prestado por la IPS')" +
+        		"} GROUP BY(?municipio)" +
+        		"ORDER BY ASC(?promedio)"; 
+        
+    	mostrarConsulta(queryString,model);    
 
 	}
 

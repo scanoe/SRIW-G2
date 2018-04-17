@@ -24,7 +24,7 @@ public class QueryDBpedia {
 		Model model = ModelFactory.createDefaultModel(); // creates an in-memory Jena Model
 		
 		// abrir el archivo con la ontologia
-		InputStream in = FileManager.get().open( "src/owl/ips-virtuoso.owl" );
+		InputStream in = FileManager.get().open( "src/owl/Salida.owl" );
 		model.read(in, null, "TURTLE"); // parses an InputStream assuming RDF in Turtle format
 		
 		String queryString =   
@@ -58,7 +58,7 @@ public class QueryDBpedia {
            		.addProperty(RDF.type, model.getResource("http://www.EPSColombia.org#Departamento"))
                 .addProperty(nombre, nomDepartamento);
             }    
-            OutputStream output = new FileOutputStream("src/owl/departamentos-dbpedia.owl");
+            OutputStream output = new FileOutputStream("src/owl/Salida.owl");
             model.write(output, "TURTLE");
         } finally {
             qexec.close();

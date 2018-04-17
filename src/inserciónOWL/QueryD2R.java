@@ -85,7 +85,7 @@ public class QueryD2R {
                 	.addProperty(resultado, soln.getLiteral("resultado"));
                 
             }        
-            OutputStream output = new FileOutputStream("src/owl/EPS-D2R.owl");
+            OutputStream output = new FileOutputStream("src/owl/Salida.owl");
             model.write(output, "TURTLE");
         } finally {
             qexec.close();

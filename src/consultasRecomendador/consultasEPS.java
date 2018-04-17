@@ -37,7 +37,7 @@ public class consultasEPS {
 		Model model =  ModelFactory.createOntologyModel(); // creates an in-memory Jena Model
 		
 		// abrir el archivo con la ontolog�a
-		InputStream in = FileManager.get().open( "src/owl/ips-virtuoso.owl" );
+		InputStream in = FileManager.get().open( "src/owl/Salida.owl" );
 		model.read(in, null, "TURTLE"); // parses an InputStream assuming RDF in Turtle format
         
 		System.out.println("Las 10 EPS con menor tiempo en asignar citas médicas");
