@@ -49,6 +49,7 @@ public class QueryDBpedia {
                 QuerySolution soln = results.nextSolution();
                 String nomDepartamento = soln.getLiteral("nombre").toString();
                 nomDepartamento = nomDepartamento.substring(0, nomDepartamento.length()-3);
+                nomDepartamento = nomDepartamento.replaceAll("\\(Colombia\\)", "");
                 
                 String recurso = "http://www.EPSColombia.org#" + nomDepartamento.toString().replaceAll("\\s+","");
                 Property nombre = model.getProperty("http://www.EPSColombia.org#departamento");

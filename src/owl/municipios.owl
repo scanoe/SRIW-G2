@@ -24,6 +24,9 @@
         :numerador        "2598" ;
         :resultado        90 .
 
+:LaUnión  a             :Municipio ;
+        :Contenido_Por  :Valledelcauca , :Sucre .
+
 :E.3.5-ESS118  a         :EPS ;
         :codigo          "E.3.5" ;
         :eps             "EMSSANAR E.S.S." ;
@@ -40,6 +43,12 @@
 
 :codigo  a                  owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
+
+:SanAndrésdeTumaco  a   :Municipio ;
+        :Contenido_Por  :Nariño .
+
+:Marulanda  a           :Municipio ;
+        :Contenido_Por  :Caldas .
 
 :E.3.1-CCF049  a         :EPS ;
         :codigo          "E.3.1" ;
@@ -73,6 +82,12 @@
         :nomunidad        "Tasa" ;
         :numerador        "357" ;
         :resultado        2 .
+
+:Turbaco  a             :Municipio ;
+        :Contenido_Por  :Bolivar .
+
+:Armenia  a             :Municipio ;
+        :Contenido_Por  :Antioquia , :Quindio .
 
 :500101150-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -130,6 +145,10 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "172" ;
         :resultado        93 .
+
+[ a            owl:AllDisjointProperties ;
+  owl:members  ( :CODIGO_DANE_DEL_DEPARTAMENTO :CODIGO_DANE_DEL_MUNICIPIO :DEPARTAMENTO :MUNICIPIO :REGION :coddepartamento :codigo :codmunicipio :denominador :enlace :eps :fecha_corte :ideps :idips :ips :linkfuente :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :numerador :resultado )
+] .
 
 :6808104198-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -192,6 +211,9 @@
         :nomunidad       "Días" ;
         :resultado       0.5E0 .
 
+:Caquetá  a            :Departamento ;
+        :departamento  "Caquetá" .
+
 :7610902974-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "76" ;
@@ -210,6 +232,9 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "35374" ;
         :resultado        98 .
+
+:Manizales  a           :Municipio ;
+        :Contenido_Por  :Caldas .
 
 :514708028-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -358,24 +383,8 @@
         :numerador        "192" ;
         :resultado        96 .
 
-:6600100693-SatisfaccióndelUsuario-Experienciaglobal
-        a                 :IPS ;
-        :coddepartamento  "66" ;
-        :codmunicipio     "66001" ;
-        :denominador      "1442" ;
-        :departamento     "Risaralda" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "6600100693" ;
-        :ips              "Centro de medicina nuclear de pereira SAS." ;
-        :municipio        "Pereira" ;
-        :nomcategorias    "Satisfacción del Usuario" ;
-        :nomespecifique   "Experiencia global con los servicios de salud" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
-        :nomservicio      "Experiencia global" ;
-        :nomunidad        "Porcentaje" ;
-        :numerador        "1442" ;
-        :resultado        100 .
+:Soacha  a              :Municipio ;
+        :Contenido_Por  :Cundinamarca .
 
 :1300102486-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -409,6 +418,25 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:6600100693-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "66" ;
+        :codmunicipio     "66001" ;
+        :denominador      "1442" ;
+        :departamento     "Risaralda" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "6600100693" ;
+        :ips              "Centro de medicina nuclear de pereira SAS." ;
+        :municipio        "Pereira" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "1442" ;
+        :resultado        100 .
 
 :1583700709-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -447,6 +475,12 @@
         :nomunidad        "Tasa" ;
         :numerador        "2" ;
         :resultado        0 .
+
+:Orito  a               :Municipio ;
+        :Contenido_Por  :Putumayo .
+
+:LaCeja  a              :Municipio ;
+        :Contenido_Por  :Antioquia .
 
 :7640301647-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -552,6 +586,9 @@
         :numerador        "4292" ;
         :resultado        97 .
 
+:Sevilla  a             :Municipio ;
+        :Contenido_Por  :Valledelcauca .
+
 :nomfuente  a               owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
 
@@ -587,6 +624,9 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:Betulia  a             :Municipio ;
+        :Contenido_Por  :Santander .
 
 :6800103387-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -677,6 +717,9 @@
         :nomunidad        "minutos" ;
         :numerador        "37375" ;
         :resultado        6 .
+
+:SanJosé  a             :Municipio ;
+        :Contenido_Por  :Caldas .
 
 :E.3.2-ESS076  a         :EPS ;
         :codigo          "E.3.2" ;
@@ -796,6 +839,9 @@
         :numerador        "1330334" ;
         :resultado        5 .
 
+:LaApartada  a          :Municipio ;
+        :Contenido_Por  :Cordoba .
+
 :E.3.3-EPS001  a         :EPS ;
         :codigo          "E.3.3" ;
         :eps             "ALIANSALUD" ;
@@ -809,6 +855,12 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:Versalles  a           :Municipio ;
+        :Contenido_Por  :Valledelcauca .
+
+:Chimichagua  a         :Municipio ;
+        :Contenido_Por  :Cesar .
 
 :6810100709-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -955,25 +1007,6 @@
         :nomunidad       "Días" ;
         :resultado       0.98E0 .
 
-:7600103799-Tiemposdeespera-Consultas
-        a                 :IPS ;
-        :coddepartamento  "76" ;
-        :codmunicipio     "76001" ;
-        :denominador      "48" ;
-        :departamento     "Valle del cauca" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "7600103799" ;
-        :ips              "Hospital universitario del valle evaristo garcia ESE." ;
-        :municipio        "Cali" ;
-        :nomcategorias    "Tiempos de espera" ;
-        :nomespecifique   "Odontología" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Espera en la atención en consulta de odontología general" ;
-        :nomservicio      "Consultas" ;
-        :nomunidad        "días" ;
-        :numerador        "506" ;
-        :resultado        10 .
-
 :6300100873-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "63" ;
@@ -992,6 +1025,25 @@
         :nomunidad        "Tasa" ;
         :numerador        "20" ;
         :resultado        5 .
+
+:7600103799-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "76" ;
+        :codmunicipio     "76001" ;
+        :denominador      "48" ;
+        :departamento     "Valle del cauca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "7600103799" ;
+        :ips              "Hospital universitario del valle evaristo garcia ESE." ;
+        :municipio        "Cali" ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Odontología" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la atención en consulta de odontología general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "506" ;
+        :resultado        10 .
 
 :1564600787-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -1030,6 +1082,9 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "30" ;
         :resultado        100 .
+
+:Belalcázar  a          :Municipio ;
+        :Contenido_Por  :Caldas .
 
 :5400101530-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -1083,6 +1138,9 @@
         :numerador        "25" ;
         :resultado        80 .
 
+:SantaFédeAntioquia  a  :Municipio ;
+        :Contenido_Por  :Antioquia .
+
 :CODIGO_DANE_DEL_DEPARTAMENTO
         a                   owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
@@ -1105,6 +1163,12 @@
         :nomunidad        "días" ;
         :numerador        "82965" ;
         :resultado        1 .
+
+:Sampués  a             :Municipio ;
+        :Contenido_Por  :Sucre .
+
+:SanGil  a              :Municipio ;
+        :Contenido_Por  :Santander .
 
 :7689209842-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -1177,6 +1241,10 @@
         :numerador        "42349" ;
         :resultado        2 .
 
+:Córdoba  a             :Municipio , :Departamento ;
+        :Contenido_Por  :Nariño ;
+        :departamento   "Córdoba " .
+
 :2318200957-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "23" ;
@@ -1209,6 +1277,12 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:SanBenito  a           :Municipio ;
+        :Contenido_Por  :Santander .
+
+:Turmequé  a            :Municipio ;
+        :Contenido_Por  :Boyacá .
 
 :E.3.5-EPS023  a         :EPS ;
         :codigo          "E.3.5" ;
@@ -1300,6 +1374,9 @@
         :numerador        "6710" ;
         :resultado        100 .
 
+:Barranquilla  a        :Municipio ;
+        :Contenido_Por  :Atlántico .
+
 :E.3.4-ESS002  a         :EPS ;
         :codigo          "E.3.4" ;
         :eps             "EMDISALUD" ;
@@ -1352,6 +1429,15 @@
         :numerador        "41277" ;
         :resultado        2 .
 
+:Pinillos  a            :Municipio ;
+        :Contenido_Por  :Bolivar .
+
+:Bello  a               :Municipio ;
+        :Contenido_Por  :Antioquia .
+
+:nomunidad  a               owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
 :1744600462-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "17" ;
@@ -1370,9 +1456,6 @@
         :nomunidad        "minutos" ;
         :numerador        "3295" ;
         :resultado        6 .
-
-:nomunidad  a               owl:DatatypeProperty ;
-        rdfs:subPropertyOf  owl:topDataProperty .
 
 :1900108524-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -1406,6 +1489,9 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:SanEstanislao  a       :Municipio ;
+        :Contenido_Por  :Bolivar .
 
 :1100121757-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -1511,29 +1597,6 @@
         :numerador        "41" ;
         :resultado        0 .
 
-:856000153-Seguridaddelpaciente-Hospitalaria
-        a                 :IPS ;
-        :coddepartamento  "8" ;
-        :codmunicipio     "08560" ;
-        :denominador      "9" ;
-        :departamento     "Atlántico" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "856000153" ;
-        :ips              "Empresa Social del Estado Hospital de Ponedera" ;
-        :municipio        "Ponedera" ;
-        :nomcategorias    "Seguridad del paciente" ;
-        :nomespecifique   "Infecciones hospitalarias" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Tasa de infección intrahospitalaria (por cada 100 hospitalizados)" ;
-        :nomservicio      "Hospitalaria" ;
-        :nomunidad        "Tasa" ;
-        :numerador        "0" ;
-        :resultado        0 .
-
-[ a            owl:AllDisjointProperties ;
-  owl:members  ( :CODIGO_DANE_DEL_DEPARTAMENTO :CODIGO_DANE_DEL_MUNICIPIO :DEPARTAMENTO :MUNICIPIO :REGION :coddepartamento :codigo :codmunicipio :denominador :enlace :eps :fecha_corte :ideps :idips :ips :linkfuente :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :numerador :resultado )
-] .
-
 :2341701766-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "23" ;
@@ -1552,6 +1615,25 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "11" ;
         :resultado        100 .
+
+:856000153-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "8" ;
+        :codmunicipio     "08560" ;
+        :denominador      "9" ;
+        :departamento     "Atlántico" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "856000153" ;
+        :ips              "Empresa Social del Estado Hospital de Ponedera" ;
+        :municipio        "Ponedera" ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Infecciones hospitalarias" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de infección intrahospitalaria (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "0" ;
+        :resultado        0 .
 
 :4400100065-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -1627,24 +1709,8 @@
 :fecha_corte  a             owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
 
-:2515400077-Tiemposdeespera-Consultas
-        a                 :IPS ;
-        :coddepartamento  "25" ;
-        :codmunicipio     "25154" ;
-        :denominador      "3967" ;
-        :departamento     "Cundinamarca" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "2515400077" ;
-        :ips              "Ese hospital habacuc calderon de carmen de carupa." ;
-        :municipio        "Carmen de Carupa" ;
-        :nomcategorias    "Tiempos de espera" ;
-        :nomespecifique   "Odontología" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Espera en la atención en consulta de odontología general" ;
-        :nomservicio      "Consultas" ;
-        :nomunidad        "días" ;
-        :numerador        "7974" ;
-        :resultado        2 .
+:LaArgentina  a         :Municipio ;
+        :Contenido_Por  :Huila .
 
 :2335000471-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -1702,6 +1768,25 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "132" ;
         :resultado        97 .
+
+:2515400077-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "25" ;
+        :codmunicipio     "25154" ;
+        :denominador      "3967" ;
+        :departamento     "Cundinamarca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "2515400077" ;
+        :ips              "Ese hospital habacuc calderon de carmen de carupa." ;
+        :municipio        "Carmen de Carupa" ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Odontología" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la atención en consulta de odontología general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "7974" ;
+        :resultado        2 .
 
 :4187200566-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -1772,6 +1857,9 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Cartago  a             :Municipio ;
+        :Contenido_Por  :Valledelcauca .
+
 :E.3.6-ESS024  a         :EPS ;
         :codigo          "E.3.6" ;
         :eps             "COOSALUD E.S.S." ;
@@ -1785,6 +1873,9 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.0E0 .
+
+:Yopal  a               :Municipio ;
+        :Contenido_Por  :Casanare .
 
 :589002431-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -1805,19 +1896,8 @@
         :numerador        "318274" ;
         :resultado        32 .
 
-:E.3.1-ESS002  a         :EPS ;
-        :codigo          "E.3.1" ;
-        :eps             "EMDISALUD" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "ESS002" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Mostrar resultado" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
-        :nomservicio     "Citas médicas" ;
-        :nomunidad       "Días" ;
-        :resultado       0.99E0 .
+:LaGuajira  a          :Departamento ;
+        :departamento  "La Guajira" .
 
 :7300100706-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -1838,6 +1918,20 @@
         :numerador        "212925" ;
         :resultado        1 .
 
+:E.3.1-ESS002  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "EMDISALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS002" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
 :E.3.3-CCF015  a         :EPS ;
         :codigo          "E.3.3" ;
         :eps             "COMFACOR" ;
@@ -1851,6 +1945,12 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:Sincelejo  a           :Municipio ;
+        :Contenido_Por  :Sucre .
+
+:Lorica  a              :Municipio ;
+        :Contenido_Por  :Cordoba .
 
 :7074200350-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -1890,25 +1990,6 @@
         :numerador        "160" ;
         :resultado        80 .
 
-:5000101542-Tiemposdeespera-Consultas
-        a                 :IPS ;
-        :coddepartamento  "50" ;
-        :codmunicipio     "50001" ;
-        :denominador      "70" ;
-        :departamento     "Meta" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "5000101542" ;
-        :ips              "Medicos asociados SA." ;
-        :municipio        "Villavicencio" ;
-        :nomcategorias    "Tiempos de espera" ;
-        :nomespecifique   "Urgencias" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Tiempo de espera para la atención en consulta de urgencias" ;
-        :nomservicio      "Consultas" ;
-        :nomunidad        "minutos" ;
-        :numerador        "974" ;
-        :resultado        13 .
-
 :2038300453-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "20" ;
@@ -1927,6 +2008,25 @@
         :nomunidad        "Tasa" ;
         :numerador        "0" ;
         :resultado        0 .
+
+:5000101542-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "50" ;
+        :codmunicipio     "50001" ;
+        :denominador      "70" ;
+        :departamento     "Meta" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "5000101542" ;
+        :ips              "Medicos asociados SA." ;
+        :municipio        "Villavicencio" ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Urgencias" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tiempo de espera para la atención en consulta de urgencias" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "minutos" ;
+        :numerador        "974" ;
+        :resultado        13 .
 
 :6300101086-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -2073,6 +2173,9 @@
         :numerador        "38" ;
         :resultado        2 .
 
+:Herveo  a              :Municipio ;
+        :Contenido_Por  :Tolima .
+
 :5242700696-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "52" ;
@@ -2158,10 +2261,6 @@
         :numerador        "20590" ;
         :resultado        7 .
 
-[ a            owl:AllDisjointClasses ;
-  owl:members  ( :Departamento :Locaciones :Municipio :Servicios_de_Salud :Subdivision )
-] .
-
 :E.3.2-CCF024  a         :EPS ;
         :codigo          "E.3.2" ;
         :eps             "COMFAMILIAR HUILA" ;
@@ -2175,6 +2274,9 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:Cúcuta  a              :Municipio ;
+        :Contenido_Por  :NortedeSantander .
 
 :1100106292-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -2209,27 +2311,17 @@
         :nomunidad       "Días" ;
         :resultado       0.96E0 .
 
+:Villagarzón  a         :Municipio ;
+        :Contenido_Por  :Putumayo .
+
+:Filandia  a            :Municipio ;
+        :Contenido_Por  :Quindio .
+
+:CarmendeCarupa  a      :Municipio ;
+        :Contenido_Por  :Cundinamarca .
+
 :codmunicipio  a            owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
-
-:4100100519-Tiemposdeespera-Consultas
-        a                 :IPS ;
-        :coddepartamento  "41" ;
-        :codmunicipio     "41001" ;
-        :denominador      "3118" ;
-        :departamento     "Huila" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "4100100519" ;
-        :ips              "Empresa cooperativa de servicios de salud emcosalud." ;
-        :municipio        "Neiva" ;
-        :nomcategorias    "Tiempos de espera" ;
-        :nomespecifique   "Odontología" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Espera en la atención en consulta de odontología general" ;
-        :nomservicio      "Consultas" ;
-        :nomunidad        "días" ;
-        :numerador        "3143" ;
-        :resultado        1 .
 
 :5400100470-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -2249,6 +2341,25 @@
         :nomunidad        "Tasa" ;
         :numerador        "526" ;
         :resultado        6 .
+
+:4100100519-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "41" ;
+        :codmunicipio     "41001" ;
+        :denominador      "3118" ;
+        :departamento     "Huila" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "4100100519" ;
+        :ips              "Empresa cooperativa de servicios de salud emcosalud." ;
+        :municipio        "Neiva" ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Odontología" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la atención en consulta de odontología general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "3143" ;
+        :resultado        1 .
 
 :7686301656-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -2282,6 +2393,15 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.27E0 .
+
+:Villavicencio  a       :Municipio ;
+        :Contenido_Por  :Meta .
+
+:Cocorná  a             :Municipio ;
+        :Contenido_Por  :Antioquia .
+
+:Cumbal  a              :Municipio ;
+        :Contenido_Por  :Nariño .
 
 :500110234-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -2340,6 +2460,20 @@
         :numerador        "583" ;
         :resultado        1 .
 
+:E.3.4-CCF102  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "COMFACHOCO" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF102" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
 :1100121323-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "11" ;
@@ -2358,6 +2492,34 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "207" ;
         :resultado        95 .
+
+:E.3.5-EPSS34  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "CAPITAL SALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSS34" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.3-EPS008  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "COMPENSAR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS008" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
 
 :8501003568-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -2396,48 +2558,6 @@
         :nomunidad        "Tasa" ;
         :numerador        "0" ;
         :resultado        0 .
-
-:E.3.5-EPSS34  a         :EPS ;
-        :codigo          "E.3.5" ;
-        :eps             "CAPITAL SALUD" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "EPSS34" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Cirugía programada" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
-        :nomservicio     "Autorizaciones" ;
-        :nomunidad       "Días" ;
-        :resultado       0.99E0 .
-
-:E.3.3-EPS008  a         :EPS ;
-        :codigo          "E.3.3" ;
-        :eps             "COMPENSAR" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "EPS008" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Imágenes diagnostica" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
-        :nomservicio     "Autorizaciones" ;
-        :nomunidad       "Días" ;
-        :resultado       0.0E0 .
-
-:E.3.4-CCF102  a         :EPS ;
-        :codigo          "E.3.4" ;
-        :eps             "COMFACHOCO" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "CCF102" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Cirugía programada" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
-        :nomservicio     "Autorizaciones" ;
-        :nomunidad       "Días" ;
-        :resultado       0.99E0 .
 
 :7600103954-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -2495,6 +2615,9 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "231" ;
         :resultado        92 .
+
+:Montería  a            :Municipio ;
+        :Contenido_Por  :Cordoba .
 
 :7071700426-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -2614,6 +2737,9 @@
         :numerador        "1011" ;
         :resultado        1 .
 
+:PuebloNuevo  a         :Municipio ;
+        :Contenido_Por  :Cordoba .
+
 :7300101888-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "73" ;
@@ -2632,6 +2758,12 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "500" ;
         :resultado        95 .
+
+:SanMartín  a           :Municipio ;
+        :Contenido_Por  :Meta .
+
+:Valledupar  a          :Municipio ;
+        :Contenido_Por  :Cesar .
 
 :E.3.6-EPS003  a         :EPS ;
         :codigo          "E.3.6" ;
@@ -2755,6 +2887,12 @@
         :nomunidad        "Tasa" ;
         :numerador        "2" ;
         :resultado        0 .
+
+:Cunday  a              :Municipio ;
+        :Contenido_Por  :Tolima .
+
+:Pelaya  a              :Municipio ;
+        :Contenido_Por  :Cesar .
 
 :1100108930-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -2902,24 +3040,8 @@
         :numerador        "0" ;
         :resultado        0 .
 
-:1575901554-SatisfaccióndelUsuario-Experienciaglobal
-        a                 :IPS ;
-        :coddepartamento  "15" ;
-        :codmunicipio     "15759" ;
-        :denominador      "1927" ;
-        :departamento     "Boyacá" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "1575901554" ;
-        :ips              "Centro medico colcan SAS." ;
-        :municipio        "Sogamoso" ;
-        :nomcategorias    "Satisfacción del Usuario" ;
-        :nomespecifique   "Experiencia global con los servicios de salud" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
-        :nomservicio      "Experiencia global" ;
-        :nomunidad        "Porcentaje" ;
-        :numerador        "1840" ;
-        :resultado        95 .
+:Tuluá  a               :Municipio ;
+        :Contenido_Por  :Valledelcauca .
 
 :1100101443-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -2939,6 +3061,25 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "1873" ;
         :resultado        94 .
+
+:1575901554-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "15" ;
+        :codmunicipio     "15759" ;
+        :denominador      "1927" ;
+        :departamento     "Boyacá" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1575901554" ;
+        :ips              "Centro medico colcan SAS." ;
+        :municipio        "Sogamoso" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "1840" ;
+        :resultado        95 .
 
 :E.3.3-CCF055  a         :EPS ;
         :codigo          "E.3.3" ;
@@ -2968,43 +3109,8 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
-:800102280-SatisfaccióndelUsuario-Experienciaglobal
-        a                 :IPS ;
-        :coddepartamento  "8" ;
-        :codmunicipio     "08001" ;
-        :denominador      "871" ;
-        :departamento     "Atlántico" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "800102280" ;
-        :ips              "Cardiocenter barranquilla Ltda." ;
-        :municipio        "Barranquilla" ;
-        :nomcategorias    "Satisfacción del Usuario" ;
-        :nomespecifique   "Experiencia global con los servicios de salud" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
-        :nomservicio      "Experiencia global" ;
-        :nomunidad        "Porcentaje" ;
-        :numerador        "870" ;
-        :resultado        99 .
-
-:1100108120-SatisfaccióndelUsuario-Experienciaglobal
-        a                 :IPS ;
-        :coddepartamento  "11" ;
-        :codmunicipio     "11001" ;
-        :denominador      "1118" ;
-        :departamento     "Bogotá D.C." ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "1100108120" ;
-        :ips              "Garcia perez medica y compañia SAS garper medica SAS." ;
-        :municipio        "Bogotá" ;
-        :nomcategorias    "Satisfacción del Usuario" ;
-        :nomespecifique   "Experiencia global con los servicios de salud" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
-        :nomservicio      "Experiencia global" ;
-        :nomunidad        "Porcentaje" ;
-        :numerador        "1060" ;
-        :resultado        94 .
+:Rionegro  a            :Municipio ;
+        :Contenido_Por  :Antioquia .
 
 :6827604100-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -3024,6 +3130,25 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "358" ;
         :resultado        96 .
+
+:800102280-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "8" ;
+        :codmunicipio     "08001" ;
+        :denominador      "871" ;
+        :departamento     "Atlántico" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "800102280" ;
+        :ips              "Cardiocenter barranquilla Ltda." ;
+        :municipio        "Barranquilla" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "870" ;
+        :resultado        99 .
 
 :7000100365-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -3046,15 +3171,11 @@
 
 :EPS    a                 owl:Class ;
         rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :nomfuente ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
                             owl:onProperty      :eps ;
-                            owl:someValuesFrom  xsd:string
-                          ] ;
-        rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :nomunidad ;
-                            owl:someValuesFrom  xsd:string
-                          ] ;
-        rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :linkfuente ;
                             owl:someValuesFrom  xsd:string
                           ] ;
         rdfs:subClassOf   [ a                   owl:Restriction ;
@@ -3062,15 +3183,7 @@
                             owl:someValuesFrom  xsd:string
                           ] ;
         rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :ideps ;
-                            owl:someValuesFrom  xsd:string
-                          ] ;
-        rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :Contrata ;
-                            owl:someValuesFrom  :IPS
-                          ] ;
-        rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :codigo ;
+                            owl:onProperty      :nomunidad ;
                             owl:someValuesFrom  xsd:string
                           ] ;
         rdfs:subClassOf   [ a                   owl:Restriction ;
@@ -3086,16 +3199,28 @@
                             owl:someValuesFrom  xsd:string
                           ] ;
         rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :nomfuente ;
+                            owl:onProperty      :codigo ;
                             owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :resultado ;
+                            owl:someValuesFrom  xsd:float
                           ] ;
         rdfs:subClassOf   [ a                   owl:Restriction ;
                             owl:onProperty      :nomindicador ;
                             owl:someValuesFrom  xsd:string
                           ] ;
         rdfs:subClassOf   [ a                   owl:Restriction ;
-                            owl:onProperty      :resultado ;
-                            owl:someValuesFrom  xsd:float
+                            owl:onProperty      :Contrata ;
+                            owl:someValuesFrom  :IPS
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :linkfuente ;
+                            owl:someValuesFrom  xsd:string
+                          ] ;
+        rdfs:subClassOf   [ a                   owl:Restriction ;
+                            owl:onProperty      :ideps ;
+                            owl:someValuesFrom  xsd:string
                           ] ;
         owl:disjointWith  :IPS .
 
@@ -3146,6 +3271,25 @@
         :numerador        "778" ;
         :resultado        1 .
 
+:1100108120-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "11" ;
+        :codmunicipio     "11001" ;
+        :denominador      "1118" ;
+        :departamento     "Bogotá D.C." ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1100108120" ;
+        :ips              "Garcia perez medica y compañia SAS garper medica SAS." ;
+        :municipio        "Bogotá" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "1060" ;
+        :resultado        94 .
+
 :E.3.2-EPSI06  a         :EPS ;
         :codigo          "E.3.2" ;
         :eps             "PIJAOSALUD EPSI" ;
@@ -3159,6 +3303,12 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:Valparaíso  a          :Municipio ;
+        :Contenido_Por  :Antioquia .
+
+:Samacá  a              :Municipio ;
+        :Contenido_Por  :Boyacá .
 
 :6843204872-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -3179,25 +3329,6 @@
         :numerador        "82" ;
         :resultado        82 .
 
-:7322601043-Tiemposdeespera-Consultas
-        a                 :IPS ;
-        :coddepartamento  "73" ;
-        :codmunicipio     "73226" ;
-        :denominador      "10504" ;
-        :departamento     "Tolima" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "7322601043" ;
-        :ips              "Hospital federico arbelaez empresa social del estado." ;
-        :municipio        "Cunday" ;
-        :nomcategorias    "Tiempos de espera" ;
-        :nomespecifique   "Médico General" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Espera en la asignación de citas en la consulta médica general" ;
-        :nomservicio      "Consultas" ;
-        :nomunidad        "días" ;
-        :numerador        "10504" ;
-        :resultado        1 .
-
 :500102175-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "5" ;
@@ -3216,6 +3347,25 @@
         :nomunidad        "Tasa" ;
         :numerador        "1262" ;
         :resultado        3 .
+
+:7322601043-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "73" ;
+        :codmunicipio     "73226" ;
+        :denominador      "10504" ;
+        :departamento     "Tolima" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "7322601043" ;
+        :ips              "Hospital federico arbelaez empresa social del estado." ;
+        :municipio        "Cunday" ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Médico General" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la asignación de citas en la consulta médica general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "10504" ;
+        :resultado        1 .
 
 :7326802242-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -3269,6 +3419,9 @@
         :nomunidad       "Días" ;
         :resultado       0.01E0 .
 
+:ElCarmendeBolívar  a   :Municipio ;
+        :Contenido_Por  :Bolivar .
+
 :E.3.6-EPS016  a         :EPS ;
         :codigo          "E.3.6" ;
         :eps             "COOMEVA" ;
@@ -3282,6 +3435,9 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.27E0 .
+
+:NortedeSantander  a   :Departamento ;
+        :departamento  "Norte de Santander" .
 
 :2571800018-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -3301,6 +3457,9 @@
         :nomunidad        "Tasa" ;
         :numerador        "1" ;
         :resultado        0 .
+
+:Jericó  a              :Municipio ;
+        :Contenido_Por  :Antioquia .
 
 :4155101358-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -3339,6 +3498,9 @@
         :nomunidad        "días" ;
         :numerador        "60161" ;
         :resultado        1 .
+
+:Villanueva  a          :Municipio ;
+        :Contenido_Por  :Casanare .
 
 :E.3.5-EPSI01  a         :EPS ;
         :codigo          "E.3.5" ;
@@ -3442,6 +3604,9 @@
 :municipio  a               owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
 
+:Yolombó  a             :Municipio ;
+        :Contenido_Por  :Antioquia .
+
 :1100119341-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "11" ;
@@ -3460,6 +3625,12 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "19259" ;
         :resultado        88 .
+
+:Vaupés  a             :Departamento ;
+        :departamento  "Vaupés" .
+
+:Guática  a             :Municipio ;
+        :Contenido_Por  :Risaralda .
 
 :2357000404-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -3480,6 +3651,20 @@
         :numerador        "14703" ;
         :resultado        1 .
 
+:E.3.3-ESS207  a         :EPS ;
+        :codigo          "E.3.3" ;
+        :eps             "MUTUAL SER" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS207" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Imágenes diagnostica" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.5E0 .
+
 :7000101254-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "70" ;
@@ -3498,20 +3683,6 @@
         :nomunidad        "Tasa" ;
         :numerador        "0" ;
         :resultado        0 .
-
-:E.3.3-ESS207  a         :EPS ;
-        :codigo          "E.3.3" ;
-        :eps             "MUTUAL SER" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "ESS207" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Imágenes diagnostica" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
-        :nomservicio     "Autorizaciones" ;
-        :nomunidad       "Días" ;
-        :resultado       0.5E0 .
 
 :4700101044-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -3792,25 +3963,6 @@
         :numerador        "2292" ;
         :resultado        93 .
 
-:2300100451-SatisfaccióndelUsuario-Experienciaglobal
-        a                 :IPS ;
-        :coddepartamento  "23" ;
-        :codmunicipio     "23001" ;
-        :denominador      "1246" ;
-        :departamento     "Cordoba" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "2300100451" ;
-        :ips              "Corporacion IPS cordoba." ;
-        :municipio        "Montería" ;
-        :nomcategorias    "Satisfacción del Usuario" ;
-        :nomespecifique   "Experiencia global con los servicios de salud" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
-        :nomservicio      "Experiencia global" ;
-        :nomunidad        "Porcentaje" ;
-        :numerador        "1192" ;
-        :resultado        95 .
-
 :6600101651-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "66" ;
@@ -3829,6 +3981,25 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "200" ;
         :resultado        100 .
+
+:2300100451-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "23" ;
+        :codmunicipio     "23001" ;
+        :denominador      "1246" ;
+        :departamento     "Cordoba" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "2300100451" ;
+        :ips              "Corporacion IPS cordoba." ;
+        :municipio        "Montería" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "1192" ;
+        :resultado        95 .
 
 :5400102162-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -3853,6 +4024,9 @@
         rdfs:domain  :Municipio ;
         rdfs:range   :IPS .
 
+:Calarcá  a             :Municipio ;
+        :Contenido_Por  :Quindio .
+
 :E.3.2-EPSI01  a         :EPS ;
         :codigo          "E.3.2" ;
         :eps             "DUSAKAWI E.P.S.I." ;
@@ -3866,6 +4040,9 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.69E0 .
+
+:Heliconia  a           :Municipio ;
+        :Contenido_Por  :Antioquia .
 
 :E.3.3-ESS133  a         :EPS ;
         :codigo          "E.3.3" ;
@@ -4028,6 +4205,9 @@
         :numerador        "6046" ;
         :resultado        1 .
 
+:Ocamonte  a            :Municipio ;
+        :Contenido_Por  :Santander .
+
 :6645600288-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "66" ;
@@ -4094,25 +4274,6 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
-:7600106892-SatisfaccióndelUsuario-Experienciaglobal
-        a                 :IPS ;
-        :coddepartamento  "76" ;
-        :codmunicipio     "76001" ;
-        :denominador      "120" ;
-        :departamento     "Valle del cauca" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "7600106892" ;
-        :ips              "Longevos." ;
-        :municipio        "Cali" ;
-        :nomcategorias    "Satisfacción del Usuario" ;
-        :nomespecifique   "Experiencia global con los servicios de salud" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
-        :nomservicio      "Experiencia global" ;
-        :nomunidad        "Porcentaje" ;
-        :numerador        "120" ;
-        :resultado        100 .
-
 :4443000168-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "44" ;
@@ -4131,6 +4292,25 @@
         :nomunidad        "Tasa" ;
         :numerador        "39" ;
         :resultado        0 .
+
+:7600106892-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "76" ;
+        :codmunicipio     "76001" ;
+        :denominador      "120" ;
+        :departamento     "Valle del cauca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "7600106892" ;
+        :ips              "Longevos." ;
+        :municipio        "Cali" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "120" ;
+        :resultado        100 .
 
 :E.3.3-ESS091  a         :EPS ;
         :codigo          "E.3.3" ;
@@ -4160,12 +4340,24 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Chocó  a              :Departamento ;
+        :departamento  "Chocó" .
+
+:Sasaima  a             :Municipio ;
+        :Contenido_Por  :Cundinamarca .
+
 :CODIGO_DANE_DEL_MUNICIPIO
         a                   owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
 
+:Chiquinquirá  a        :Municipio ;
+        :Contenido_Por  :Boyacá .
+
 :linkfuente  a              owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
+
+:Sitionuevo  a          :Municipio ;
+        :Contenido_Por  :Magdalena .
 
 :7652007930-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -4205,6 +4397,12 @@
         :numerador        "1885" ;
         :resultado        98 .
 
+:PuertoRico  a          :Municipio ;
+        :Contenido_Por  :Caquetá .
+
+:Quindío  a            :Departamento ;
+        :departamento  "Quindío" .
+
 :6340100818-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "63" ;
@@ -4223,6 +4421,9 @@
         :nomunidad        "días" ;
         :numerador        "12873" ;
         :resultado        2 .
+
+:Chía   a               :Municipio ;
+        :Contenido_Por  :Cundinamarca .
 
 :800102482-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -4262,10 +4463,6 @@
         :numerador        "124" ;
         :resultado        65 .
 
-[ a            owl:AllDisjointProperties ;
-  owl:members  ( :coddepartamento :codigo :codmunicipio :denominador :departamento :eps :fecha_corte :ideps :idips :ips :linkfuente :municipio :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :numerador :resultado )
-] .
-
 :2341701099-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "23" ;
@@ -4284,6 +4481,13 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "1361" ;
         :resultado        99 .
+
+:Sucre  a               :Municipio , :Departamento ;
+        :Contenido_Por  :Sucre ;
+        :departamento   "Sucre " .
+
+:Apartadó  a            :Municipio ;
+        :Contenido_Por  :Antioquia .
 
 :2055000213-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -4304,25 +4508,6 @@
         :numerador        "110971" ;
         :resultado        14 .
 
-:2517502371-SatisfaccióndelUsuario-Experienciaglobal
-        a                 :IPS ;
-        :coddepartamento  "25" ;
-        :codmunicipio     "25175" ;
-        :denominador      "865" ;
-        :departamento     "Cundinamarca" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "2517502371" ;
-        :ips              "Servicios profesionales y tecnologicos SAS seprot SAS." ;
-        :municipio        "Chía" ;
-        :nomcategorias    "Satisfacción del Usuario" ;
-        :nomespecifique   "Experiencia global con los servicios de salud" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
-        :nomservicio      "Experiencia global" ;
-        :nomunidad        "Porcentaje" ;
-        :numerador        "854" ;
-        :resultado        98 .
-
 :1700101789-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "17" ;
@@ -4341,6 +4526,25 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "82" ;
         :resultado        97 .
+
+:2517502371-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "25" ;
+        :codmunicipio     "25175" ;
+        :denominador      "865" ;
+        :departamento     "Cundinamarca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "2517502371" ;
+        :ips              "Servicios profesionales y tecnologicos SAS seprot SAS." ;
+        :municipio        "Chía" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "854" ;
+        :resultado        98 .
 
 :7600108946-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -4361,6 +4565,9 @@
         :numerador        "121" ;
         :resultado        100 .
 
+:ValledelCauca  a      :Departamento ;
+        :departamento  "Valle del Cauca" .
+
 :E.3.1-EPS002  a         :EPS ;
         :codigo          "E.3.1" ;
         :eps             "SALUD TOTAL" ;
@@ -4374,6 +4581,9 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:Cajicá  a              :Municipio ;
+        :Contenido_Por  :Cundinamarca .
 
 :2001100763-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -4427,6 +4637,9 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Málaga  a              :Municipio ;
+        :Contenido_Por  :Santander .
+
 :2584300026-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "25" ;
@@ -4446,24 +4659,14 @@
         :numerador        "28" ;
         :resultado        0 .
 
-:7600107602-SatisfaccióndelUsuario-Experienciaglobal
-        a                 :IPS ;
-        :coddepartamento  "76" ;
-        :codmunicipio     "76001" ;
-        :denominador      "450" ;
-        :departamento     "Valle del cauca" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "7600107602" ;
-        :ips              "Lastra IPS eu." ;
-        :municipio        "Cali" ;
-        :nomcategorias    "Satisfacción del Usuario" ;
-        :nomespecifique   "Experiencia global con los servicios de salud" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
-        :nomservicio      "Experiencia global" ;
-        :nomunidad        "Porcentaje" ;
-        :numerador        "438" ;
-        :resultado        97 .
+:Duitama  a             :Municipio ;
+        :Contenido_Por  :Boyacá .
+
+:Mitú   a               :Municipio ;
+        :Contenido_Por  :Vaupés .
+
+:Soledad  a             :Municipio ;
+        :Contenido_Por  :Atlántico .
 
 :6800101362-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -4503,6 +4706,25 @@
         :numerador        "3603" ;
         :resultado        1 .
 
+:7600107602-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "76" ;
+        :codmunicipio     "76001" ;
+        :denominador      "450" ;
+        :departamento     "Valle del cauca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "7600107602" ;
+        :ips              "Lastra IPS eu." ;
+        :municipio        "Cali" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "438" ;
+        :resultado        97 .
+
 :E.3.5-CCF007  a         :EPS ;
         :codigo          "E.3.5" ;
         :eps             "COMFAMILIAR CARTAGENA" ;
@@ -4517,6 +4739,9 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Salamina  a            :Municipio ;
+        :Contenido_Por  :Magdalena .
+
 :E.3.5-CCF053  a         :EPS ;
         :codigo          "E.3.5" ;
         :eps             "COMFACUNDI" ;
@@ -4530,6 +4755,10 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+<http://www.EPSColombia.org#ArchipiélagodeSanAndrés,ProvidenciaySantaCatalina>
+        a              :Departamento ;
+        :departamento  "Archipiélago de San Andrés, Providencia y Santa Catalina" .
 
 :6600100205-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -4630,6 +4859,20 @@
         :nomunidad       "Días" ;
         :resultado       0.41E0 .
 
+:E.3.5-EPS033  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "SALUDVIDA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS033" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.66E0 .
+
 :6800104332-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "68" ;
@@ -4648,20 +4891,6 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "155" ;
         :resultado        73 .
-
-:E.3.5-EPS033  a         :EPS ;
-        :codigo          "E.3.5" ;
-        :eps             "SALUDVIDA" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "EPS033" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Cirugía programada" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
-        :nomservicio     "Autorizaciones" ;
-        :nomunidad       "Días" ;
-        :resultado       0.66E0 .
 
 :7689208647-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -4682,25 +4911,6 @@
         :numerador        "30" ;
         :resultado        100 .
 
-:2000101547-SatisfaccióndelUsuario-Experienciaglobal
-        a                 :IPS ;
-        :coddepartamento  "20" ;
-        :codmunicipio     "20001" ;
-        :denominador      "123" ;
-        :departamento     "Cesar" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "2000101547" ;
-        :ips              "Unidad fonoaudiologica integral rehabiliser IPS Ltda." ;
-        :municipio        "Valledupar" ;
-        :nomcategorias    "Satisfacción del Usuario" ;
-        :nomespecifique   "Experiencia global con los servicios de salud" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
-        :nomservicio      "Experiencia global" ;
-        :nomunidad        "Porcentaje" ;
-        :numerador        "123" ;
-        :resultado        100 .
-
 :1738001719-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "17" ;
@@ -4719,6 +4929,25 @@
         :nomunidad        "Tasa" ;
         :numerador        "0" ;
         :resultado        0 .
+
+:2000101547-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "20" ;
+        :codmunicipio     "20001" ;
+        :denominador      "123" ;
+        :departamento     "Cesar" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "2000101547" ;
+        :ips              "Unidad fonoaudiologica integral rehabiliser IPS Ltda." ;
+        :municipio        "Valledupar" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "123" ;
+        :resultado        100 .
 
 :5000101331-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -4772,6 +5001,15 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Melgar  a              :Municipio ;
+        :Contenido_Por  :Tolima .
+
+:TalaiguaNuevo  a       :Municipio ;
+        :Contenido_Por  :Bolivar .
+
+:Restrepo  a            :Municipio ;
+        :Contenido_Por  :Meta .
+
 :8632000024-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "86" ;
@@ -4824,24 +5062,24 @@
         :numerador        "496" ;
         :resultado        99 .
 
-:6617000278-Seguridaddelpaciente-Hospitalaria
+:1365500312-Tiemposdeespera-Consultas
         a                 :IPS ;
-        :coddepartamento  "66" ;
-        :codmunicipio     "66170" ;
-        :denominador      "5246" ;
-        :departamento     "Risaralda" ;
+        :coddepartamento  "13" ;
+        :codmunicipio     "13655" ;
+        :denominador      "6677" ;
+        :departamento     "Bolivar" ;
         :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "6617000278" ;
-        :ips              "Ese hospital santa mónica." ;
-        :municipio        "Dosquebradas" ;
-        :nomcategorias    "Seguridad del paciente" ;
-        :nomespecifique   "Reingreso de pacientes" ;
+        :idips            "1365500312" ;
+        :ips              "Ese centro de salud con cama." ;
+        :municipio        "San jacinto del cauca" ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Médico General" ;
         :nomfuente        "Supersalud" ;
-        :nomindicador     "Tasa de reingreso de pacientes hospitalizados (por cada 100 hospitalizados)" ;
-        :nomservicio      "Hospitalaria" ;
-        :nomunidad        "Tasa" ;
-        :numerador        "3" ;
-        :resultado        0 .
+        :nomindicador     "Espera en la asignación de citas en la consulta médica general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "6677" ;
+        :resultado        1 .
 
 :4767500060-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -4862,24 +5100,24 @@
         :numerador        "12965" ;
         :resultado        5 .
 
-:1365500312-Tiemposdeespera-Consultas
+:6617000278-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
-        :coddepartamento  "13" ;
-        :codmunicipio     "13655" ;
-        :denominador      "6677" ;
-        :departamento     "Bolivar" ;
+        :coddepartamento  "66" ;
+        :codmunicipio     "66170" ;
+        :denominador      "5246" ;
+        :departamento     "Risaralda" ;
         :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "1365500312" ;
-        :ips              "Ese centro de salud con cama." ;
-        :municipio        "San jacinto del cauca" ;
-        :nomcategorias    "Tiempos de espera" ;
-        :nomespecifique   "Médico General" ;
+        :idips            "6617000278" ;
+        :ips              "Ese hospital santa mónica." ;
+        :municipio        "Dosquebradas" ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Reingreso de pacientes" ;
         :nomfuente        "Supersalud" ;
-        :nomindicador     "Espera en la asignación de citas en la consulta médica general" ;
-        :nomservicio      "Consultas" ;
-        :nomunidad        "días" ;
-        :numerador        "6677" ;
-        :resultado        1 .
+        :nomindicador     "Tasa de reingreso de pacientes hospitalizados (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "3" ;
+        :resultado        0 .
 
 :2579900056-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -4899,6 +5137,9 @@
         :nomunidad        "Tasa" ;
         :numerador        "0" ;
         :resultado        0 .
+
+:ElColegio  a           :Municipio ;
+        :Contenido_Por  :Cundinamarca .
 
 :2526902158-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -4966,6 +5207,23 @@
         :numerador        "4868" ;
         :resultado        100 .
 
+:Enciso  a              :Municipio ;
+        :Contenido_Por  :Santander .
+
+:E.3.5-ESS062  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "ASMET SALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS062" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
 :500110471-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "5" ;
@@ -4984,20 +5242,6 @@
         :nomunidad        "días" ;
         :numerador        "323463" ;
         :resultado        2 .
-
-:E.3.5-ESS062  a         :EPS ;
-        :codigo          "E.3.5" ;
-        :eps             "ASMET SALUD" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "ESS062" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Cirugía programada" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
-        :nomservicio     "Autorizaciones" ;
-        :nomunidad       "Días" ;
-        :resultado       0.99E0 .
 
 :8500101434-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -5046,25 +5290,6 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
-:1100120946-SatisfaccióndelUsuario-Experienciaglobal
-        a                 :IPS ;
-        :coddepartamento  "11" ;
-        :codmunicipio     "11001" ;
-        :denominador      "26" ;
-        :departamento     "Bogotá D.C." ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "1100120946" ;
-        :ips              "Cirurobotica marly litomedica SA." ;
-        :municipio        "Bogotá" ;
-        :nomcategorias    "Satisfacción del Usuario" ;
-        :nomespecifique   "Experiencia global con los servicios de salud" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
-        :nomservicio      "Experiencia global" ;
-        :nomunidad        "Porcentaje" ;
-        :numerador        "26" ;
-        :resultado        100 .
-
 :1900108016-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "19" ;
@@ -5083,6 +5308,25 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "2450" ;
         :resultado        95 .
+
+:1100120946-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "11" ;
+        :codmunicipio     "11001" ;
+        :denominador      "26" ;
+        :departamento     "Bogotá D.C." ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1100120946" ;
+        :ips              "Cirurobotica marly litomedica SA." ;
+        :municipio        "Bogotá" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "26" ;
+        :resultado        100 .
 
 :1100121548-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -5116,6 +5360,9 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.02E0 .
+
+:Fusagasugá  a          :Municipio ;
+        :Contenido_Por  :Cundinamarca .
 
 :2575402328-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -5178,6 +5425,9 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Villavieja  a          :Municipio ;
+        :Contenido_Por  :Huila .
+
 :534702192-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "5" ;
@@ -5235,39 +5485,6 @@
         :numerador        "90" ;
         :resultado        100 .
 
-:1100117093-Tiemposdeespera-Consultas
-        a                 :IPS ;
-        :coddepartamento  "11" ;
-        :codmunicipio     "11001" ;
-        :denominador      "1650" ;
-        :departamento     "Bogotá D.C." ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "1100117093" ;
-        :ips              "Mision salud internacional SAS." ;
-        :municipio        "Bogotá" ;
-        :nomcategorias    "Tiempos de espera" ;
-        :nomespecifique   "Odontología" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Espera en la atención en consulta de odontología general" ;
-        :nomservicio      "Consultas" ;
-        :nomunidad        "días" ;
-        :numerador        "1650" ;
-        :resultado        1 .
-
-:E.3.2-EPS001  a         :EPS ;
-        :codigo          "E.3.2" ;
-        :eps             "ALIANSALUD" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "EPS001" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Mostrar resultado" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
-        :nomservicio     "Citas médicas" ;
-        :nomunidad       "Días" ;
-        :resultado       0.99E0 .
-
 :500102393-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "5" ;
@@ -5286,6 +5503,39 @@
         :nomunidad        "Tasa" ;
         :numerador        "0" ;
         :resultado        0 .
+
+:E.3.2-EPS001  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "ALIANSALUD" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS001" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:1100117093-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "11" ;
+        :codmunicipio     "11001" ;
+        :denominador      "1650" ;
+        :departamento     "Bogotá D.C." ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1100117093" ;
+        :ips              "Mision salud internacional SAS." ;
+        :municipio        "Bogotá" ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Odontología" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la atención en consulta de odontología general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "1650" ;
+        :resultado        1 .
 
 :E.3.6-ESS002  a         :EPS ;
         :codigo          "E.3.6" ;
@@ -5353,6 +5603,28 @@
         :nomunidad       "Días" ;
         :resultado       0.0E0 .
 
+:PuertoColombia  a      :Municipio ;
+        :Contenido_Por  :Atlántico .
+
+:5235601734-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "52" ;
+        :codmunicipio     "52356" ;
+        :denominador      "25050" ;
+        :departamento     "Nariño" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "5235601734" ;
+        :ips              "Ips indígena mallamás." ;
+        :municipio        "Ipiales" ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Médico General" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la asignación de citas en la consulta médica general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "52031" ;
+        :resultado        2 .
+
 :7614709467-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "76" ;
@@ -5372,6 +5644,9 @@
         :numerador        "260" ;
         :resultado        86 .
 
+:Casanare  a           :Departamento ;
+        :departamento  "Casanare" .
+
 :1100108704-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "11" ;
@@ -5389,25 +5664,6 @@
         :nomservicio      "Consultas" ;
         :nomunidad        "días" ;
         :numerador        "139543" ;
-        :resultado        2 .
-
-:5235601734-Tiemposdeespera-Consultas
-        a                 :IPS ;
-        :coddepartamento  "52" ;
-        :codmunicipio     "52356" ;
-        :denominador      "25050" ;
-        :departamento     "Nariño" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "5235601734" ;
-        :ips              "Ips indígena mallamás." ;
-        :municipio        "Ipiales" ;
-        :nomcategorias    "Tiempos de espera" ;
-        :nomespecifique   "Médico General" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Espera en la asignación de citas en la consulta médica general" ;
-        :nomservicio      "Consultas" ;
-        :nomunidad        "días" ;
-        :numerador        "52031" ;
         :resultado        2 .
 
 :Servicios_de_Salud  a       owl:Class ;
@@ -5453,6 +5709,9 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.5E0 .
+
+:Huila  a              :Departamento ;
+        :departamento  "Huila" .
 
 :6327200491-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -5511,6 +5770,9 @@
         :numerador        "89" ;
         :resultado        98 .
 
+:Putumayo  a           :Departamento ;
+        :departamento  "Putumayo " .
+
 :E.3.2-ESS062  a         :EPS ;
         :codigo          "E.3.2" ;
         :eps             "ASMET SALUD" ;
@@ -5543,6 +5805,15 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "110" ;
         :resultado        88 .
+
+:Cáchira  a             :Municipio ;
+        :Contenido_Por  :NortedeSantander .
+
+:Cauca  a              :Departamento ;
+        :departamento  "Cauca " .
+
+:Barrancabermeja  a     :Municipio ;
+        :Contenido_Por  :Santander .
 
 :7326802049-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -5609,6 +5880,12 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:Meta   a              :Departamento ;
+        :departamento  "Meta " .
+
+:SanVicentedeChucurí  a  :Municipio ;
+        :Contenido_Por  :Santander .
 
 :E.3.6-CCF053  a         :EPS ;
         :codigo          "E.3.6" ;
@@ -5709,6 +5986,13 @@
         :nomunidad       "Días" ;
         :resultado       0.0E0 .
 
+[ a            owl:AllDisjointProperties ;
+  owl:members  ( :coddepartamento :codigo :codmunicipio :denominador :departamento :eps :fecha_corte :ideps :idips :ips :linkfuente :municipio :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :numerador :resultado )
+] .
+
+:Risaralda  a          :Departamento ;
+        :departamento  "Risaralda" .
+
 :1346800661-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "13" ;
@@ -5727,6 +6011,12 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "2448" ;
         :resultado        98 .
+
+:Chiriguaná  a          :Municipio ;
+        :Contenido_Por  :Cesar .
+
+:ElTambo  a             :Municipio ;
+        :Contenido_Por  :Cauca .
 
 :E.3.3-ESS002  a         :EPS ;
         :codigo          "E.3.3" ;
@@ -5775,6 +6065,9 @@
         :numerador        "41424" ;
         :resultado        1 .
 
+:Neiva  a               :Municipio ;
+        :Contenido_Por  :Huila .
+
 :4100101380-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "41" ;
@@ -5812,6 +6105,9 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "845" ;
         :resultado        96 .
+
+:Anserma  a             :Municipio ;
+        :Contenido_Por  :Caldas .
 
 :1100116496-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -5870,6 +6166,15 @@
         :numerador        "143" ;
         :resultado        100 .
 
+:Remedios  a            :Municipio ;
+        :Contenido_Por  :Antioquia .
+
+:Marinilla  a           :Municipio ;
+        :Contenido_Por  :Antioquia .
+
+:Ancuyá  a              :Municipio ;
+        :Contenido_Por  :Nariño .
+
 :1527600741-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "15" ;
@@ -5888,6 +6193,12 @@
         :nomunidad        "días" ;
         :numerador        "7777" ;
         :resultado        1 .
+
+:Nuquí  a               :Municipio ;
+        :Contenido_Por  :Choco .
+
+:Puebloviejo  a         :Municipio ;
+        :Contenido_Por  :Magdalena .
 
 :MUNICIPIO  a                   owl:DatatypeProperty ;
         rdfs:subPropertyOf      owl:topDataProperty ;
@@ -5928,6 +6239,9 @@
 
 :ips    a                   owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
+
+:SanMarcos  a           :Municipio ;
+        :Contenido_Por  :Sucre .
 
 :1100111140-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -6004,6 +6318,9 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "215" ;
         :resultado        86 .
+
+:Facatativá  a          :Municipio ;
+        :Contenido_Por  :Cundinamarca .
 
 :2517500281-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -6180,6 +6497,9 @@
         :numerador        "22758" ;
         :resultado        2 .
 
+:Choachí  a             :Municipio ;
+        :Contenido_Por  :Cundinamarca .
+
 :departamento  a            owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
 
@@ -6330,6 +6650,9 @@
         :numerador        "1116" ;
         :resultado        3 .
 
+:Sibaté  a              :Municipio ;
+        :Contenido_Por  :Cundinamarca .
+
 :564702174-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "5" ;
@@ -6386,6 +6709,12 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "170" ;
         :resultado        94 .
+
+:Pereira  a             :Municipio ;
+        :Contenido_Por  :Risaralda .
+
+:Charalá  a             :Municipio ;
+        :Contenido_Por  :Santander .
 
 :1100113132-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -6461,24 +6790,24 @@
 :REGION  a                  owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
 
-:1300102285-SatisfaccióndelUsuario-Experienciaglobal
+:1100125003-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
-        :coddepartamento  "13" ;
-        :codmunicipio     "13001" ;
-        :denominador      "610" ;
-        :departamento     "Bolivar" ;
+        :coddepartamento  "11" ;
+        :codmunicipio     "11001" ;
+        :denominador      "135" ;
+        :departamento     "Bogotá D.C." ;
         :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "1300102285" ;
-        :ips              "Centro de estetica dental de cartagena ltda cesdent." ;
-        :municipio        "Cartagena de Indias" ;
+        :idips            "1100125003" ;
+        :ips              "Unidad de cuidados paliativos presentes SAS." ;
+        :municipio        "Bogotá" ;
         :nomcategorias    "Satisfacción del Usuario" ;
         :nomespecifique   "Experiencia global con los servicios de salud" ;
         :nomfuente        "Supersalud" ;
         :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
         :nomservicio      "Experiencia global" ;
         :nomunidad        "Porcentaje" ;
-        :numerador        "599" ;
-        :resultado        98 .
+        :numerador        "132" ;
+        :resultado        97 .
 
 :E.3.5-EPS022  a         :EPS ;
         :codigo          "E.3.5" ;
@@ -6508,24 +6837,24 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
-:1100125003-SatisfaccióndelUsuario-Experienciaglobal
+:1300102285-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
-        :coddepartamento  "11" ;
-        :codmunicipio     "11001" ;
-        :denominador      "135" ;
-        :departamento     "Bogotá D.C." ;
+        :coddepartamento  "13" ;
+        :codmunicipio     "13001" ;
+        :denominador      "610" ;
+        :departamento     "Bolivar" ;
         :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "1100125003" ;
-        :ips              "Unidad de cuidados paliativos presentes SAS." ;
-        :municipio        "Bogotá" ;
+        :idips            "1300102285" ;
+        :ips              "Centro de estetica dental de cartagena ltda cesdent." ;
+        :municipio        "Cartagena de Indias" ;
         :nomcategorias    "Satisfacción del Usuario" ;
         :nomespecifique   "Experiencia global con los servicios de salud" ;
         :nomfuente        "Supersalud" ;
         :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
         :nomservicio      "Experiencia global" ;
         :nomunidad        "Porcentaje" ;
-        :numerador        "132" ;
-        :resultado        97 .
+        :numerador        "599" ;
+        :resultado        98 .
 
 :4718900188-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -6583,6 +6912,13 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "355" ;
         :resultado        88 .
+
+:SanAndrésdeSotavento
+        a               :Municipio ;
+        :Contenido_Por  :Cordoba .
+
+:Girardot  a            :Municipio ;
+        :Contenido_Por  :Cundinamarca .
 
 :1575902100-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -6691,6 +7027,9 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Pradera  a             :Municipio ;
+        :Contenido_Por  :Valledelcauca .
+
 :2000101792-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "20" ;
@@ -6732,9 +7071,15 @@
 :idips  a                   owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
 
+:Pitalito  a            :Municipio ;
+        :Contenido_Por  :Huila .
+
 :DEPARTAMENTO  a                owl:DatatypeProperty ;
         rdfs:subPropertyOf      owl:topDataProperty ;
         owl:equivalentProperty  :departamento .
+
+:Boyacá  a             :Departamento ;
+        :departamento  "Boyacá" .
 
 :500102036-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -6920,6 +7265,9 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Riohacha  a            :Municipio ;
+        :Contenido_Por  :Laguajira .
+
 :537605926-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "5" ;
@@ -6986,6 +7334,12 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Amazonas  a           :Departamento ;
+        :departamento  "Amazonas " .
+
+:Anzoátegui  a          :Municipio ;
+        :Contenido_Por  :Tolima .
+
 :E.3.4-EPSI06  a         :EPS ;
         :codigo          "E.3.4" ;
         :eps             "PIJAOSALUD EPSI" ;
@@ -6999,6 +7353,25 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.46E0 .
+
+:500103978-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "5" ;
+        :codmunicipio     "05001" ;
+        :denominador      "2300" ;
+        :departamento     "Antioquia" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "500103978" ;
+        :ips              "Salud Mental Integral SAS" ;
+        :municipio        "Medellín" ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Infecciones hospitalarias" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de infección intrahospitalaria (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "0" ;
+        :resultado        0 .
 
 :7300102065-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -7019,24 +7392,8 @@
         :numerador        "1914" ;
         :resultado        86 .
 
-:500103978-Seguridaddelpaciente-Hospitalaria
-        a                 :IPS ;
-        :coddepartamento  "5" ;
-        :codmunicipio     "05001" ;
-        :denominador      "2300" ;
-        :departamento     "Antioquia" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "500103978" ;
-        :ips              "Salud Mental Integral SAS" ;
-        :municipio        "Medellín" ;
-        :nomcategorias    "Seguridad del paciente" ;
-        :nomespecifique   "Infecciones hospitalarias" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Tasa de infección intrahospitalaria (por cada 100 hospitalizados)" ;
-        :nomservicio      "Hospitalaria" ;
-        :nomunidad        "Tasa" ;
-        :numerador        "0" ;
-        :resultado        0 .
+:Ipiales  a             :Municipio ;
+        :Contenido_Por  :Nariño .
 
 :E.3.5-EPS003  a         :EPS ;
         :codigo          "E.3.5" ;
@@ -7070,6 +7427,34 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "2820" ;
         :resultado        99 .
+
+:Malambo  a             :Municipio ;
+        :Contenido_Por  :Atlántico .
+
+:Saldaña  a             :Municipio ;
+        :Contenido_Por  :Tolima .
+
+:Mompós  a              :Municipio ;
+        :Contenido_Por  :Bolivar .
+
+:4757000244-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "47" ;
+        :codmunicipio     "47570" ;
+        :denominador      "187" ;
+        :departamento     "Magdalena" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "4757000244" ;
+        :ips              "Ese hospital local san jose." ;
+        :municipio        "Puebloviejo" ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Reingreso de pacientes" , "Infecciones hospitalarias" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de reingreso de pacientes hospitalizados (por cada 100 hospitalizados)" , "Tasa de infección intrahospitalaria (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "0" , "5" ;
+        :resultado        2 , 0 .
 
 :800100623-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -7109,24 +7494,11 @@
         :numerador        "1380" ;
         :resultado        100 .
 
-:4757000244-Seguridaddelpaciente-Hospitalaria
-        a                 :IPS ;
-        :coddepartamento  "47" ;
-        :codmunicipio     "47570" ;
-        :denominador      "187" ;
-        :departamento     "Magdalena" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "4757000244" ;
-        :ips              "Ese hospital local san jose." ;
-        :municipio        "Puebloviejo" ;
-        :nomcategorias    "Seguridad del paciente" ;
-        :nomespecifique   "Reingreso de pacientes" , "Infecciones hospitalarias" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Tasa de reingreso de pacientes hospitalizados (por cada 100 hospitalizados)" , "Tasa de infección intrahospitalaria (por cada 100 hospitalizados)" ;
-        :nomservicio      "Hospitalaria" ;
-        :nomunidad        "Tasa" ;
-        :numerador        "0" , "5" ;
-        :resultado        2 , 0 .
+:Ponedera  a            :Municipio ;
+        :Contenido_Por  :Atlántico .
+
+:Barichara  a           :Municipio ;
+        :Contenido_Por  :Santander .
 
 :E.3.1-EPS017  a         :EPS ;
         :codigo          "E.3.1" ;
@@ -7141,6 +7513,12 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:Zarzal  a              :Municipio ;
+        :Contenido_Por  :Valledelcauca .
+
+:GuadalajaradeBuga  a   :Municipio ;
+        :Contenido_Por  :Valledelcauca .
 
 :E.3.1-EPSS34  a         :EPS ;
         :codigo          "E.3.1" ;
@@ -7255,6 +7633,9 @@
         :numerador        "2448" ;
         :resultado        94 .
 
+:SanJosédelGuaviare  a  :Municipio ;
+        :Contenido_Por  :Guaviare .
+
 :E.3.4-EPS012  a         :EPS ;
         :codigo          "E.3.4" ;
         :eps             "COMFENALCO VALLE" ;
@@ -7282,6 +7663,9 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:Guaviare  a           :Departamento ;
+        :departamento  "Guaviare" .
 
 :5200101267-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -7334,6 +7718,9 @@
         :nomunidad        "Tasa" ;
         :numerador        "21" ;
         :resultado        0 .
+
+:Tame   a               :Municipio ;
+        :Contenido_Por  :Arauca .
 
 :1100117167-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -7390,19 +7777,8 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
-:E.3.5-CCF050  a         :EPS ;
-        :codigo          "E.3.5" ;
-        :eps             "CENTRO ORIENTE MOVILIDAD SUBSI" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "CCF050" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Cirugía programada" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
-        :nomservicio     "Autorizaciones" ;
-        :nomunidad       "Días" ;
-        :resultado       0.07E0 .
+:Cundinamarca  a       :Departamento ;
+        :departamento  "Cundinamarca" .
 
 :1100118284-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -7422,6 +7798,20 @@
         :nomunidad        "días" ;
         :numerador        "2300" ;
         :resultado        1 .
+
+:E.3.5-CCF050  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             "CENTRO ORIENTE MOVILIDAD SUBSI" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF050" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.07E0 .
 
 :E.3.5-EPS016  a         :EPS ;
         :codigo          "E.3.5" ;
@@ -7456,24 +7846,22 @@
         :numerador        "1866289" ;
         :resultado        37 .
 
-:1100108270-SatisfaccióndelUsuario-Experienciaglobal
-        a                 :IPS ;
-        :coddepartamento  "11" ;
-        :codmunicipio     "11001" ;
-        :denominador      "4079" ;
-        :departamento     "Bogotá D.C." ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "1100108270" ;
-        :ips              "Optica iris SAS." ;
-        :municipio        "Bogotá" ;
-        :nomcategorias    "Satisfacción del Usuario" ;
-        :nomespecifique   "Experiencia global con los servicios de salud" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
-        :nomservicio      "Experiencia global" ;
-        :nomunidad        "Porcentaje" ;
-        :numerador        "4058" ;
-        :resultado        99 .
+:Zipaquirá  a           :Municipio ;
+        :Contenido_Por  :Cundinamarca .
+
+:E.3.4-EPSI01  a         :EPS ;
+        :codigo          "E.3.4" ;
+        :eps             "DUSAKAWI E.P.S.I." ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPSI01" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
 
 :1100105040-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -7513,19 +7901,24 @@
         :numerador        "2965" ;
         :resultado        1 .
 
-:E.3.4-EPSI01  a         :EPS ;
-        :codigo          "E.3.4" ;
-        :eps             "DUSAKAWI E.P.S.I." ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "EPSI01" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Cirugía programada" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera para la autorización de Cirugía de Cataratas" ;
-        :nomservicio     "Autorizaciones" ;
-        :nomunidad       "Días" ;
-        :resultado       0.99E0 .
+:1100108270-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "11" ;
+        :codmunicipio     "11001" ;
+        :denominador      "4079" ;
+        :departamento     "Bogotá D.C." ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1100108270" ;
+        :ips              "Optica iris SAS." ;
+        :municipio        "Bogotá" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "4058" ;
+        :resultado        99 .
 
 :7623307684-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -7579,24 +7972,8 @@
         :numerador        "38034" ;
         :resultado        1 .
 
-:6300101327-Seguridaddelpaciente-Hospitalaria
-        a                 :IPS ;
-        :coddepartamento  "63" ;
-        :codmunicipio     "63001" ;
-        :denominador      "2" ;
-        :departamento     "Quindio" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "6300101327" ;
-        :ips              "Neumovida SAS." ;
-        :municipio        "Armenia" ;
-        :nomcategorias    "Seguridad del paciente" ;
-        :nomespecifique   "Infecciones hospitalarias" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Tasa de infección intrahospitalaria (por cada 100 hospitalizados)" ;
-        :nomservicio      "Hospitalaria" ;
-        :nomunidad        "Tasa" ;
-        :numerador        "0" ;
-        :resultado        0 .
+:SantaMarta  a          :Municipio ;
+        :Contenido_Por  :Magdalena .
 
 :E.3.1-CCF018  a         :EPS ;
         :codigo          "E.3.1" ;
@@ -7630,6 +8007,25 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "1562" ;
         :resultado        98 .
+
+:6300101327-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "63" ;
+        :codmunicipio     "63001" ;
+        :denominador      "2" ;
+        :departamento     "Quindio" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "6300101327" ;
+        :ips              "Neumovida SAS." ;
+        :municipio        "Armenia" ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Infecciones hospitalarias" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de infección intrahospitalaria (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "0" ;
+        :resultado        0 .
 
 :800103310-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -7687,6 +8083,9 @@
         :nomunidad        "días" ;
         :numerador        "4504" ;
         :resultado        1 .
+
+:LaDorada  a            :Municipio ;
+        :Contenido_Por  :Caldas .
 
 :8544000049-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -7779,6 +8178,13 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Nariño  a              :Municipio , :Departamento ;
+        :Contenido_Por  :Nariño ;
+        :departamento   "Nariño " .
+
+:LaTebaida  a           :Municipio ;
+        :Contenido_Por  :Quindio .
+
 :E.3.6-CCF055  a         :EPS ;
         :codigo          "E.3.6" ;
         :eps             "CAJACOPI" ;
@@ -7812,6 +8218,9 @@
         :numerador        "1970" ;
         :resultado        93 .
 
+:LaGloria  a            :Municipio ;
+        :Contenido_Por  :Cesar .
+
 :E.3.6-EPS002  a         :EPS ;
         :codigo          "E.3.6" ;
         :eps             "SALUD TOTAL" ;
@@ -7840,6 +8249,20 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:E.3.5-ESS091  a         :EPS ;
+        :codigo          "E.3.5" ;
+        :eps             " ECOOPSOS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS091" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
 :1100103694-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "11" ;
@@ -7859,20 +8282,6 @@
         :numerador        "1801" ;
         :resultado        87 .
 
-:E.3.5-ESS091  a         :EPS ;
-        :codigo          "E.3.5" ;
-        :eps             " ECOOPSOS" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "ESS091" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Cirugía programada" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera   para la autorización de Cirugía de Reemplazo de Cade" ;
-        :nomservicio     "Autorizaciones" ;
-        :nomunidad       "Días" ;
-        :resultado       0.99E0 .
-
 :7600106560-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "76" ;
@@ -7891,6 +8300,9 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "2039" ;
         :resultado        89 .
+
+:Carepa  a              :Municipio ;
+        :Contenido_Por  :Antioquia .
 
 :5417201083-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -7929,6 +8341,10 @@
         :nomunidad        "días" ;
         :numerador        "5024" ;
         :resultado        1 .
+
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( :Departamento :Locaciones :Municipio :Servicios_de_Salud :Subdivision )
+] .
 
 :E.3.2-CCF050  a         :EPS ;
         :codigo          "E.3.2" ;
@@ -7977,6 +8393,9 @@
         :numerador        "821" ;
         :resultado        93 .
 
+:Tenjo  a               :Municipio ;
+        :Contenido_Por  :Cundinamarca .
+
 :2367001235-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "23" ;
@@ -7995,6 +8414,9 @@
         :nomunidad        "días" ;
         :numerador        "5256" ;
         :resultado        1 .
+
+:SanAndrésdeCuerquía  a  :Municipio ;
+        :Contenido_Por  :Antioquia .
 
 :500102932-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -8043,6 +8465,9 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Guatapé  a             :Municipio ;
+        :Contenido_Por  :Antioquia .
+
 :2538600084-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "25" ;
@@ -8062,6 +8487,20 @@
         :numerador        "53" ;
         :resultado        100 .
 
+:E.3.1-CCF101  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COLSUBSIDIO" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF101" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
 :2300100831-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "23" ;
@@ -8080,20 +8519,6 @@
         :nomunidad        "días" ;
         :numerador        "105" ;
         :resultado        1 .
-
-:E.3.1-CCF101  a         :EPS ;
-        :codigo          "E.3.1" ;
-        :eps             "COLSUBSIDIO" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "CCF101" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Mostrar resultado" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
-        :nomservicio     "Citas médicas" ;
-        :nomunidad       "Días" ;
-        :resultado       0.99E0 .
 
 :6313000403-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -8181,6 +8606,9 @@
         :numerador        "436457" ;
         :resultado        26 .
 
+:SanPablodeBorbur  a    :Municipio ;
+        :Contenido_Por  :Boyacá .
+
 :E.3.2-EPSI05  a         :EPS ;
         :codigo          "E.3.2" ;
         :eps             "MALLAMAS" ;
@@ -8214,25 +8642,6 @@
         :numerador        "817" ;
         :resultado        91 .
 
-:7300100944-Tiemposdeespera-Consultas
-        a                 :IPS ;
-        :coddepartamento  "73" ;
-        :codmunicipio     "73001" ;
-        :denominador      "8497" ;
-        :departamento     "Tolima" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "7300100944" ;
-        :ips              "Clinica ibague SA." ;
-        :municipio        "Ibagué" ;
-        :nomcategorias    "Tiempos de espera" ;
-        :nomespecifique   "Urgencias" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Tiempo de espera para la atención en consulta de urgencias" ;
-        :nomservicio      "Consultas" ;
-        :nomunidad        "minutos" ;
-        :numerador        "162731" ;
-        :resultado        19 .
-
 :1787300377-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "17" ;
@@ -8252,6 +8661,25 @@
         :numerador        "142" ;
         :resultado        95 .
 
+:7300100944-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "73" ;
+        :codmunicipio     "73001" ;
+        :denominador      "8497" ;
+        :departamento     "Tolima" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "7300100944" ;
+        :ips              "Clinica ibague SA." ;
+        :municipio        "Ibagué" ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Urgencias" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tiempo de espera para la atención en consulta de urgencias" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "minutos" ;
+        :numerador        "162731" ;
+        :resultado        19 .
+
 :800103926-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "8" ;
@@ -8270,6 +8698,15 @@
         :nomunidad        "minutos" ;
         :numerador        "35018" ;
         :resultado        11 .
+
+:Mistrató  a            :Municipio ;
+        :Contenido_Por  :Risaralda .
+
+:Popayán  a             :Municipio ;
+        :Contenido_Por  :Cauca .
+
+:Sutamarchán  a         :Municipio ;
+        :Contenido_Por  :Boyacá .
 
 :561510089-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -8413,6 +8850,9 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Jamundí  a             :Municipio ;
+        :Contenido_Por  :Valledelcauca .
+
 :1517602063-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "15" ;
@@ -8460,6 +8900,9 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:CartagenadeIndias  a   :Municipio ;
+        :Contenido_Por  :Bolivar .
+
 :7600100816-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "76" ;
@@ -8479,6 +8922,12 @@
         :numerador        "49440" ;
         :resultado        6 .
 
+:Mongua  a              :Municipio ;
+        :Contenido_Por  :Boyacá .
+
+:Tunja  a               :Municipio ;
+        :Contenido_Por  :Boyacá .
+
 :1800100025-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "18" ;
@@ -8497,6 +8946,20 @@
         :nomunidad        "días" ;
         :numerador        "9436" ;
         :resultado        1 .
+
+:E.3.2-CCF049  a         :EPS ;
+        :codigo          "E.3.2" ;
+        :eps             "COMFAORIENTE" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "CCF049" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.74E0 .
 
 :1100121832-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -8536,20 +8999,6 @@
         :numerador        "70" ;
         :resultado        1 .
 
-:E.3.2-CCF049  a         :EPS ;
-        :codigo          "E.3.2" ;
-        :eps             "COMFAORIENTE" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "CCF049" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Mostrar resultado" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Odontología General. " ;
-        :nomservicio     "Citas médicas" ;
-        :nomunidad       "Días" ;
-        :resultado       0.74E0 .
-
 :1900108324-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "19" ;
@@ -8588,25 +9037,6 @@
         :numerador        "191872" ;
         :resultado        19 .
 
-:7600104064-SatisfaccióndelUsuario-Experienciaglobal
-        a                 :IPS ;
-        :coddepartamento  "76" ;
-        :codmunicipio     "76001" ;
-        :denominador      "7174" ;
-        :departamento     "Valle del cauca" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "7600104064" ;
-        :ips              "Cosmitet ltda corporacion de servicios medicos internacionales them y compañia Ltda." ;
-        :municipio        "Cali" ;
-        :nomcategorias    "Satisfacción del Usuario" ;
-        :nomespecifique   "Experiencia global con los servicios de salud" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
-        :nomservicio      "Experiencia global" ;
-        :nomunidad        "Porcentaje" ;
-        :numerador        "6656" ;
-        :resultado        92 .
-
 :7000101092-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "70" ;
@@ -8626,24 +9056,24 @@
         :numerador        "1174" ;
         :resultado        97 .
 
-:2575402328-Tiemposdeespera-Consultas
+:7600104064-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
-        :coddepartamento  "25" ;
-        :codmunicipio     "25754" ;
-        :denominador      "43" ;
-        :departamento     "Cundinamarca" ;
+        :coddepartamento  "76" ;
+        :codmunicipio     "76001" ;
+        :denominador      "7174" ;
+        :departamento     "Valle del cauca" ;
         :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "2575402328" ;
-        :ips              "Famivital IPS SAS." ;
-        :municipio        "Soacha" ;
-        :nomcategorias    "Tiempos de espera" ;
-        :nomespecifique   "Médico General" ;
+        :idips            "7600104064" ;
+        :ips              "Cosmitet ltda corporacion de servicios medicos internacionales them y compañia Ltda." ;
+        :municipio        "Cali" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
         :nomfuente        "Supersalud" ;
-        :nomindicador     "Espera en la asignación de citas en la consulta médica general" ;
-        :nomservicio      "Consultas" ;
-        :nomunidad        "días" ;
-        :numerador        "43" ;
-        :resultado        1 .
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "6656" ;
+        :resultado        92 .
 
 :800102477-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -8664,6 +9094,25 @@
         :numerador        "468825" ;
         :resultado        18 .
 
+:2575402328-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "25" ;
+        :codmunicipio     "25754" ;
+        :denominador      "43" ;
+        :departamento     "Cundinamarca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "2575402328" ;
+        :ips              "Famivital IPS SAS." ;
+        :municipio        "Soacha" ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Médico General" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la asignación de citas en la consulta médica general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "43" ;
+        :resultado        1 .
+
 :E.3.6-CCF050  a         :EPS ;
         :codigo          "E.3.6" ;
         :eps             "CENTRO ORIENTE MOVILIDAD SUBSI" ;
@@ -8677,6 +9126,9 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.43E0 .
+
+:Íquira  a              :Municipio ;
+        :Contenido_Por  :Huila .
 
 :7673601444-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -8718,6 +9170,9 @@
 
 :Region  a                   owl:Class ;
         owl:equivalentClass  :Subdivision .
+
+:Florencia  a           :Municipio ;
+        :Contenido_Por  :Caquetá .
 
 :2000100269-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -8889,6 +9344,9 @@
         :numerador        "2640313" ;
         :resultado        21 .
 
+:Pauna  a               :Municipio ;
+        :Contenido_Por  :Boyacá .
+
 :7300101971-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "73" ;
@@ -8964,6 +9422,9 @@
         :nomunidad        "días" ;
         :numerador        "1890" ;
         :resultado        4 .
+
+:Dosquebradas  a        :Municipio ;
+        :Contenido_Por  :Risaralda .
 
 :1300101679-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -9120,6 +9581,9 @@
         :numerador        "809" ;
         :resultado        93 .
 
+:Pasto  a               :Municipio ;
+        :Contenido_Por  :Nariño .
+
 :E.3.3-ESS118  a         :EPS ;
         :codigo          "E.3.3" ;
         :eps             "EMSSANAR E.S.S." ;
@@ -9153,6 +9617,9 @@
         :numerador        "650" ;
         :resultado        97 .
 
+:Atlántico  a          :Departamento ;
+        :departamento  "Atlántico " .
+
 :7600105651-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "76" ;
@@ -9171,6 +9638,9 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "288" ;
         :resultado        96 .
+
+:Vegachí  a             :Municipio ;
+        :Contenido_Por  :Antioquia .
 
 :536010395-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -9238,6 +9708,23 @@
         :numerador        "502" ;
         :resultado        94 .
 
+:SantaRosadeOsos  a     :Municipio ;
+        :Contenido_Por  :Antioquia .
+
+:E.3.6-EPS010  a         :EPS ;
+        :codigo          "E.3.6" ;
+        :eps             "EPS SURA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS010" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Cirugía programada" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
+        :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.0E0 .
+
 :7322601043-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "73" ;
@@ -9275,20 +9762,6 @@
         :nomunidad        "Tasa" ;
         :numerador        "0" ;
         :resultado        0 .
-
-:E.3.6-EPS010  a         :EPS ;
-        :codigo          "E.3.6" ;
-        :eps             "EPS SURA" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "EPS010" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Cirugía programada" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera  para la autorización de Cirugía de revascularización " ;
-        :nomservicio     "Autorizaciones" ;
-        :nomunidad       "Días" ;
-        :resultado       0.0E0 .
 
 :1859207561-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -9389,6 +9862,9 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Landázuri  a           :Municipio ;
+        :Contenido_Por  :Santander .
+
 :Contrata  a                owl:ObjectProperty , owl:SymmetricProperty ;
         rdfs:domain         :EPS ;
         rdfs:range          :IPS ;
@@ -9407,6 +9883,9 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:LaVictoria  a          :Municipio ;
+        :Contenido_Por  :Valledelcauca .
 
 :5283502275-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -9517,6 +9996,9 @@
         :numerador        "0" ;
         :resultado        0 .
 
+:Algarrobo  a           :Municipio ;
+        :Contenido_Por  :Magdalena .
+
 :7636407118-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "76" ;
@@ -9536,25 +10018,6 @@
         :numerador        "0" ;
         :resultado        0 .
 
-:1100125872-Tiemposdeespera-Consultas
-        a                 :IPS ;
-        :coddepartamento  "11" ;
-        :codmunicipio     "11001" ;
-        :denominador      "215" ;
-        :departamento     "Bogotá D.C." ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "1100125872" ;
-        :ips              "Odontologia estetica s & a SAS." ;
-        :municipio        "Bogotá" ;
-        :nomcategorias    "Tiempos de espera" ;
-        :nomespecifique   "Odontología" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Espera en la atención en consulta de odontología general" ;
-        :nomservicio      "Consultas" ;
-        :nomunidad        "días" ;
-        :numerador        "885" ;
-        :resultado        4 .
-
 :800101371-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "8" ;
@@ -9573,6 +10036,25 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "180" ;
         :resultado        100 .
+
+:1100125872-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "11" ;
+        :codmunicipio     "11001" ;
+        :denominador      "215" ;
+        :departamento     "Bogotá D.C." ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1100125872" ;
+        :ips              "Odontologia estetica s & a SAS." ;
+        :municipio        "Bogotá" ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Odontología" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la atención en consulta de odontología general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "885" ;
+        :resultado        4 .
 
 :eps    a                   owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
@@ -9628,6 +10110,9 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "102" ;
         :resultado        93 .
+
+:Buenaventura  a        :Municipio ;
+        :Contenido_Por  :Valledelcauca .
 
 :4148300388-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -9723,6 +10208,13 @@
         :nomunidad        "días" ;
         :numerador        "7296" ;
         :resultado        1 .
+
+:Nátaga  a              :Municipio ;
+        :Contenido_Por  :Huila .
+
+[ a            owl:AllDisjointProperties ;
+  owl:members  ( :codigo :eps :fecha_corte :ideps :linkfuente :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :resultado )
+] .
 
 :E.3.4-ESS062  a         :EPS ;
         :codigo          "E.3.4" ;
@@ -9826,6 +10318,31 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:LaEstrella  a          :Municipio ;
+        :Contenido_Por  :Antioquia .
+
+:1300102444-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "13" ;
+        :codmunicipio     "13001" ;
+        :denominador      "1261" ;
+        :departamento     "Bolivar" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "1300102444" ;
+        :ips              "Neofpediatria SAS." ;
+        :municipio        "Cartagena de Indias" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "1162" ;
+        :resultado        92 .
+
+:Guainía  a            :Departamento ;
+        :departamento  "Guainía" .
+
 :1700102132-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "17" ;
@@ -9864,25 +10381,6 @@
         :numerador        "765" ;
         :resultado        99 .
 
-:1300102444-SatisfaccióndelUsuario-Experienciaglobal
-        a                 :IPS ;
-        :coddepartamento  "13" ;
-        :codmunicipio     "13001" ;
-        :denominador      "1261" ;
-        :departamento     "Bolivar" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "1300102444" ;
-        :ips              "Neofpediatria SAS." ;
-        :municipio        "Cartagena de Indias" ;
-        :nomcategorias    "Satisfacción del Usuario" ;
-        :nomespecifique   "Experiencia global con los servicios de salud" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
-        :nomservicio      "Experiencia global" ;
-        :nomunidad        "Porcentaje" ;
-        :numerador        "1162" ;
-        :resultado        92 .
-
 :E.3.3-EPS010  a         :EPS ;
         :codigo          "E.3.3" ;
         :eps             "EPS SURA" ;
@@ -9896,6 +10394,12 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.17E0 .
+
+:Donmatías  a           :Municipio ;
+        :Contenido_Por  :Antioquia .
+
+:Samaniego  a           :Municipio ;
+        :Contenido_Por  :Nariño .
 
 :E.3.1-EPS033  a         :EPS ;
         :codigo          "E.3.1" ;
@@ -9924,6 +10428,9 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.0E0 .
+
+:Sanjacintodelcauca  a  :Municipio ;
+        :Contenido_Por  :Bolivar .
 
 :coddepartamento  a  owl:DatatypeProperty .
 
@@ -10102,10 +10609,6 @@
         :numerador        "107929" ;
         :resultado        25 .
 
-[ a            owl:AllDisjointClasses ;
-  owl:members  ( :EPS :IPS :Locaciones )
-] .
-
 :7600105879-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "76" ;
@@ -10125,6 +10628,9 @@
         :numerador        "150" ;
         :resultado        100 .
 
+:Vichada  a            :Departamento ;
+        :departamento  "Vichada" .
+
 :E.3.2-EPS005  a         :EPS ;
         :codigo          "E.3.2" ;
         :eps             "SANITAS" ;
@@ -10138,6 +10644,12 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:Girón  a               :Municipio ;
+        :Contenido_Por  :Santander .
+
+:Fundación  a           :Municipio ;
+        :Contenido_Por  :Magdalena .
 
 :1100113718-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -10158,6 +10670,9 @@
         :numerador        "504" ;
         :resultado        1 .
 
+:Caldas  a             :Departamento ;
+        :departamento  "Caldas" .
+
 :E.3.1-ESS062  a         :EPS ;
         :codigo          "E.3.1" ;
         :eps             "ASMET SALUD" ;
@@ -10171,6 +10686,9 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:Floridablanca  a       :Municipio ;
+        :Contenido_Por  :Santander .
 
 :E.3.4-EPSI03  a         :EPS ;
         :codigo          "E.3.4" ;
@@ -10205,6 +10723,9 @@
         :numerador        "353736" ;
         :resultado        2 .
 
+:Medellín  a            :Municipio ;
+        :Contenido_Por  :Antioquia .
+
 :6800104268-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "68" ;
@@ -10223,6 +10744,9 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "150" ;
         :resultado        78 .
+
+:Ibagué  a              :Municipio ;
+        :Contenido_Por  :Tolima .
 
 :1766500595-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -10281,6 +10805,9 @@
         :numerador        "1264" ;
         :resultado        1 .
 
+:PlanetaRica  a         :Municipio ;
+        :Contenido_Por  :Cordoba .
+
 :ideps  a                   owl:DatatypeProperty ;
         rdfs:subPropertyOf  owl:topDataProperty .
 
@@ -10297,25 +10824,6 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.0E0 .
-
-:5200101923-SatisfaccióndelUsuario-Experienciaglobal
-        a                 :IPS ;
-        :coddepartamento  "52" ;
-        :codmunicipio     "52001" ;
-        :denominador      "590" ;
-        :departamento     "Nariño" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "5200101923" ;
-        :ips              "Clinica andina de especialidades." ;
-        :municipio        "Pasto" ;
-        :nomcategorias    "Satisfacción del Usuario" ;
-        :nomespecifique   "Experiencia global con los servicios de salud" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
-        :nomservicio      "Experiencia global" ;
-        :nomunidad        "Porcentaje" ;
-        :numerador        "458" ;
-        :resultado        77 .
 
 :8688500198-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -10335,6 +10843,25 @@
         :nomunidad        "Tasa" ;
         :numerador        "0" ;
         :resultado        0 .
+
+:5200101923-SatisfaccióndelUsuario-Experienciaglobal
+        a                 :IPS ;
+        :coddepartamento  "52" ;
+        :codmunicipio     "52001" ;
+        :denominador      "590" ;
+        :departamento     "Nariño" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "5200101923" ;
+        :ips              "Clinica andina de especialidades." ;
+        :municipio        "Pasto" ;
+        :nomcategorias    "Satisfacción del Usuario" ;
+        :nomespecifique   "Experiencia global con los servicios de salud" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Usuarios satisfechos con el servicio prestado por la IPS" ;
+        :nomservicio      "Experiencia global" ;
+        :nomunidad        "Porcentaje" ;
+        :numerador        "458" ;
+        :resultado        77 .
 
 :4700101103-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -10440,6 +10967,9 @@
         :numerador        "204" ;
         :resultado        100 .
 
+:SanLuisdeSincé  a      :Municipio ;
+        :Contenido_Por  :Sucre .
+
 :5203600988-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "52" ;
@@ -10458,6 +10988,9 @@
         :nomunidad        "días" ;
         :numerador        "24427" ;
         :resultado        2 .
+
+:SabanadeTorres  a      :Municipio ;
+        :Contenido_Por  :Santander .
 
 :E.3.2-EPS018  a         :EPS ;
         :codigo          "E.3.2" ;
@@ -10530,6 +11063,9 @@
         :numerador        "256" ;
         :resultado        1 .
 
+:Chocontá  a            :Municipio ;
+        :Contenido_Por  :Cundinamarca .
+
 :2517500132-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "25" ;
@@ -10549,9 +11085,6 @@
         :numerador        "7203687" ;
         :resultado        90 .
 
-:denominador  a             owl:DatatypeProperty ;
-        rdfs:subPropertyOf  owl:topDataProperty .
-
 :E.3.1-EPSI03  a         :EPS ;
         :codigo          "E.3.1" ;
         :eps             " AIC-EPSI-I" ;
@@ -10566,6 +11099,9 @@
         :nomunidad       "Días" ;
         :resultado       0.47E0 .
 
+:denominador  a             owl:DatatypeProperty ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
 :E.3.5-CCF033  a         :EPS ;
         :codigo          "E.3.5" ;
         :eps             "COMFASUCRE" ;
@@ -10579,6 +11115,19 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:Sopetrán  a            :Municipio ;
+        :Contenido_Por  :Antioquia .
+
+:Yumbo  a               :Municipio ;
+        :Contenido_Por  :Valledelcauca .
+
+:Chinú  a               :Municipio ;
+        :Contenido_Por  :Cordoba .
+
+:VilladeSanDiegodeUbaté
+        a               :Municipio ;
+        :Contenido_Por  :Cundinamarca .
 
 :2001101799-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -10613,6 +11162,9 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Tangua  a              :Municipio ;
+        :Contenido_Por  :Nariño .
+
 :1700101984-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "17" ;
@@ -10645,6 +11197,9 @@
         :nomservicio     "Autorizaciones" ;
         :nomunidad       "Días" ;
         :resultado       0.84E0 .
+
+:LaMesa  a              :Municipio ;
+        :Contenido_Por  :Cundinamarca .
 
 :5200101914-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -10683,6 +11238,9 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "103" ;
         :resultado        93 .
+
+:Manzanares  a          :Municipio ;
+        :Contenido_Por  :Caldas .
 
 :5235601327-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -10735,6 +11293,9 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:Tuta   a               :Municipio ;
+        :Contenido_Por  :Boyacá .
 
 :E.3.6-EPS017  a         :EPS ;
         :codigo          "E.3.6" ;
@@ -10868,6 +11429,9 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:LaCalera  a            :Municipio ;
+        :Contenido_Por  :Cundinamarca .
+
 :857300803-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "8" ;
@@ -10953,6 +11517,12 @@
         :numerador        "179" ;
         :resultado        89 .
 
+:LaPalma  a             :Municipio ;
+        :Contenido_Por  :Cundinamarca .
+
+:Aguachica  a           :Municipio ;
+        :Contenido_Por  :Cesar .
+
 :1738000589-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "17" ;
@@ -10971,6 +11541,10 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "2027" ;
         :resultado        96 .
+
+:Bolívar  a             :Municipio , :Departamento ;
+        :Contenido_Por  :Santander ;
+        :departamento   "Bolívar " .
 
 :5400101872-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -11028,6 +11602,15 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "3014" ;
         :resultado        89 .
+
+:Palmira  a             :Municipio ;
+        :Contenido_Por  :Valledelcauca .
+
+:Aguazul  a             :Municipio ;
+        :Contenido_Por  :Casanare .
+
+:Chinácota  a           :Municipio ;
+        :Contenido_Por  :NortedeSantander .
 
 :E.3.2-EPS013  a         :EPS ;
         :codigo          "E.3.2" ;
@@ -11152,6 +11735,9 @@
         :numerador        "129" ;
         :resultado        96 .
 
+:SanRafael  a           :Municipio ;
+        :Contenido_Por  :Antioquia .
+
 :4137800382-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "41" ;
@@ -11189,6 +11775,9 @@
         :nomunidad        "días" ;
         :numerador        "2018" ;
         :resultado        1 .
+
+:Tolima  a             :Departamento ;
+        :departamento  "Tolima" .
 
 :6600101491-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -11280,6 +11869,9 @@
         :numerador        "8824" ;
         :resultado        1 .
 
+:Sogamoso  a            :Municipio ;
+        :Contenido_Por  :Boyacá .
+
 :500113122-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "5" ;
@@ -11370,6 +11962,9 @@
         :numerador        "14855" ;
         :resultado        1 .
 
+:Pailitas  a            :Municipio ;
+        :Contenido_Por  :Cesar .
+
 :E.3.3-EPSS34  a         :EPS ;
         :codigo          "E.3.3" ;
         :eps             "CAPITAL SALUD" ;
@@ -11381,6 +11976,20 @@
         :nomfuente       "Minsalud" ;
         :nomindicador    "Tiempo promedio de espera  para la autorización de Resonancia Magnética " ;
         :nomservicio     "Autorizaciones" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
+:E.3.1-EPS008  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "COMPENSAR" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS008" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
@@ -11398,20 +12007,6 @@
         :nomunidad       "Días" ;
         :resultado       0.0E0 .
 
-:E.3.1-EPS008  a         :EPS ;
-        :codigo          "E.3.1" ;
-        :eps             "COMPENSAR" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "EPS008" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Mostrar resultado" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
-        :nomservicio     "Citas médicas" ;
-        :nomunidad       "Días" ;
-        :resultado       0.99E0 .
-
 :E.3.2-CCF102  a         :EPS ;
         :codigo          "E.3.2" ;
         :eps             "COMFACHOCO" ;
@@ -11425,6 +12020,9 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.93E0 .
+
+:Teruel  a              :Municipio ;
+        :Contenido_Por  :Huila .
 
 :5200102037-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -11448,6 +12046,9 @@
 :enlace  a                      owl:DatatypeProperty ;
         rdfs:subPropertyOf      owl:topDataProperty ;
         owl:equivalentProperty  :linkfuente .
+
+:Dagua  a               :Municipio ;
+        :Contenido_Por  :Valledelcauca .
 
 :1100124959-Tiemposdeespera-Consultas
         a                 :IPS ;
@@ -11506,24 +12107,19 @@
         :numerador        "73943" ;
         :resultado        10 .
 
-:5278801372-Tiemposdeespera-Consultas
-        a                 :IPS ;
-        :coddepartamento  "52" ;
-        :codmunicipio     "52788" ;
-        :denominador      "11541" ;
-        :departamento     "Nariño" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "5278801372" ;
-        :ips              "Ese tangua salud hermes andrade mejia." ;
-        :municipio        "Tangua" ;
-        :nomcategorias    "Tiempos de espera" ;
-        :nomespecifique   "Odontología" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Espera en la atención en consulta de odontología general" ;
-        :nomservicio      "Consultas" ;
-        :nomunidad        "días" ;
-        :numerador        "24985" ;
-        :resultado        2 .
+:E.3.1-EPS022  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             "CONVIDA" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "EPS022" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
 
 :7300102199-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -11544,19 +12140,24 @@
         :numerador        "632" ;
         :resultado        99 .
 
-:E.3.1-EPS022  a         :EPS ;
-        :codigo          "E.3.1" ;
-        :eps             "CONVIDA" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "EPS022" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Mostrar resultado" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
-        :nomservicio     "Citas médicas" ;
-        :nomunidad       "Días" ;
-        :resultado       0.99E0 .
+:5278801372-Tiemposdeespera-Consultas
+        a                 :IPS ;
+        :coddepartamento  "52" ;
+        :codmunicipio     "52788" ;
+        :denominador      "11541" ;
+        :departamento     "Nariño" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "5278801372" ;
+        :ips              "Ese tangua salud hermes andrade mejia." ;
+        :municipio        "Tangua" ;
+        :nomcategorias    "Tiempos de espera" ;
+        :nomespecifique   "Odontología" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Espera en la atención en consulta de odontología general" ;
+        :nomservicio      "Consultas" ;
+        :nomunidad        "días" ;
+        :numerador        "24985" ;
+        :resultado        2 .
 
 :E.3.6-EPS012  a         :EPS ;
         :codigo          "E.3.6" ;
@@ -11675,6 +12276,9 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "51" ;
         :resultado        100 .
+
+:Cali   a               :Municipio ;
+        :Contenido_Por  :Valledelcauca .
 
 :5068900457-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -11817,6 +12421,9 @@
         :numerador        "86834" ;
         :resultado        16 .
 
+:Rosas  a               :Municipio ;
+        :Contenido_Por  :Cauca .
+
 :5400101564-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "54" ;
@@ -11888,10 +12495,6 @@
         :numerador        "2" ;
         :resultado        0 .
 
-[ a            owl:AllDisjointProperties ;
-  owl:members  ( :codigo :eps :fecha_corte :ideps :linkfuente :nomcategorias :nomespecifique :nomfuente :nomindicador :nomservicio :nomunidad :resultado )
-] .
-
 :2574002255-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "25" ;
@@ -11910,6 +12513,9 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "1898" ;
         :resultado        98 .
+
+:Magdalena  a          :Departamento ;
+        :departamento  "Magdalena " .
 
 :561504259-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
@@ -11949,6 +12555,9 @@
         :numerador        "2874" ;
         :resultado        96 .
 
+:Itaguí  a              :Municipio ;
+        :Contenido_Por  :Antioquia .
+
 :7636403314-Tiemposdeespera-Consultas
         a                 :IPS ;
         :coddepartamento  "76" ;
@@ -11968,24 +12577,9 @@
         :numerador        "2354" ;
         :resultado        1 .
 
-:7640000587-Seguridaddelpaciente-Hospitalaria
-        a                 :IPS ;
-        :coddepartamento  "76" ;
-        :codmunicipio     "76400" ;
-        :denominador      "314" ;
-        :departamento     "Valle del cauca" ;
-        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
-        :idips            "7640000587" ;
-        :ips              "Fundacion ong mision por colombia." ;
-        :municipio        "La Unión" ;
-        :nomcategorias    "Seguridad del paciente" ;
-        :nomespecifique   "Reingreso de pacientes" ;
-        :nomfuente        "Supersalud" ;
-        :nomindicador     "Tasa de reingreso de pacientes hospitalizados (por cada 100 hospitalizados)" ;
-        :nomservicio      "Hospitalaria" ;
-        :nomunidad        "Tasa" ;
-        :numerador        "0" ;
-        :resultado        0 .
+:Arauca  a              :Municipio , :Departamento ;
+        :Contenido_Por  :Arauca ;
+        :departamento   "Arauca " .
 
 :7344901045-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -12006,6 +12600,25 @@
         :numerador        "0" ;
         :resultado        0 .
 
+:7640000587-Seguridaddelpaciente-Hospitalaria
+        a                 :IPS ;
+        :coddepartamento  "76" ;
+        :codmunicipio     "76400" ;
+        :denominador      "314" ;
+        :departamento     "Valle del cauca" ;
+        :enlace           "https://www.supersalud.gov.co/vigilados/vigilados/estadisticas" ;
+        :idips            "7640000587" ;
+        :ips              "Fundacion ong mision por colombia." ;
+        :municipio        "La Unión" ;
+        :nomcategorias    "Seguridad del paciente" ;
+        :nomespecifique   "Reingreso de pacientes" ;
+        :nomfuente        "Supersalud" ;
+        :nomindicador     "Tasa de reingreso de pacientes hospitalizados (por cada 100 hospitalizados)" ;
+        :nomservicio      "Hospitalaria" ;
+        :nomunidad        "Tasa" ;
+        :numerador        "0" ;
+        :resultado        0 .
+
 :E.3.1-CCF009  a         :EPS ;
         :codigo          "E.3.1" ;
         :eps             "COMFABOY" ;
@@ -12019,6 +12632,12 @@
         :nomservicio     "Citas médicas" ;
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
+
+:Ciénaga  a             :Municipio ;
+        :Contenido_Por  :Magdalena .
+
+:Antioquia  a          :Departamento ;
+        :departamento  "Antioquia" .
 
 :7689504656-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
@@ -12105,6 +12724,9 @@
         :numerador        "10550" ;
         :resultado        1 .
 
+:BarrancodeLoba  a      :Municipio ;
+        :Contenido_Por  :Bolivar .
+
 :2017500360-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "20" ;
@@ -12152,6 +12774,9 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Espinal  a             :Municipio ;
+        :Contenido_Por  :Tolima .
+
 :6800100474-SatisfaccióndelUsuario-Experienciaglobal
         a                 :IPS ;
         :coddepartamento  "68" ;
@@ -12170,6 +12795,15 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "652" ;
         :resultado        88 .
+
+:Santander  a          :Departamento ;
+        :departamento  "Santander " .
+
+:Toledo  a              :Municipio ;
+        :Contenido_Por  :NortedeSantander .
+
+:Bucaramanga  a         :Municipio ;
+        :Contenido_Por  :Santander .
 
 :E.3.1-EPS003  a         :EPS ;
         :codigo          "E.3.1" ;
@@ -12360,6 +12994,9 @@
         :numerador        "355" ;
         :resultado        100 .
 
+:Maicao  a              :Municipio ;
+        :Contenido_Por  :Laguajira .
+
 :6867900793-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "68" ;
@@ -12426,6 +13063,12 @@
         :numerador        "91" ;
         :resultado        90 .
 
+:Magüí  a               :Municipio ;
+        :Contenido_Por  :Nariño .
+
+:ValledelGuamuez  a     :Municipio ;
+        :Contenido_Por  :Putumayo .
+
 :5267800613-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "52" ;
@@ -12466,6 +13109,13 @@
         :nomunidad        "Porcentaje" ;
         :numerador        "78" ;
         :resultado        96 .
+
+:SanPedro  a            :Municipio ;
+        :Contenido_Por  :Sucre .
+
+[ a            owl:AllDisjointClasses ;
+  owl:members  ( :EPS :IPS :Locaciones )
+] .
 
 :E.3.4-EPSI05  a         :EPS ;
         :codigo          "E.3.4" ;
@@ -12552,6 +13202,9 @@
         :numerador        "2178" ;
         :resultado        96 .
 
+:PuertoBoyacá  a        :Municipio ;
+        :Contenido_Por  :Boyacá .
+
 :E.3.5-EPS002  a         :EPS ;
         :codigo          "E.3.5" ;
         :eps             "SALUD TOTAL" ;
@@ -12613,6 +13266,9 @@
         :nomunidad       "Días" ;
         :resultado       0.99E0 .
 
+:Floresta  a            :Municipio ;
+        :Contenido_Por  :Boyacá .
+
 :5400100855-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "54" ;
@@ -12631,6 +13287,9 @@
         :nomunidad        "Tasa" ;
         :numerador        "8" ;
         :resultado        2 .
+
+:Villamaría  a          :Municipio ;
+        :Contenido_Por  :Caldas .
 
 :E.3.1-CCF050  a         :EPS ;
         :codigo          "E.3.1" ;
@@ -12830,6 +13489,9 @@
         :numerador        "17" ;
         :resultado        0 .
 
+:Bogotá  a              :Municipio ;
+        :Contenido_Por  <http://www.EPSColombia.org#BogotáD.C.> .
+
 :1962200023-Seguridaddelpaciente-Hospitalaria
         a                 :IPS ;
         :coddepartamento  "19" ;
@@ -12923,6 +13585,20 @@
         :numerador        "202" ;
         :resultado        91 .
 
+:E.3.1-ESS091  a         :EPS ;
+        :codigo          "E.3.1" ;
+        :eps             " ECOOPSOS" ;
+        :fecha_corte     "2017-06-30"^^xsd:date ;
+        :ideps           "ESS091" ;
+        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
+        :nomcategorias   "Tiempos de espera" ;
+        :nomespecifique  "Mostrar resultado" ;
+        :nomfuente       "Minsalud" ;
+        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
+        :nomservicio     "Citas médicas" ;
+        :nomunidad       "Días" ;
+        :resultado       0.99E0 .
+
 :E.3.2-EPS002  a         :EPS ;
         :codigo          "E.3.2" ;
         :eps             "SALUD TOTAL" ;
@@ -12975,16 +13651,5 @@
         :numerador        "461" ;
         :resultado        95 .
 
-:E.3.1-ESS091  a         :EPS ;
-        :codigo          "E.3.1" ;
-        :eps             " ECOOPSOS" ;
-        :fecha_corte     "2017-06-30"^^xsd:date ;
-        :ideps           "ESS091" ;
-        :linkfuente      "http://calidadensalud.minsalud.gov.co/indicadores/Paginas/Indicadores.aspx" ;
-        :nomcategorias   "Tiempos de espera" ;
-        :nomespecifique  "Mostrar resultado" ;
-        :nomfuente       "Minsalud" ;
-        :nomindicador    "Tiempo promedio de espera para la asignación de cita de Medicina General " ;
-        :nomservicio     "Citas médicas" ;
-        :nomunidad       "Días" ;
-        :resultado       0.99E0 .
+:Cesar  a              :Departamento ;
+        :departamento  "Cesar" .
