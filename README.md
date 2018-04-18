@@ -4,15 +4,26 @@
   - Nicolas Buitrago Beltrán
   - Carlos Mario Sierra Moreno
  
- ## Ontología
+ ## Branch master
+    Aquí se encuentra todo lo relacionado con las bases de conocimiento.
+  
+ ### Ontología
     El archivo EPS.owl contiene la ontología que integra los 3 vocabularios (D2R, Virtuoso, DBpedia)
 
- ## Script para d2r
-    Dentro de esta carpeta están el script sql correspondientes a la creación y llenado de tablas en MySQL(usando phpmyadmin en xampp),los archivo rdf y ttl quye se generaron.
+ ### Script para d2r
+    Dentro de esta carpeta están el script sql correspondientes a la creación y llenado de tablas en 
+    MySQL(usando phpmyadmin en xampp),los archivo rdf y ttl quye se generaron.
+    
+ ### Datasets
+ 
+ * [Dataset de EPS](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Calidad-en-Salud-EPS/riak-tm9d)
+ * [Dataset de IPS](https://www.datos.gov.co/Salud-y-Protecci-n-Social/CALIDAD-EN-SALUD-IPS/thui-g47e)
 
-  ## Links al servidor
+ ### Links al servidor
   
   * [phpmyadmin](http://52.67.23.207/phpmyadmin/)
-  * [apache jena fuseki](http:52.67.23.207:3030)
   * [d2r](http://52.67.23.207:2020)
   * [virtuoso](http://52.67.23.207:8890)
+  
+  ## Branch nbuitrago
+    Aquí se encuentra el código fuente del sistema recomendador(jena)
