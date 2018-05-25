@@ -1,5 +1,4 @@
-package inserciÃ³nOWL;
-
+package inserciónOWL;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStream;
