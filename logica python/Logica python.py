@@ -76,7 +76,7 @@ for servi in listaderv:
 
 
 ips={"ips":[{"id":"1234","municipio":"A","departamento":"z","Servicio":"CONSULTAS"},{"id":"1233","municipio":"B","departamento":"t","Servicio":"URGENCIAS"}
-,{"id":"1235","municipio":"C","departamento":"z","Servicio":"CONSULTAS"},{"id":"1237","municipio":"C","departamento":"c","Servicio":"CONSULTAS"}]}
+,{"id":"1235","municipio":"C","departamento":"z","Servicio":"CONSULTAS"},{"id":"1237","municipio":"C","departamento":"c","Servicio":"CONSULTAS"},{"id":"1239","municipio":"C","departamento":"m","like":1,"Servicio":"URGENCIAS"}]}
 
 probLike=0.5
 recomendacion={}
