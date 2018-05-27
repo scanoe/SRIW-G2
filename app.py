@@ -2,7 +2,7 @@
 from flask import Flask, request, jsonify
 import json
 import rdflib
-import MySQL
+from flaskext.mysql import MySQL
 from rdflib import Graph
 from flask import abort
 from flask import make_response
@@ -80,7 +80,7 @@ def registro():
     return response
 
 @app.route('/usuario/iniciar-sesion', methods=['POST'])
-def registro():
+def iniciar_sesion():
     email = request.json['email']
     password = request.json['password']
     conn = mysql.connect()
@@ -88,11 +88,12 @@ def registro():
     try:
         cursor.execute("SELECT * FROM usuarios WHERE email='" + email + "' AND password= '" + password + "'")
         data = cursor.fetchall()
-        if len(data) == 0
+        if len(data) == 0:
             response = app.response_class(
                 response = json.dumps({'message':'Inicio sesión no exitoso'}),
                 status = 401,
                 mimetype='apllication/json'
+            )
         else:
             response = app.response_class(
                 response=json.dumps({'message': 'Inicio sesión exitoso'}),
@@ -105,6 +106,9 @@ def registro():
            response = json.dumps({'message':'Registro no exitoso'}),
            status = 401,
            mimetype='apllication/json'
+       )
+    return response
+
     
 @app.route('/verinfo', methods=['GET'])
 def ver_info():
