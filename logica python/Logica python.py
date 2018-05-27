@@ -7,27 +7,72 @@ Created on Sat May 26 10:47:14 2018
 
 Likes={"ips":[{"id":"1234","municipio":"A","departamento":"z","like":1,"Servicio":"CONSULTAS"},{"id":"1233","municipio":"B","departamento":"t","like":0,"Servicio":"URGENCIAS"},{"id":"1239","municipio":"C","departamento":"z","like":1,"Servicio":"URGENCIAS"}]}
 
-municipiosLike ={"A":0,"B":0,"C":0}
-municipiosNoLike ={"A":0,"B":0,"C":0}
-probLikeMuni={"A":0,"B":0,"C":0}
-proNobLikeMuni={"A":0,"B":0,"C":0}
-ProbTotalesMuni={"A":0,"B":0,"C":0}
+#municipiosLike ={"A":0,"B":0,"C":0}
+#municipiosNoLike ={"A":0,"B":0,"C":0}
+#probLikeMuni={"A":0,"B":0,"C":0}
+#proNobLikeMuni={"A":0,"B":0,"C":0}
+#ProbTotalesMuni={"A":0,"B":0,"C":0}
+#
+#
+#departamentosLike={"z":0,"t":0,"c":0}
+#departamentosNoLike={"z":0,"t":0,"c":0}
+#probLikeDepto={"z":0,"t":0,"c":0}
+#probNoLikeDepto={"z":0,"t":0,"c":0}
+#probTotalesDpto={"z":0,"t":0,"c":0}
+#
+#
+#
+#serviciosLike={"HOSPITALARIA":0,"CONSULTAS":0,"EXPERIENCIA GLOBAL":0,"URGENCIAS":0}
+#serviciosNoLike={"HOSPITALARIA":0,"CONSULTAS":0,"EXPERIENCIA GLOBAL":0,"URGENCIAS":0}
+#probLikeServ={"HOSPITALARIA":0,"CONSULTAS":0,"EXPERIENCIA GLOBAL":0,"URGENCIAS":0}
+#probNoLikeServ={"HOSPITALARIA":0,"CONSULTAS":0,"EXPERIENCIA GLOBAL":0,"URGENCIAS":0}
+#probTotalesServ={"HOSPITALARIA":0,"CONSULTAS":0,"EXPERIENCIA GLOBAL":0,"URGENCIAS":0}
 
+## se llenan los diccionarios de  municipip
+listaMunicipips=["A","B","C"]
+listadep=["z","t","c"]
+listaderv=["HOSPITALARIA","CONSULTAS","EXPERIENCIA GLOBAL","URGENCIAS"]
 
-departamentosLike={"z":0,"t":0,"c":0}
-departamentosNoLike={"z":0,"t":0,"c":0}
-probLikeDepto={"z":0,"t":0,"c":0}
-probNoLikeDepto={"z":0,"t":0,"c":0}
-probTotalesDpto={"z":0,"t":0,"c":0}
-
-
-
-serviciosLike={"HOSPITALARIA":0,"CONSULTAS":0,"EXPERIENCIA GLOBAL":0,"URGENCIAS":0}
-serviciosNoLike={"HOSPITALARIA":0,"CONSULTAS":0,"EXPERIENCIA GLOBAL":0,"URGENCIAS":0}
-probLikeServ={"HOSPITALARIA":0,"CONSULTAS":0,"EXPERIENCIA GLOBAL":0,"URGENCIAS":0}
-probNoLikeServ={"HOSPITALARIA":0,"CONSULTAS":0,"EXPERIENCIA GLOBAL":0,"URGENCIAS":0}
-probTotalesServ={"HOSPITALARIA":0,"CONSULTAS":0,"EXPERIENCIA GLOBAL":0,"URGENCIAS":0}
-
+municipiosLike={}
+municipiosNoLike={}
+probLikeMuni={}
+proNobLikeMuni={}
+ProbTotalesMuni={}
+for mun in listaMunicipips:
+    municipiosLike[mun]=0
+    municipiosNoLike[mun]=0
+    probLikeMuni[mun]=0
+    proNobLikeMuni[mun]=0
+    ProbTotalesMuni[mun]=0
+    
+## se llenan los diccioarios por de departameno
+departamentosLike={}
+departamentosNoLike={}
+probLikeDepto={}
+probNoLikeDepto={}
+probTotalesDpto={}
+    
+for dep in listadep:
+    departamentosLike[dep]=0
+    departamentosNoLike[dep]=0
+    probLikeDepto[dep]=0
+    probNoLikeDepto[dep]=0
+    probTotalesDpto[dep]=0
+    
+serviciosLike={}
+serviciosNoLike={}
+probLikeServ={}
+probNoLikeServ={}
+probTotalesServ={}
+    
+for servi in listaderv:
+    serviciosLike[servi]=0
+    serviciosNoLike[servi]=0
+    probLikeServ[servi]=0
+    probNoLikeServ[servi]=0
+    probTotalesServ[servi]=0
+    
+    
 
 
 ips={"ips":[{"id":"1234","municipio":"A","departamento":"z","Servicio":"CONSULTAS"},{"id":"1233","municipio":"B","departamento":"t","Servicio":"URGENCIAS"}
