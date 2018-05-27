@@ -1,9 +1,14 @@
-# -*- coding: utf-8 -*-
+# coding: utf-8
 from flask import Flask, request, jsonify
 import json
-
+import rdflib
+from rdflib import Graph
+from flask import abort
+from flask import make_response
 
 app = Flask(__name__)
+g = Graph()
+g.parse('Datos.owl')
 
 @app.before_request
 def option_autoreply():
@@ -44,47 +49,82 @@ def set_allow_origin(resp):
     return resp
 
 
-@app.route('/companies', methods=['GET'])
-def actores():
+@app.route('/verinfo', methods=['GET'])
+def ver_info():
     if request.method == 'GET':
-        q = request.args.get('q')
-        act_, status = ac.get_actores(db, q)
-        response = app.response_class(
-            response=dumps_({"items": list(act_)}),
-            status=status,
-            mimetype='application/json'
-        )
+        id = request.args.get('id')
+        query ='PREFIX ips:<http://www.EPSColombia.org#>\
+                SELECT *\
+                WHERE {\
+                    ?ips ips:idips ?id;\
+                    ips:municipio ?mun;\
+                    ips:departamento ?dep\
+                    FILTER REGEX(?id, "' + id + '+")'\
+                ' }'
+        data = dict()
+        for row in g.query(query):
+            data['id'] = str(row.asdict()['id'])
+            data['municipio'] = str(row.asdict()['mun'])
+            data['departamento'] = str(row.asdict()['dep'])
+            
+        query = 'PREFIX ips:<http://www.EPSColombia.org#>\
+            SELECT *\
+            WHERE {\
+                ?ips ips:idips ?id;\
+                ips:nomservicio ?ser;\
+                FILTER REGEX(?id, "' + id + '+")'\
+            ' }'
+
+        servicios = []
+        for row in g.query(query):
+            servicios.append(str(row.asdict()['ser']))   
+        data['servicios'] = servicios
+
+        if len(servicios) == 0:
+            abort(404)
+        else:
+            response = app.response_class(
+                response=json.dumps({'ips': data}),
+                status=200,
+                mimetype='application/json'
+            )
+            
         return response
 
-
-
-
-# Step0
-@app.route('/step0', methods=['POST', 'GET'])
-def step0():
-    if request.method == 'POST':
-        sectores = request.json
-        """
-        conn = pymysql.connect(host='127.0.0.1', user='root', passwd='Lantiasas@2016', db='api_lantia')
-        cur = conn.cursor(pymysql.cursors.DictCursor)
-        cur.execute('SELECT * FROM portales')
-        for r in cur:
-            print(r)
-        cur.close()
-        conn.close()        
-        """
-
-        db.sectores.update(
-            {'id': 1}, {"$set": {"sectores": sectores}}, upsert=False)
-
+@app.route('/ips', methods=['GET'])
+def ips():
+    if request.method == 'GET':
+        query ='PREFIX ips:<http://www.EPSColombia.org#>\
+                SELECT *\
+                WHERE {\
+                    ?i ips:idips ?id;\
+                    ips:ips ?nom;\
+                    ips:municipio ?mun;\
+                    ips:departamento ?dep;\
+                    ips:resultado ?res\
+                }'
+        data = []
+        for row in g.query(query):
+            data2 = dict()
+            data2['id'] = str(row.asdict()['id'])
+            data2['nombre'] = str(row.asdict()['nom'])
+            data2['municipio'] = str(row.asdict()['mun'])
+            data2['departamento'] = str(row.asdict()['dep'])
+            data2['resultado'] = str(row.asdict()['res'])
+            data.append(data2)
+        
         response = app.response_class(
-            response=json.dumps({"sectores": sectores['sectores']}),
-            status=201,
+            response=json.dumps({'ips': data}),
+            status=200,
             mimetype='application/json'
         )
-        return response
+            
+        return response        
 
-
+# Retornar errores como json
+@app.errorhandler(404)
+def not_found(error):
+    return make_response(jsonify({'error': 'Not found'}), 404)
 
 if __name__ == '__main__':
     app.secret_key = 'secret1234'
