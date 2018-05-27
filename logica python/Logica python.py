@@ -5,7 +5,7 @@ Created on Sat May 26 10:47:14 2018
 @author: sebastian
 """
 
-Likes={"ips":[{"id":"1234","municipio":"A","departamento":"z","like":1,"Servicio":"CONSULTAS"},{"id":"1233","municipio":"B","departamento":"t","like":0,"Servicio":"URGENCIAS"},{"id":"1239","municipio":"C","departamento":"z","like":1,"Servicio":"URGENCIAS"}]}
+Likes={"ips":[{"id":"1234","municipio":"A","departamento":"z","like":1,"Servicio":"CONSULTAS"},{"id":"1233","municipio":"B","departamento":"t","like":0,"Servicio":"URGENCIAS"},{"id":"1239","municipio":"C","departamento":"m","like":1,"Servicio":"URGENCIAS"}]}
 
 #municipiosLike ={"A":0,"B":0,"C":0}
 #municipiosNoLike ={"A":0,"B":0,"C":0}
@@ -30,7 +30,7 @@ Likes={"ips":[{"id":"1234","municipio":"A","departamento":"z","like":1,"Servicio
 
 ## se llenan los diccionarios de  municipip
 listaMunicipips=["A","B","C"]
-listadep=["z","t","c"]
+listadep=["z","t","c","m"]
 listaderv=["HOSPITALARIA","CONSULTAS","EXPERIENCIA GLOBAL","URGENCIAS"]
 
 municipiosLike={}
@@ -109,7 +109,7 @@ for serv in probLikeServ.keys():
     if serviciosLike[serv]==0:
         probLikeServ[serv]=0.001
     else:
-        probLikeServ[serv]=serviciosLike[serv]/contLike
+        probLikeServ[serv]=serviciosLike[serv]/sum(serviciosLike.values())
         
         
 for dep in probLikeDepto.keys():
@@ -117,14 +117,14 @@ for dep in probLikeDepto.keys():
     if departamentosLike[dep]==0:
         probLikeDepto[dep]=0.001
     else:
-        probLikeDepto[dep]=departamentosLike[dep]/contLike
+        probLikeDepto[dep]=departamentosLike[dep]/sum(departamentosLike.values())
 
 for muni in probLikeMuni.keys():
     
     if municipiosLike[muni]==0:
         probLikeMuni[muni]=0.001
     else:
-        probLikeMuni[muni]=municipiosLike[muni]/contLike    
+        probLikeMuni[muni]=municipiosLike[muni]/sum(municipiosLike.values())    
         
 
   # saca la probabilidadd condicionada de no like para cada atributo      
@@ -158,21 +158,21 @@ for serv in probTotalesServ.keys():
     if (serviciosLike[serv]+serviciosNoLike[serv])==0:
         probTotalesServ[serv]=0.001
     else:
-         probTotalesServ[serv]=(serviciosLike[serv]+serviciosNoLike[serv])/Calificaciones
+         probTotalesServ[serv]=(serviciosLike[serv]+serviciosNoLike[serv])/(sum(serviciosLike.values())+sum(serviciosNoLike.values()))
          
          
 for dep in probTotalesDpto.keys():
     if (departamentosLike[dep]+departamentosNoLike[dep])==0:
         probTotalesDpto[dep]=0.001
     else:
-         probTotalesDpto[dep]=(departamentosLike[dep]+departamentosNoLike[dep])/Calificaciones
+         probTotalesDpto[dep]=(departamentosLike[dep]+departamentosNoLike[dep])/(sum(departamentosLike.values())+sum(departamentosNoLike.values()))
 
 
 for muni in ProbTotalesMuni.keys():
     if (municipiosLike[muni]+municipiosNoLike[muni])==0:
         ProbTotalesMuni[muni]=0.001
     else:
-         ProbTotalesMuni[muni]=(municipiosLike[muni]+municipiosNoLike[muni])/Calificaciones
+         ProbTotalesMuni[muni]=(municipiosLike[muni]+municipiosNoLike[muni])/(sum(municipiosLike.values())+sum(municipiosNoLike.values()))
          
          
 # se hace el calculo de probabilidad que le guste
