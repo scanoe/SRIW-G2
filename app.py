@@ -61,11 +61,24 @@ def registro():
     email = request.json['email']
     password = request.json['password']
     conn = mysql.connect()
-    cursor = conn.cursor()
-    cursor.execute("INSERT INTO usuarios VALUES('" + email + "', '" + password + "')")
-    conn.commit()
+    try:
+        cursor = conn.cursor()
+        cursor.execute("INSERT INTO usuarios VALUES('" + email + "', '" + password + "')")
+        conn.commit()
+
+        response = app.response_class(
+            response=json.dumps({'message': 'Registro exitoso'}),
+            status=201,
+            mimetype='application/json'
+        )
+    except:
+        response = app.response_class(
+            response=json.dumps({'message': 'Registro no exitoso'}),
+            status=401,
+            mimetype='application/json'
+        )
     conn.close()
-    return email + " " + password 
+    return response
 
 @app.route('/verinfo', methods=['GET'])
 def ver_info():
