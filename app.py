@@ -2,6 +2,7 @@
 from flask import Flask, request, jsonify
 import json
 import rdflib
+import MySQLdb as db
 from rdflib import Graph
 from flask import abort
 from flask import make_response
@@ -9,6 +10,13 @@ from flask import make_response
 app = Flask(__name__)
 g = Graph()
 g.parse('Datos.owl')
+
+HOST = "52.67.23.207"
+PORT = 3306
+USER = "root@localhost"
+PASSWORD = "SRWgrupo_2"
+DB = "EPS"
+
 
 @app.before_request
 def option_autoreply():
@@ -48,78 +56,83 @@ def set_allow_origin(resp):
         h['Access-Control-Allow-Origin'] = request.headers['Origin']
     return resp
 
+@app.route('/usuario/registro', methods=['POST'])
+def registro():
+    email = request.json['email']
+    password = request.json['password']
+    connection = db.Connection(host=HOST, port=PORT,
+                            user=USER, passwd=PASSWORD, db=DB)
+    return email + " " + password 
 
 @app.route('/verinfo', methods=['GET'])
 def ver_info():
-    if request.method == 'GET':
-        id = request.args.get('id')
-        query ='PREFIX ips:<http://www.EPSColombia.org#>\
-                SELECT *\
-                WHERE {\
-                    ?ips ips:idips ?id;\
-                    ips:municipio ?mun;\
-                    ips:departamento ?dep\
-                    FILTER REGEX(?id, "' + id + '+")'\
-                ' }'
-        data = dict()
-        for row in g.query(query):
-            data['id'] = str(row.asdict()['id'])
-            data['municipio'] = str(row.asdict()['mun'])
-            data['departamento'] = str(row.asdict()['dep'])
-            
-        query = 'PREFIX ips:<http://www.EPSColombia.org#>\
+    id = request.args.get('id')
+    query ='PREFIX ips:<http://www.EPSColombia.org#>\
             SELECT *\
             WHERE {\
                 ?ips ips:idips ?id;\
-                ips:nomservicio ?ser;\
+                ips:municipio ?mun;\
+                ips:departamento ?dep\
                 FILTER REGEX(?id, "' + id + '+")'\
             ' }'
-
-        servicios = []
-        for row in g.query(query):
-            servicios.append(str(row.asdict()['ser']))   
-        data['servicios'] = servicios
-
-        if len(servicios) == 0:
-            abort(404)
-        else:
-            response = app.response_class(
-                response=json.dumps({'ips': data}),
-                status=200,
-                mimetype='application/json'
-            )
-            
-        return response
-
-@app.route('/ips', methods=['GET'])
-def ips():
-    if request.method == 'GET':
-        query ='PREFIX ips:<http://www.EPSColombia.org#>\
-                SELECT *\
-                WHERE {\
-                    ?i ips:idips ?id;\
-                    ips:ips ?nom;\
-                    ips:municipio ?mun;\
-                    ips:departamento ?dep;\
-                    ips:resultado ?res\
-                }'
-        data = []
-        for row in g.query(query):
-            data2 = dict()
-            data2['id'] = str(row.asdict()['id'])
-            data2['nombre'] = str(row.asdict()['nom'])
-            data2['municipio'] = str(row.asdict()['mun'])
-            data2['departamento'] = str(row.asdict()['dep'])
-            data2['resultado'] = str(row.asdict()['res'])
-            data.append(data2)
+    data = dict()
+    for row in g.query(query):
+        data['id'] = str(row.asdict()['id'])
+        data['municipio'] = str(row.asdict()['mun'])
+        data['departamento'] = str(row.asdict()['dep'])
         
+    query = 'PREFIX ips:<http://www.EPSColombia.org#>\
+        SELECT *\
+        WHERE {\
+            ?ips ips:idips ?id;\
+            ips:nomservicio ?ser;\
+            FILTER REGEX(?id, "' + id + '+")'\
+        ' }'
+
+    servicios = []
+    for row in g.query(query):
+        servicios.append(str(row.asdict()['ser']))   
+    data['servicios'] = servicios
+
+    if len(servicios) == 0:
+        abort(404)
+    else:
         response = app.response_class(
             response=json.dumps({'ips': data}),
             status=200,
             mimetype='application/json'
         )
-            
-        return response        
+        
+    return response
+
+@app.route('/ips', methods=['GET'])
+def ips():
+    query ='PREFIX ips:<http://www.EPSColombia.org#>\
+            SELECT *\
+            WHERE {\
+                ?i ips:idips ?id;\
+                ips:ips ?nom;\
+                ips:municipio ?mun;\
+                ips:departamento ?dep;\
+                ips:resultado ?res\
+            }'
+    data = []
+    for row in g.query(query):
+        data2 = dict()
+        data2['id'] = str(row.asdict()['id'])
+        data2['nombre'] = str(row.asdict()['nom'])
+        data2['municipio'] = str(row.asdict()['mun'])
+        data2['departamento'] = str(row.asdict()['dep'])
+        data2['resultado'] = str(row.asdict()['res'])
+        data.append(data2)
+    
+    response = app.response_class(
+        response=json.dumps({'ips': data}),
+        status=200,
+        mimetype='application/json'
+    )
+        
+    return response        
 
 # Retornar errores como json
 @app.errorhandler(404)
