@@ -2,20 +2,20 @@
 from flask import Flask, request, jsonify
 import json
 import rdflib
-import MySQLdb as db
+from flaskext.mysql import MySQL
 from rdflib import Graph
 from flask import abort
 from flask import make_response
 
+mysql = MySQL()
 app = Flask(__name__)
+app.config['MYSQL_DATABASE_USER'] = 'root'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'SRWgrupo_2'
+app.config['MYSQL_DATABASE_DB'] = 'EPS'
+app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+mysql.init_app(app)
 g = Graph()
 g.parse('Datos.owl')
-
-HOST = "52.67.23.207"
-PORT = 3306
-USER = "root@localhost"
-PASSWORD = "SRWgrupo_2"
-DB = "EPS"
 
 
 @app.before_request
@@ -60,8 +60,11 @@ def set_allow_origin(resp):
 def registro():
     email = request.json['email']
     password = request.json['password']
-    connection = db.Connection(host=HOST, port=PORT,
-                            user=USER, passwd=PASSWORD, db=DB)
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    cursor.execute("INSERT INTO usuarios VALUES('" + email + "', '" + password + "')")
+    conn.commit()
+    conn.close()
     return email + " " + password 
 
 @app.route('/verinfo', methods=['GET'])
