@@ -4,7 +4,7 @@ Created on Sat May 26 10:47:14 2018
 
 @author: sebastian
 """
-
+import collections
 Likes={"ips":[{"id":"1234","municipio":"A","departamento":"z","like":1,"Servicio":"CONSULTAS"},{"id":"1233","municipio":"B","departamento":"t","like":0,"Servicio":"URGENCIAS"},{"id":"1239","municipio":"C","departamento":"m","like":1,"Servicio":"URGENCIAS"}]}
 
 #municipiosLike ={"A":0,"B":0,"C":0}
@@ -182,14 +182,16 @@ for ips in ips["ips"]:
     servicio=ips["Servicio"]
     municipio=ips["municipio"]
     departamento=ips["departamento"]
-    print(ID)
-    print(probLikeServ[servicio])
-    print(probLikeDepto[departamento])
-    print(probLikeMuni[municipio])
-    print(probTotalesServ[servicio])
-    print(probTotalesDpto[departamento])
-    print(ProbTotalesMuni[municipio])
-    
+#    print(ID)
+#    print(probLikeServ[servicio])
+#    print(probLikeDepto[departamento])
+#    print(probLikeMuni[municipio])
+#    print(probTotalesServ[servicio])
+#    print(probTotalesDpto[departamento])
+#    print(ProbTotalesMuni[municipio])
+#    print("aca")
+#    print(probLike*probLikeServ[servicio]*probLikeDepto[departamento]*probLikeMuni[municipio])
+#    print(probTotalesServ[servicio]*probTotalesDpto[departamento]*ProbTotalesMuni[municipio])
     
     prob=(probLike*probLikeServ[servicio]*probLikeDepto[departamento]*probLikeMuni[municipio])/(probTotalesServ[servicio]*probTotalesDpto[departamento]*ProbTotalesMuni[municipio])
     
@@ -201,43 +203,47 @@ for ips in ips["ips"]:
         
 
         
-print("holi")
-print(Calificaciones)
-print(contLike)
 
-print(contNoLike)
+sorrecomendacion=collections.OrderedDict(sorted(recomendacion.items()))
+#
+#print("holi")
+#print(Calificaciones)
+#print(contLike)
+#
+#print(contNoLike)
 print(recomendacion)
-    
-         
-print("probabilidades totales")
-
-print(probTotalesServ)
-print(probTotalesDpto)
-print(ProbTotalesMuni)     
-        
-        
-print("prob no like") 
-print(probLikeServ)
-print(probLikeDepto)
-print(probLikeMuni)  
-print("probLike")    
-print(probLikeServ)
-print(probLikeDepto)
-print(probLikeMuni)       
-    
-print("contadores")
-        
-print(serviciosLike)
-print(serviciosNoLike)
-print(departamentosLike)
-print(departamentosNoLike)
-print(municipiosLike)
-print(municipiosNoLike)
-
-        
-    
-
-
-    
-    
-    
+print(sorrecomendacion)
+#    
+#         
+#print("probabilidades totales")
+#
+#print(probTotalesServ)
+#print(probTotalesDpto)
+#print(ProbTotalesMuni)     
+#        
+#        
+#print("prob no like") 
+#print(probLikeServ)
+#print(probLikeDepto)
+#print(probLikeMuni)  
+#print("probLike")    
+#print(probLikeServ)
+#print(probLikeDepto)
+#print(probLikeMuni)       
+#    
+#print("contadores")
+#        
+#print(serviciosLike)
+#print(serviciosNoLike)
+#print(departamentosLike)
+#print(departamentosNoLike)
+#print(municipiosLike)
+#print(municipiosNoLike)
+#
+#        
+#    
+#
+#
+#    
+#    
+#    
