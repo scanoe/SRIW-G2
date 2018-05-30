@@ -116,7 +116,7 @@ def iniciar_sesion():
 def calificar():
     email = request.json['email']
     calificaciones = request.json['calificaciones']
-    dic = []
+    
     for c in calificaciones:
 
         conn = mysql.connect()
@@ -128,14 +128,33 @@ def calificar():
         except:
             abort(500)
 
-    cursor.execute("SELECT * FROM calificaciones WHERE email='" + email + "'")
+    cursor.execute("SELECT idips, like FROM calificaciones WHERE email='" + email + "'")
     data = cursor.fetchall()
+    conn.close()
+    lista = []
     for d in data:
-        print(d[0])
-        print(d[1])
-        print(d[2])
+        idips = d[0])
+        like = d[1])
+        query ='PREFIX ips:<http://www.EPSColombia.org#>\
+        SELECT *\
+        WHERE {\
+            ?ips ips:idips ?id;\
+            ips:nomservicio ?ser;\
+            ips:municipio ?mun;\
+            ips:departamento ?dep\
+            FILTER REGEX(?id, "' + idips + '+")'\
+        ' }'
+
+        dic = dict()
+        for row in g.query(query):
+            dic['id'] = str(row.asdict()['id'])
+            dic['municipio'] = str(row.asdict()['mun'])
+            dic['departamento'] = str(row.asdict()['dep'])
+            dic['servicio'] = str(row.asdict()['ser'])
+            dic['like'] = like
+        lista.append(dic)
     
-    Likes = {"ips": dic}
+    Likes = {"ips": lista}
     listadep = get_departamentos()
     listaMunicipips = get_municipios()
     listaderv=["Hospitalaria","Consultas","Experiencia global","Urgencias"]
@@ -147,8 +166,7 @@ def calificar():
                 ips:ips ?nom;\
                 ips:nomservicio ?ser;\
                 ips:municipio ?mun;\
-                ips:departamento ?dep;\
-                ips:resultado ?res\
+                ips:departamento ?dep\
             }'
 
     data = []
@@ -159,7 +177,6 @@ def calificar():
         data2['servicio'] = str(row.asdict()['ser'])
         data2['municipio'] = str(row.asdict()['mun'])
         data2['departamento'] = str(row.asdict()['dep'])
-        data2['resultado'] = str(row.asdict()['res'])
         data.append(data2)
     ips = {'ips': data}
 
