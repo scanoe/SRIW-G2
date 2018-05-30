@@ -13,7 +13,7 @@ app = Flask(__name__)
 app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'SRWgrupo_2'
 app.config['MYSQL_DATABASE_DB'] = 'EPS'
-app.config['MYSQL_DATABASE_HOST'] = '52.67.23.207'
+app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
 g = Graph()
 g.parse('Datos.owl')
@@ -143,17 +143,20 @@ def calificar():
 
         conn = mysql.connect()
         cursor = conn.cursor()
-        try:
-            cursor.execute("INSERT INTO calificaciones VALUES('" + email + "', '" + data['id'] + "', '" + data['like'] +"')")
+        
+        try: 
+            cursor.execute("INSERT INTO calificaciones VALUES('" + email + "', '" + data['id'] + "', " + str(c['like']) +")")
             conn.commit()
             conn.close()
             response = app.response_class(
                 response=json.dumps({'message': 'Registro exitoso'}),
                 status=201,
                 mimetype='application/json'
-            ) 
+        ) 
         except:
             abort(500)
+
+
 
     Likes = {"ips": dic}
     listadep = get_departamentos()
