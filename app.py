@@ -342,13 +342,12 @@ def recomendar():
     dic = []
     for id in sorrecomendacion:
         query ='PREFIX ips:<http://www.EPSColombia.org#>\
-        SELECT *\
-        WHERE {\
-            ?ips ips:idips ?id;\
-            ips:ips ?nom;\
-            FILTER REGEX(?id, " id '")\
-        }'
-        
+                SELECT *\
+                WHERE {\
+                    ?ips ips:idips ?id;\
+                    ips:ips ?nom;\
+                    FILTER REGEX(?id, "'+ id + '")\
+                 }'       
         data = dict()
         for row in g.query(query):
             data['id'] = str(row.asdict()['id'])
@@ -375,7 +374,7 @@ def ver_info():
                 ips:municipio ?mun;\
                 ips:departamento ?dep;\
                 ips:nomservicio ?ser\
-                FILTER REGEX(?id, " id '")\
+                FILTER REGEX(?id, "' + id + '")\
              }'
     data = dict()
     for row in g.query(query):
