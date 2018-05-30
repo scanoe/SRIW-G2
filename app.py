@@ -156,14 +156,12 @@ def calificar():
         except:
             abort(500)
 
-
-
     Likes = {"ips": dic}
     listadep = get_departamentos()
     listaMunicipips = get_municipios()
     listaderv=["Hospitalaria","Consultas","Experiencia global","Urgencias"]
 
-    # ips = get_ips()
+    ips = get_ips()
     municipiosLike={}
     municipiosNoLike={}
     probLikeMuni={}
@@ -201,9 +199,6 @@ def calificar():
         probNoLikeServ[servi]=0
         probTotalesServ[servi]=0
     
-    ips={"ips":[{"id":"500101615","municipio":"Medellín","departamento":"Antioquia","servicio":"Consultas"},{"id":"1100120753","municipio":"Bogotá","departamento":"Bogotá D.C.","servicio":"Hospitalaria"}
-    ,{"id":"7600106747","municipio":"Cali","departamento":"Valle del Cauca","servicio":"Consultas"},{"id":"1300100414","municipio":"Cartagena de Indias","departamento":"Bolivar","servicio":"Consultas"},{"id":"7636403314","municipio":"Jamundí","departamento":"Valle del Cauca","like":1,"servicio":"Urgencias"}]}
-
     probLike=0.5
     recomendacion={}
     Calificaciones=0
