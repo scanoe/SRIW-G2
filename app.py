@@ -118,28 +118,6 @@ def calificar():
     calificaciones = request.json['calificaciones']
     dic = []
     for c in calificaciones:
-        id = c['id']
-
-        query ='PREFIX ips:<http://www.EPSColombia.org#>\
-        SELECT *\
-        WHERE {\
-            ?ips ips:idips ?id;\
-            ips:ips ?nom;\
-            ips:municipio ?mun;\
-            ips:departamento ?dep;\
-            ips:nomservicio ?ser\
-            FILTER REGEX(?id, "' + id + '+")'\
-        ' }'
-
-        data = dict()
-        for row in g.query(query):
-            data['id'] = str(row.asdict()['id'])
-            data['nombre'] = str(row.asdict()['nom'])
-            data['municipio'] = str(row.asdict()['mun'])
-            data['departamento'] = str(row.asdict()['dep'])
-            data['servicio'] = str(row.asdict()['ser'])
-            data['like'] = c['like']
-        dic.append(data)
 
         conn = mysql.connect()
         cursor = conn.cursor()
@@ -148,13 +126,39 @@ def calificar():
             cursor.execute("INSERT INTO calificaciones VALUES('" + email + "', '" + data['id'] + "', " + str(c['like']) +")")
             conn.commit()
             conn.close()
-            response = app.response_class(
-                response=json.dumps({'message': 'Registro exitoso'}),
-                status=201,
-                mimetype='application/json'
-        ) 
         except:
             abort(500)
+
+        conn = mysql.connect()
+        cursor = conn.cursor()
+
+            id = c['id']
+            query ='PREFIX ips:<http://www.EPSColombia.org#>\
+            SELECT *\
+            WHERE {\
+                ?ips ips:idips ?id;\
+                ips:ips ?nom;\
+                ips:municipio ?mun;\
+                ips:departamento ?dep;\
+                ips:nomservicio ?ser\
+                FILTER REGEX(?id, "' + id + '+")'\
+            ' }'
+
+            data = dict()
+            for row in g.query(query):
+                data['id'] = str(row.asdict()['id'])
+                data['nombre'] = str(row.asdict()['nom'])
+                data['municipio'] = str(row.asdict()['mun'])
+                data['departamento'] = str(row.asdict()['dep'])
+                data['servicio'] = str(row.asdict()['ser'])
+                data['like'] = c['like']
+            dic.append(data)
+
+    try:
+        cursor.execute("SELECT * FROM calificaciones WHERE email='" + email + "'")
+        cal = cursor.fetchall()
+        print(cal)
+
 
     Likes = {"ips": dic}
     listadep = get_departamentos()
