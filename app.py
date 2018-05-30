@@ -128,13 +128,13 @@ def calificar():
         except:
             abort(500)
 
-    cursor.execute("SELECT idips, like FROM calificaciones WHERE email='" + email + "'")
+    cursor.execute("SELECT idips, `like` FROM calificaciones WHERE email='" + email + "'")
     data = cursor.fetchall()
     conn.close()
     lista = []
     for d in data:
-        idips = d[0])
-        like = d[1])
+        idips = d[0]
+        like = d[1]
         query ='PREFIX ips:<http://www.EPSColombia.org#>\
         SELECT *\
         WHERE {\
