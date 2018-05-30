@@ -140,6 +140,21 @@ def calificar():
             data['servicio'] = str(row.asdict()['ser'])
             data['like'] = c['like']
         dic.append(data)
+
+        conn = mysql.connect()
+        cursor = conn.cursor()
+        try:
+            cursor.execute("INSERT INTO calificaciones VALUES('" + email + "', '" + data['id'] + "', '" + data['like'] +"')")
+            conn.commit()
+            conn.close()
+            response = app.response_class(
+                response=json.dumps({'message': 'Registro exitoso'}),
+                status=201,
+                mimetype='application/json'
+            ) 
+        except:
+            abort(500)
+
     Likes = {"ips": dic}
     listadep = get_departamentos()
     listaMunicipips = get_municipios()
