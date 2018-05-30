@@ -120,14 +120,27 @@ def calificar():
     for c in calificaciones:
 
         conn = mysql.connect()
-        cursor = conn.cursor()
-        
-        try: 
+        cursor = conn.cursor() 
+        try:
+            cursor.execute("DELETE FROM calificaciones WHERE email='" + email + "'")
             cursor.execute("INSERT INTO calificaciones VALUES('" + email + "', '" + c['id'] + "', " + str(c['like']) +")")
             conn.commit()
+            conn.close()    
         except:
             abort(500)
+    response = app.response_class(
+        response=json.dumps({'message': 'Calificaciones agregadas correctamente'}),
+        status=200,
+        mimetype='application/json'
+    )
+    return response
 
+
+@app.route('usuario/recomendar', methods=['POST'])
+def recomendar():
+    email = request.json['email']
+    conn = mysql.connect()
+    cursor = conn.cursor()
     cursor.execute("SELECT idips, `like` FROM calificaciones WHERE email='" + email + "'")
     data = cursor.fetchall()
     conn.close()
@@ -324,9 +337,6 @@ def calificar():
                 recomendacion[ID]=prob
         else :
             recomendacion[ID]=prob
-            
-
-            
 
     sorrecomendacion=collections.OrderedDict(sorted(recomendacion.items()))
     dic = []
@@ -447,6 +457,10 @@ def get_departamentos():
 @app.errorhandler(404)
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
+
+@app.errorhandler(500)
+def not_found(error):
+    return make_response(jsonify({'error': 'Un error ha ocurrido en el servidor'}), 500)
 
 if __name__ == '__main__':
     app.secret_key = 'secret1234'
