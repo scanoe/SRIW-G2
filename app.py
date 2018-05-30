@@ -117,17 +117,17 @@ def calificar():
     email = request.json['email']
     calificaciones = request.json['calificaciones']
     
-    for c in calificaciones:
 
-        conn = mysql.connect()
-        cursor = conn.cursor() 
-        try:
-            cursor.execute("DELETE FROM calificaciones WHERE email='" + email + "'")
+    conn = mysql.connect()
+    cursor = conn.cursor() 
+    try:
+        cursor.execute("DELETE FROM calificaciones WHERE email='" + email + "'")
+        for c in calificaciones:
             cursor.execute("INSERT INTO calificaciones VALUES('" + email + "', '" + c['id'] + "', " + str(c['like']) +")")
             conn.commit()
-            conn.close()    
-        except:
-            abort(500)
+        conn.close()    
+    except:
+       abort(500)
     response = app.response_class(
         response=json.dumps({'message': 'Calificaciones agregadas correctamente'}),
         status=200,
@@ -136,7 +136,7 @@ def calificar():
     return response
 
 
-@app.route('usuario/recomendar', methods=['POST'])
+@app.route('/usuario/recomendar', methods=['POST'])
 def recomendar():
     email = request.json['email']
     conn = mysql.connect()
@@ -346,9 +346,9 @@ def recomendar():
         WHERE {\
             ?ips ips:idips ?id;\
             ips:ips ?nom;\
-            FILTER REGEX(?id, "' + id + '+")'\
-        ' }'
-
+            FILTER REGEX(?id, " id '")\
+        }'
+        
         data = dict()
         for row in g.query(query):
             data['id'] = str(row.asdict()['id'])
@@ -375,8 +375,8 @@ def ver_info():
                 ips:municipio ?mun;\
                 ips:departamento ?dep;\
                 ips:nomservicio ?ser\
-                FILTER REGEX(?id, "' + id + '+")'\
-            ' }'
+                FILTER REGEX(?id, " id '")\
+             }'
     data = dict()
     for row in g.query(query):
         data['id'] = str(row.asdict()['id'])
