@@ -161,7 +161,29 @@ def calificar():
     listaMunicipips = get_municipios()
     listaderv=["Hospitalaria","Consultas","Experiencia global","Urgencias"]
 
-    ips = get_ips()
+    query ='PREFIX ips:<http://www.EPSColombia.org#>\
+            SELECT *\
+            WHERE {\
+                ?i ips:idips ?id;\
+                ips:ips ?nom;\
+                ips:nomservicio ?ser;\
+                ips:municipio ?mun;\
+                ips:departamento ?dep;\
+                ips:resultado ?res\
+            }'
+
+    data = []
+    for row in g.query(query):
+        data2 = dict()
+        data2['id'] = str(row.asdict()['id'])
+        data2['nombre'] = str(row.asdict()['nom'])
+        data2['servicio'] = str(row.asdict()['ser'])
+        data2['municipio'] = str(row.asdict()['mun'])
+        data2['departamento'] = str(row.asdict()['dep'])
+        data2['resultado'] = str(row.asdict()['res'])
+        data.append(data2)
+    ips = {'ips': data}
+
     municipiosLike={}
     municipiosNoLike={}
     probLikeMuni={}
