@@ -123,19 +123,17 @@ def calificar():
         cursor = conn.cursor()
         
         try: 
-            cursor.execute("INSERT INTO calificaciones VALUES('" + email + "', '" + data['id'] + "', " + str(c['like']) +")")
+            cursor.execute("INSERT INTO calificaciones VALUES('" + email + "', '" + c['id'] + "', " + str(c['like']) +")")
             conn.commit()
-            response = app.response_class(
-                response=json.dumps({'message': 'Registro exitoso'}),
-                status=201,
-                mimetype='application/json'
-        ) 
         except:
             abort(500)
 
     cursor.execute("SELECT * FROM calificaciones WHERE email='" + email + "'")
     data = cursor.fetchall()
-    print(data)
+    for d in data:
+        print(d[0])
+        print(d[1])
+        print(d[2])
     
     Likes = {"ips": dic}
     listadep = get_departamentos()
