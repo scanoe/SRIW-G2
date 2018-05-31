@@ -3,6 +3,8 @@
   - Daniel Alexander Cano Cuartas
   - Nicolas Buitrago Beltrán
   - Carlos Mario Sierra Moreno
+  
+ ## [Link a la página con el sistema recomendador](http://52.67.23.207:4200)
  
  ## Branch master
     Aquí se encuentra todo lo relacionado con las bases de conocimiento.
