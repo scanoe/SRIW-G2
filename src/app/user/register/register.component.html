@@ -1,0 +1,17 @@
+<div class="register-box">
+    <h4>Registrar Usuario</h4>
+    <form class="form-config">
+      <div>
+        <div class="input-field col s12">
+          <input [(ngModel)]="userData.email" name="email" type="text" class="validate">
+          <label>Email</label>
+        </div>
+        <div class="input-field col s6">
+          <input [(ngModel)]="userData.password" name="password" type="password" class="validate">
+          <label>Contraseña</label>
+        </div>
+      </div>
+      <a (click)="register()" class="waves-effect waves-light btn">Registrar</a>
+      <a href="/user/login"  class="waves-effect waves-light btn">Cancelar</a>
+    </form>
+ </div>

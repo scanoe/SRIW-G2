@@ -1,0 +1,23 @@
+<div *ngIf="defaultWindow"  class="alert-box">
+    <h4>Aviso</h4>
+    <div>
+        <p>{{content}}</p>
+        <br>
+        <a (click)="goToLogin()" class="waves-effect waves-light btn">OK</a>
+        <br>
+    </div>
+</div>
+
+<div *ngIf="!defaultWindow"  class="alert-box">
+    <h4>Informacion IPS</h4>
+    <div style="color:white;">
+        <label class="label-config">Departamento:</label><p>{{infoData['departamento']}}</p>
+        <label class="label-config">ID:</label><p>{{infoData['id']}}</p>
+        <label class="label-config">Nombre:</label><p>{{infoData['nombre']}}</p>
+        <label class="label-config">Servicio:</label><p>{{infoData['servicio']}}</p>
+        <label class="label-config">Municipio:</label><p>{{infoData['municipio']}}</p>
+        <br>
+        <a (click)="goToLogin()" class="waves-effect waves-light btn">OK</a>
+        <br>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+ <nav>
+    <div class="nav-wrapper app-background">
+      <a href="#" ><img class="main-logo" [src]="logo"></a>
+      <a href="#" class="brand-logo"> {{barTitle}}</a>
+      <ul *ngIf="!inSesion" id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a routerLink="user/login">Iniciar Sesion</a></li>
+        <li><a routerLink="user/register">Registrar usuario</a></li>
+      </ul>
+      <ul *ngIf="inSesion" id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a routerLink="user/rank">Calificar</a></li>
+        <li *ngIf="showSuggestions"><a routerLink="user/suggestion">Recomendaciones</a></li>
+        <li><a routerLink="user/login">Cerrar Sesion</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+<router-outlet></router-outlet>

@@ -1,0 +1,57 @@
+<div class="table-srw">
+    <h4>Calificar Centros de Salud</h4>
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Buscar">
+    </mat-form-field>
+
+    <div>
+      <mat-table #table [dataSource]="dataSource" matSort>
+
+        <!-- ID Column -->
+        <ng-container matColumnDef="id">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>
+        </ng-container>
+
+        <!-- Progress Column -->
+        <ng-container matColumnDef="nombre">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.nombre}} </mat-cell>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="like">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Like </mat-header-cell>
+                
+          <mat-cell *matCellDef="let row"> 
+                <button mat-icon-button>
+                    <i (click)="rank(row.index, 'favorite', 'close', 1)" 
+                        style="text-align: left;" class="material-icons">{{row.likeState}}</i>
+                </button> 
+          </mat-cell>
+        </ng-container>
+
+        <!-- Color Column -->
+        <ng-container matColumnDef="dislike">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Dislike </mat-header-cell>
+          <mat-cell *matCellDef="let row"> 
+                <button mat-icon-button>
+                    <i (click)="rank(row.index, 'favorite_border', 'cancel', 0 )" 
+                        style="text-align: left;" class="material-icons">{{row.dislikeState}}</i>
+                </button> 
+          </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;">
+        </mat-row>
+      </mat-table>
+
+      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+    </div>
+    
+    <br>
+    
+    <a (click)="reviewData()" class="waves-effect waves-light btn">Enviar Calificacion</a>
+    <a (click)="cancelReview()" class="waves-effect waves-light btn">Cancelar</a>
+</div>

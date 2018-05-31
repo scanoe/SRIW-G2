@@ -1,0 +1,12 @@
+.table-srw{
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 800px;
+    background-color: #4C413F;
+    text-align: center;
+    color: white;
+    border-radius: 25px;
+}
