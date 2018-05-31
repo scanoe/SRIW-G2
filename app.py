@@ -2,7 +2,7 @@
 from flask import Flask, request, jsonify
 import json
 import rdflib
-import collections
+import operator
 from flaskext.mysql import MySQL
 from rdflib import Graph
 from flask import abort
@@ -340,16 +340,16 @@ def recomendar():
                     recomendacion[ID]=prob
             else :
                 recomendacion[ID]=prob
-
-        sorrecomendacion=collections.OrderedDict(sorted(recomendacion.items()))
+        sorted_recom = sorted(recomendacion.items(), key=operator.itemgetter(1), reverse = True)
+        
         dic = []
-        for id in sorrecomendacion:
+        for i in range(10):
             query ='PREFIX ips:<http://www.EPSColombia.org#>\
                     SELECT *\
                     WHERE {\
                         ?ips ips:idips ?id;\
                         ips:ips ?nom;\
-                        FILTER REGEX(?id, "'+ id + '")\
+                        FILTER REGEX(?id, "'+ sorted_recom[i][0] + '")\
                     }'       
             data = dict()
             for row in g.query(query):
