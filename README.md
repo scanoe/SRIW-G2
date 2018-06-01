@@ -6,6 +6,8 @@
 
  ## Razonador
     En la branch nbuitragob se ecuentra los archivos de jena, en la carpeta razonador se encuentra la inferencia realizada
+  
+ ## [Link a la página con el sistema recomendador](http://52.67.23.207:4200)
  
  ## Branch master
     Aquí se encuentra todo lo relacionado con las bases de conocimiento.
@@ -33,3 +35,6 @@
     
   ## Branch api
    Aquí está todo el backend construido en Python
+   
+  ## Branch front-end
+  Aquí está el frontend desarrollado con angular
