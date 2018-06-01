@@ -32,3 +32,6 @@
     
   ## Branch api
    Aquí está todo el backend construido en Python
+   
+  ## Branch front-end
+  Aquí está el frontend desarrollado con angular
