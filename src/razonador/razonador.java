@@ -24,7 +24,7 @@ public class razonador {
 	public static void main(String[] args) throws FileNotFoundException {
 		
 		Model model = ModelFactory.createDefaultModel();
-		InputStream in = FileManager.get().open( "src/owl/EPS.owl" );
+		InputStream in = FileManager.get().open( "src/owl/Salida.owl" );
 		model.read(in,null,"TURTLE");
 		Reasoner reasoner = ReasonerRegistry.getRDFSReasoner();//.bindSchema(model.getGraph());
 		InfModel inf = ModelFactory.createInfModel(reasoner, model);
