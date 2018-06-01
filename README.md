@@ -3,6 +3,9 @@
   - Daniel Alexander Cano Cuartas
   - Nicolas Buitrago Beltrán
   - Carlos Mario Sierra Moreno
+
+ ## Razonador
+    En la branch nbuitragob se ecuentra los archivos de jena, en la carpeta razonador se encuentra la inferencia realizada
  
  ## Branch master
     Aquí se encuentra todo lo relacionado con las bases de conocimiento.
